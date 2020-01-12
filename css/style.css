@@ -1,0 +1,361 @@
+@font-face {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../font/helvthin.otf);
+}
+@font-face {
+  font-family: tkach;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../font/tkach.otf);
+}
+
+.top-p {
+    color: #FFEFD5;
+    padding-left: 20px;
+    font-size: 20px;
+    margin: 5px;
+    text-align: center;
+}
+
+.top-block > p {
+    font-family: "tkach";
+    font-size: 24px;
+    margin-top: 0;
+}
+.top-block a {
+    vertical-align: bottom;
+    margin: 0 14px 0;
+    line-height: 0;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica";
+}
+header {
+	background: url(../img/background.jpg) no-repeat 50% 50%;
+    background-color: #000;
+	height: 744px;
+}
+.key {
+    border: 1px solid #fff;
+    border-radius: 26px;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    height: 52px;
+    text-align: center;
+    vertical-align: top;
+    width: 52px;
+    margin: 5px 1px;
+}
+.keybord {
+    height: 543px;
+    margin: 5px auto 0;
+    width: 1264px;
+    position: relative;
+}
+.top-block {
+    width: 1264px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 16px 0 0;
+}
+.top-block > div {
+    display: inline-block;
+    margin: 0 90px;
+}
+.blur {
+    background: rgba(0, 0, 0, 0) url("bacgr.jpg") no-repeat scroll center 51%;
+    filter: blur(20px);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+.fade {
+    background-color: #000;
+    height: 100%;
+    opacity: 0.5;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+.content {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+}
+.keybord-top {
+    background-color: #000;
+    color: #01c7d4;
+    font-size: 16px;
+    height: 30px;
+    margin: 0 0 15px;
+    overflow: hidden;
+    padding: 7px 0 0;
+    width: 100%;
+}
+.vh {
+	visibility: hidden;
+}
+.dl {
+    font-size: 15px;
+    line-height: 0.9;
+}
+.dl > p {
+    margin-top: 14px;
+}
+.t16 {
+	font-size: 16px;
+}
+.t16 > p {
+    margin-top: 18px;
+}
+.key.dl.smin > p {
+    font-size: 28px;
+    margin-top: -2px;
+}
+.key.dl.splus > p {
+    font-size: 20px;
+    line-height: 0.7;
+}
+.brackets {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.half {
+    width: 22px;
+}
+.key-block {
+    padding: 0 22px;
+}
+.key.bs > p {
+    margin-top: -2px;
+}
+.key.bs {
+    font-size: 35px;
+    width: 112px;
+}
+.key.tab {
+    width: 83px;
+}
+.key.ds > p {
+    font-size: 16px;
+    margin-top: 8px;
+}
+.key.ds.sum {
+    width: 81px;
+}
+.key.plus {
+    float: right;
+    height: 116px;
+}
+.key.plus > p {
+    margin-top: 45px;
+}
+.key.caps {
+    font-size: 16px;
+    width: 105px;
+}
+.key.caps > p {
+    margin-top: 17px;
+}
+.key.enter {
+    width: 119px;
+}
+.key.shift1 {
+    width: 132px;
+}
+.key.shift1 > p, .key.shift2 > p {
+    font-size: 16px;
+    margin-top: 18px;
+}
+.key.shift2 {
+    width: 152px;
+}
+.key.enter2 {
+    float: right;
+    height: 116px;
+}
+.key.enter2 > p {
+    font-size: 16px;
+    margin-top: 48px;
+}
+.key.enter span {
+    background: rgba(0, 0, 0, 0) url("wk.png") repeat scroll -24px 0;
+    display: inline-block;
+    height: 12px;
+    vertical-align: -1px;
+    width: 24px;
+}
+.key.ctrl1, .key.ctrl2 {
+    width: 70px;
+}
+.cblock > span {
+    border-bottom: 1px solid #fff;
+    display: block;
+    margin: 5px 3px 0;
+}
+.cblock {
+    border: 1px solid #fff;
+    height: 25px;
+    margin: 12px auto 0;
+    width: 25px;
+}
+.key.cont {
+    width: 66px;
+}
+.key.arup > p {
+    font-size: 26px;
+    margin-top: 9px;
+    transform: rotate(-90deg);
+}
+.key.wndw > p {
+    margin: 14px auto 0;
+    text-align: center;
+}
+.key.wndw span {
+    background: rgba(0, 0, 0, 0) url("wk.png") no-repeat scroll 0 0;
+    display: block;
+    height: 23px;
+    margin: 0 auto;
+    width: 24px;
+}
+.key.wndw {
+    width: 70px;
+}
+.key.alt {
+    width: 70px;
+}
+.key.space {
+    width: 428px;
+}
+.key.zero {
+    width: 112px;
+}
+.key.lclick {
+    border-radius: 0 0 0 15px;
+    height: 40px;
+    vertical-align: bottom;
+    width: 96px;
+}
+.key.rclick {
+    border-radius: 0 0 15px 0;
+    height: 40px;
+    vertical-align: bottom;
+    width: 96px;
+}
+.key.cclick {
+    border-radius: 0;
+    height: 40px;
+    vertical-align: bottom;
+    width: 24px;
+}
+.m-block {
+    display: inline-block;
+    text-align: center;
+    vertical-align: bottom;
+    width: 843px;
+}
+.key.arleft > p, .key.arright > p {
+    font-size: 26px;
+    margin: 11px 0;
+}
+.key.ardown > p {
+    font-size: 26px;
+    margin: 14px 0 14px 5px;
+    transform: rotate(90deg);
+}
+.keybord-footer > p {
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    margin: 13px 0 0;
+    padding: 5px 0;
+    text-align: center;
+    letter-spacing: 2px;
+}
+footer {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}
+.fcontent {
+    color: #fff;
+    margin: 0 auto;
+    padding: 0 0 20px;
+    width: 1234px;
+    letter-spacing: 2px;
+}
+h1 {
+    font-size: 18px;
+    margin: 0;
+    padding: 25px 0;
+}
+.key.press {
+    background-color: #00e1ef;
+    border-color: #00e1ef;
+    color: #000;
+}
+.key.active {
+    background-color: #fff;
+    border-color: #fff;
+    color: #000;
+}
+.fdesc {
+    font-size: 16px;
+    margin: 0 0 15px;
+}
+.ftext > span {
+    display: inline-block;
+    font-size: 16px;
+    margin: 16px 0 0 16px;
+}
+.ftext .key {
+    height: 40px;
+    width: 40px;
+}
+.ftext .key > p {
+    margin-top: 11px;
+}
+.key.wndw.active span, .key.wndw.press span {
+	background-position: 0 -23px;
+}
+.key.cont.active .cblock, .key.cont.press .cblock, .key.cont.active .cblock>span, .key.cont.press .cblock>span {
+    border-color: #000;
+}
+.key.enter.active span, .key.enter.press span {
+	background-position: -24px -13px;
+}
+.keybord-top > p {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 3px 0;
+}
+.quest-block {
+    background: #000 none repeat scroll 0 0;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+}
+.quest-block > p {
+    letter-spacing: 1px;
+    margin: 13px auto;
+    text-align: center;
+    width: 1264px;
+}
+.quest-block a {
+    color: #fff;
+    letter-spacing: 1px;
+    margin: 0 22px;
+}
+.quest-block a:hover {
+    text-decoration: none;
+}
