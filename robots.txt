@@ -1,0 +1,7 @@
+User-agent: *
+#Allow: /
+Disallow:
+Disallow: /index.html
+
+Sitemap: https://keytest.pp.ua/sitemap.xml
+Sitemap: https://keytest.pp.ua/sitemap.html
