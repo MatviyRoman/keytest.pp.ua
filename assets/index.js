@@ -388,11 +388,7 @@ function list(a) {
 			$('.copyright a[href$="https://programist.top"]:visible').length;
 	if (0 == o || 0 == r) {
 		// $(
-		// 	'<section class="copyright">\n\t\t<div class="container">\n\t\t\t<div class="row justify-content-center">\n\t\t\t\t<div class="col-auto">\n\t\t\t\t\tThe site was created by the company  <a href="https://apartner.top" title="Website development on cms Wordpress/ Prestashop / Laravel php framework">aPartner.top</a> | <a href="https://programist.top" title="Website development on cms Wordpress/ Prestashop / Laravel php framework">Programist.top</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</section>'
-		// ).appendTo('#wrapper');
-
-		// $(
-		// 	'<section class="copyright">\n\t\t<div class="container">\n\t\t\t<div class="row justify-content-center">\n\t\t\t\t<div class="col-auto">\n\t\t\t\t\tDie Website wurde von der Firma erstellt <a href="https://apartner.top" title="Website-Entwicklung auf cms Wordpress/ Prestashop / Laravel php framework">aPartner.top</a> | <a href="https://programist.top" title="Website-Entwicklung auf cms Wordpress/ Prestashop / Laravel php framework">Programist.top</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</section>'
+		// 	'<section class="copyright">\n\t\t<div class="container">\n\t\t\t<div class="row justify-content-center">\n\t\t\t\t<div class="col-auto">\n\t\t\t\t\tThe site was created by the company  <a href="https://apartner.pro" title="Website development on cms Wordpress/ Prestashop / Laravel php framework">APARTNER.PRO</a> | <a href="https://programist.top" title="Website development on cms Wordpress/ Prestashop / Laravel php framework">PROGRAMIST.TOP</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</section>'
 		// ).appendTo('#wrapper');
 
 		$(
