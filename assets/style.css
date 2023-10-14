@@ -2,8 +2,6 @@
 	font-style: normal;
 	font-weight: 400;
 	font-family: "sans-serif", "Open Sans";
-
-	/* box-sizing: border-box; */
 	/* font-size: 16px; */
 }
 
@@ -485,4 +483,42 @@ section.copyright .container {
 section.copyright a {
 	color: #fff;
 	font-size: 20px;
+}
+
+@media (max-width: 1263px) {
+	* {
+		box-sizing: border-box;
+	}
+
+	.quest-block>p {
+		max-width: 1264px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.top-block {
+		max-width: 1264px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.keybord-footer>div {
+		max-width: 1264px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.footer, .fcontent, .keybord {
+		max-width: 1264px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.keybord {
+		overflow-x: scroll;
+	}
+
+	.keybord .blur , .keybord .fade, .keybord .content {
+		width: 1264px;
+	}
 }
