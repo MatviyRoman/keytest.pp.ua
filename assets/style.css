@@ -490,25 +490,12 @@ section.copyright a {
 		box-sizing: border-box;
 	}
 
-	.quest-block>p {
-		max-width: 1264px;
-		width: 100%;
-		margin: 0 auto;
-	}
-
-	.top-block {
-		max-width: 1264px;
-		width: 100%;
-		margin: 0 auto;
-	}
-
-	.keybord-footer>div {
-		max-width: 1264px;
-		width: 100%;
-		margin: 0 auto;
-	}
-
-	.footer, .fcontent, .keybord {
+	.quest-block>p,
+	.top-block,
+	.keybord-footer>div,
+	.footer, .fcontent,
+	.keybord
+	{
 		max-width: 1264px;
 		width: 100%;
 		margin: 0 auto;
@@ -518,7 +505,9 @@ section.copyright a {
 		overflow-x: scroll;
 	}
 
-	.keybord .blur , .keybord .fade, .keybord .content {
+	.keybord .blur,
+	.keybord .fade,
+	.keybord .content {
 		width: 1264px;
 	}
 }
