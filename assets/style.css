@@ -12,7 +12,7 @@ html * {
 body {
 	margin: 0;
 	padding: 0;
-	background: url(img/bg.jpg) no-repeat;
+	background: url(img/keytest.jpg) no-repeat;
 	background-color: #2f4f4f;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
@@ -72,7 +72,7 @@ header {}
 }
 
 .blur {
-	background: rgba(0, 0, 0, 0) url('img/bg.jpg') no-repeat scroll center 51%;
+	background: rgba(0, 0, 0, 0) url('img/keytest.jpg') no-repeat scroll center 51%;
 	filter: blur(20px);
 	height: 100%;
 	margin: 0;
