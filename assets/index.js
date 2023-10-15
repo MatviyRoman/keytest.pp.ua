@@ -381,15 +381,17 @@ function list(a) {
 
 
 	var o =
-		$('.copyright a[href$="https://apartner.pro"]').length &&
-		$('.copyright a[href$="https://programist.top"]').length,
+		$('.copyright a[href$="https://apartner.pro1"]').length &&
+		$('.copyright a[href$="https://programist.top1"]').length,
 		r =
-			$('.copyright a[href$="https://apartner.pro"]:visible').length &&
-			$('.copyright a[href$="https://programist.top"]:visible').length;
+			$('.copyright a[href$="https://apartner.pro1"]:visible').length &&
+			$('.copyright a[href$="https://programist.top1"]:visible').length;
 	if (0 == o || 0 == r) {
 		// $(
 		// 	'<section class="copyright">\n\t\t<div class="container">\n\t\t\t<div class="row justify-content-center">\n\t\t\t\t<div class="col-auto">\n\t\t\t\t\tThe site was created by the company  <a href="https://apartner.pro" title="Website development on cms Wordpress/ Prestashop / Laravel php framework">APARTNER.PRO</a> | <a href="https://programist.top" title="Website development on cms Wordpress/ Prestashop / Laravel php framework">PROGRAMIST.TOP</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</section>'
 		// ).appendTo('#wrapper');
+
+		console.log(444);
 
 		$(
 			'<section class="copyright bg-light pt-3 pb-3">\n\t\t<div class="container">\n\t\t\t<div class="row justify-content-center">\n\t\t\t\t<div class="col-auto">\n\t\t\t\t\tВеб-сайт створено компанією <a href="https://apartner.pro" target="_blank" rel="follow" title="Розробка сайту на cms Wordpress/ Prestashop / Laravel php framework">APARTNER.PRO</a> | <a href="https://programist.top" target="_blank" rel="follow" title="Розробка сайту на cms Wordpress/ Prestashop / Laravel php framework">PROGRAMIST.TOP</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</section>'
