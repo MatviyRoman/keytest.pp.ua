@@ -3,4 +3,3 @@ Allow: /
 #Disallow:
 
 Sitemap: https://keytest.pp.ua/sitemap.xml
-Sitemap: https://keytest.pp.ua/sitemap.html
