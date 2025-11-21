@@ -1,8 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-		<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-	<loc>https://keytest.pp.ua</loc>
-	<lastmod>2025-11-21T14:03:52+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://keytest.pp.ua</loc>
+		<lastmod>2025-11-21T14:03:52+01:00</lastmod>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://keytest.pp.ua/search</loc>
+		<lastmod>2025-11-21</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.8</priority>
+	</url>
 </urlset>
