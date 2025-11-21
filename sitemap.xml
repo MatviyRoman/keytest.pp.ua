@@ -6,7 +6,7 @@
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>https://keytest.pp.ua/search</loc>
+		<loc>https://keytest.pp.ua/search/</loc>
 		<lastmod>2025-11-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.8</priority>
