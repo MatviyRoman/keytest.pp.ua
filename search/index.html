@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пошук - KeyTest</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .search-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .search-box {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        #search-input {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px 0 0 4px;
+        }
+        #search-button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+        #search-button:hover {
+            background-color: #45a049;
+        }
+        .results {
+            margin-top: 20px;
+        }
+        .result-item {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .result-title {
+            color: #1a0dab;
+            text-decoration: none;
+            font-size: 18px;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .result-url {
+            color: #006621;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .result-snippet {
+            color: #545454;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Введіть пошуковий запит...">
+            <button id="search-button">Пошук</button>
+        </div>
+        <div id="search-results" class="results">
+            <p>Введіть пошуковий запит у поле вище та натисніть кнопку "Пошук"</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('search-input');
+            const searchButton = document.getElementById('search-button');
+            const searchResults = document.getElementById('search-results');
+            
+            function performSearch(query) {
+                if (!query.trim()) {
+                    searchResults.innerHTML = '<p>Будь ласка, введіть пошуковий запит</p>';
+                    return;
+                }
+                
+                // Redirect to Google search with site: parameter
+                window.location.href = `https://www.google.com/search?q=site:keytest.pp.ua+${encodeURIComponent(query)}`;
+            }
+
+            searchButton.addEventListener('click', function() {
+                performSearch(searchInput.value);
+            });
+
+            searchInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    performSearch(searchInput.value);
+                }
+            });
+
+            // Check for search query in URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const query = urlParams.get('q');
+            if (query) {
+                searchInput.value = query;
+                performSearch(query);
+            }
+        });
+    </script>
+</body>
+</html>
