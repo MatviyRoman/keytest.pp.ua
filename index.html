@@ -617,61 +617,124 @@
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="assets/index.js"></script>
+    <!-- Organization Schema -->
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebApplication",
-            "name": "KeyTest - Безкоштовний тест клавіатури онлайн",
-            "description": "Перевірте роботу всіх клавіш на клавіатурі ноутбука чи ПК. Швидкий та безкоштовний онлайн тест клавіатури без реєстрації.",
-            "applicationCategory": "UtilityApplication",
-            "operatingSystem": "Web Browser",
-            "offers": {
-                "@type": "Offer",
-                "price": "0",
-                "priceCurrency": "UAH"
-            },
-            "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.9",
-                "reviewCount": "7859",
-                "bestRating": "5"
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "KeyTest",
+        "url": "https://keytest.pp.ua",
+        "logo": "https://keytest.pp.ua/assets/img/logo.png",
+        "sameAs": [
+            "https://apartner.pro",
+            "https://programist.top"
+        ]
+    }
+    </script>
+    <!-- WebSite Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "KeyTest - Тест клавіатури онлайн",
+        "url": "https://keytest.pp.ua",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://keytest.pp.ua/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Головна",
+            "item": "https://keytest.pp.ua"
+        },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Тест клавіатури",
+            "item": "https://keytest.pp.ua"
+        }]
+    }
+    </script>
+    <!-- WebPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Безкоштовний тест клавіатури онлайн | KeyTest",
+        "description": "Перевірте роботу всіх клавіш на клавіатурі ноутбука чи ПК. Швидкий та безкоштовний онлайн тест клавіатури без реєстрації.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "KeyTest",
+            "logo": {
+            "@type": "ImageObject",
+            "url": "https://keytest.pp.ua/assets/img/logo.png"
             }
         }
+    }
     </script>
     <script type="application/ld+json">
-        {
-            "@context": "http://schema.org",
-            "@type": "Service",
-            "name": "Тест клавіатури онлайн безкоштовно",
-            "url": "https://keytest.pp.ua",
-            "logo": "https://keytest.pp.ua/assets/img/fav.jpg",
-            "image": "https://keytest.pp.ua/assets/img/keytest.png",
-            "description": "Безкоштовний Онлайн тест клавіатури кнопок, клавіш та мишки для ноутбука чи пк. Швидке тестування клавіатури без реклами та реєстрації.",
-            "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "5",
-                "bestRating": "5",
-                "worstRating": "1",
-                "ratingCount": "7859"
-            }
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "KeyTest - Безкоштовний тест клавіатури онлайн",
+        "description": "Перевірте роботу всіх клавіш на клавіатурі ноутбука чи ПК. Швидкий та безкоштовний онлайн тест клавіатури без реєстрації.",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "UAH"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "7859",
+            "bestRating": "5"
         }
+    }
     </script>
     <script type="application/ld+json">
-        {
-            "@context": "http://www.schema.org",
-            "@type": "Product",
-            "brand": "Тест клавіатури онлайн безкоштовно",
-            "name": "Тест клавіатури онлайн безкоштовно",
-            "image": "https://keytest.pp.ua/assets/img/keytest.png",
-            "description": "Безкоштовний Онлайн тест клавіатури кнопок, клавіш та мишки для ноутбука чи пк. Швидке тестування клавіатури без реклами та реєстрації.",
-            "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "5",
-                "bestRating": "5",
-                "worstRating": "1",
-                "reviewCount": "7859"
-            }
+    {
+        "@context": "http://schema.org",
+        "@type": "Service",
+        "name": "Тест клавіатури онлайн безкоштовно",
+        "url": "https://keytest.pp.ua",
+        "logo": "https://keytest.pp.ua/assets/img/fav.jpg",
+        "image": "https://keytest.pp.ua/assets/img/keytest.png",
+        "description": "Безкоштовний Онлайн тест клавіатури кнопок, клавіш та мишки для ноутбука чи пк. Швидке тестування клавіатури без реклами та реєстрації.",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1",
+            "ratingCount": "7859"
         }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "http://www.schema.org",
+        "@type": "Product",
+        "brand": "Тест клавіатури онлайн безкоштовно",
+        "name": "Тест клавіатури онлайн безкоштовно",
+        "image": "https://keytest.pp.ua/assets/img/keytest.png",
+        "description": "Безкоштовний Онлайн тест клавіатури кнопок, клавіш та мишки для ноутбука чи пк. Швидке тестування клавіатури без реклами та реєстрації.",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1",
+            "reviewCount": "7859"
+        }
+    }
     </script>
 
     <script type="application/ld+json">
