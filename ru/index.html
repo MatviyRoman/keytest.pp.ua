@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="ru" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <!-- <meta name="viewport" content="width=1264"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="max-content"> -->
+    <meta name="robots" content="all">
+    <meta name="description"
+        content="Бесплатный Онлайн тест клавиатуры, кнопок, клавиш и мышки для ноутбука или ПК. Быстрое тестирование клавиатуры без рекламы и регистрации.">
+    <meta name="keywords"
+        content="тест, клавиатуры, клавиатура, мышки, кнопок, кнопка, онлайн, keytest, key-test, online test keyboard, ">
+    <meta http-equiv="Content-Language" content="ru">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/fav.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">
+    <link rel="manifest" href="../assets/img/site.webmanifest">
+    <link rel="preload" href="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js" as="script">
+    <link rel="preload" href="../assets/index.js" as="script">
+    <link rel="preload" href="../assets/style.min.css" as="style">
+    <link rel="stylesheet" href="../assets/style.min.css">
+    <!--<link rel="stylesheet" href="../assets/style.css">-->
+    <style>
+        .lang-switcher { position: relative; display: table; margin: 10px auto; z-index: 1000; background-color: rgba(47, 79, 79, 0.8); padding: 8px 20px; border-radius: 20px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); white-space: nowrap; }
+        .lang-switcher .lang-option { color: #fff; text-decoration: none; margin: 0 5px; font-size: 16px; font-weight: 600; transition: color 0.3s ease; }
+        .lang-switcher .lang-option:hover { color: #4CAF50; }
+        .lang-switcher .lang-option.active { color: #4CAF50; text-decoration: underline; }
+        .lang-switcher .lang-separator { color: #fff; margin: 0 2px; }
+        @media (max-width: 768px) {
+            .lang-switcher { padding: 5px 10px; margin: 10px auto; }
+            .lang-switcher .lang-option { font-size: 14px; }
+        }
+    </style>
+    <link rel="canonical" href="https://keytest.pp.ua/ru/">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@APARTNER.PRO">
+    <meta name="twitter:title" content="keytest.pp.ua - тест клавиатуры онлайн">
+    <meta name="twitter:description" content="Бесплатный Онлайн тест клавиатуры, кнопок, клавиш и мышки для ноутбука или ПК. Быстрое тестирование клавиатуры без рекламы и регистрации.">
+    <meta name="twitter:image" content="https://keytest.pp.ua/ru/assets/img/fav.jpg">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="KeyTest - бесплатный тест клавиатуры онлайн">
+    <meta property="og:site_name" content="KeyTest" />
+    <meta property="og:url" content="https://keytest.pp.ua/ru/">
+    <meta property="og:image" content="https://keytest.pp.ua/ru/assets/img/keyboard-test-preview.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="KeyTest - онлайн тест клавиатуры">
+    <meta property="og:description" content="Бесплатный Онлайн тест клавиатуры, кнопок, клавиш и мышки для ноутбука или ПК. Быстрое тестирование клавиатуры без рекламы и регистрации.">
+    <!-- <meta property="og:locale" content="uk_UA"> -->
+    <title>KeyTest - бесплатный онлайн тест клавиатуры без регистрации</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X54XV8ZP8C"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-X54XV8ZP8C');
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@graph":[{"@type":"Corporation","name":"KeyTest","description":"KeyTest - бесплатный онлайн тест клавиатуры для проверки кнопок, клавиш и мышки на ноутбуке или ПК","url":"https://keytest.pp.ua/ru/","logo":{"@type":"ImageObject","@id":"https://keytest.pp.ua/ru/#logo","url":"https://keytest.pp.ua/ru/assets/img/fav.jpg","width":300,"height":300,"caption":"KeyTest"},"image":{"@id":"https://keytest.pp.ua/ru/#logo"},"location":{"@type":"PostalAddress","addressCountry":"Україна","postalCode":"01001","addressLocality":"Київ, Україна","addressRegion":"Київська область","streetAddress":"вул. Хрещатик, 1"}},{"@type":"BreadcrumbList","name":"Breadcrumbs","description":"Breadcrumbs list","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://keytest.pp.ua/ru/"},{"@type":"ListItem","position":2,"name":"Тест клавиатуры ✅","item":"https://keytest.pp.ua/ru/"}]},{"@type":"CreativeWorkSeries","name":"KeyTest - Тест клавіатури онлайн","aggregateRating":{"@type":"AggregateRating","ratingValue":4.9,"reviewCount":7859}},{"@type":"QAPage","mainEntity":{"@type":"Question","name":"KeyTest - бесплатный тест клавиатуры онлайн","text":"KeyTest - бесплатный онлайн тест клавиатуры для проверки кнопок, клавиш и мышки на ноутбуке или ПК","answerCount":2847391,"upvoteCount":2847391,"acceptedAnswer":{"@type":"Answer","text":"KeyTest - бесплатный онлайн тест клавиатуры без регистрации","upvoteCount":1239989,"url":"https://keytest.pp.ua/ru/"},"suggestedAnswer":[{"@type":"Answer","text":"KeyTest - безкоштовний онлайн тест клавіатури для перевірки кнопок, клавіш та мишки","upvoteCount":534323,"url":"https://keytest.pp.ua/ru/"}]}}]}
+    </script>
+</head>
+
+<body cz-shortcut-listen="true">
+    <header class="header">
+        <div class="lang-switcher">
+            <a href="/" class="lang-option">UA</a>
+            <span class="lang-separator">|</span>
+            <a href="/en/" class="lang-option">EN</a>
+            <span class="lang-separator">|</span>
+            <a href="/ru/" class="lang-option active">RU</a>
+        </div>
+        <div class="top-block">
+            <h1><a target="_blank" href="https://keytest.pp.ua/ru/" title="KeyTest - бесплатный тест клавиатуры онлайн"
+                    style="color:#d3d3d3;text-decoration:none">"KeyTest.pp.ua" - бесплатный тест клавиатуры онлайн</a>
+            </h1>
+            <div class="rating" style="text-align: center; margin: 5px 0 15px 0;" title="Оценка: 4.9 из 5 на основе 7859 отзывов">
+                <span style="color: #fbbc04; font-size: 22px;">★★★★★</span>
+                <span style="color: #d3d3d3; font-size: 15px; margin-left: 8px;">Оценка: 4.9 / 5 (на основе 7859 отзывов)</span>
+            </div>
+            <p class="top-p">Здесь можно бесплатно и без регистрации проверить работу всех клавиш на клавиатуре ноутбука
+                или стационарного компьютера.<br>Нажатая кнопка подсвечивается синим, отжатая - серым. Если цвет не
+                меняется - клавиша неисправна.<br>Для корректного определения клавиш, используйте <b>английскую</b>
+                раскладку клавиатуры!</p>
+            <div class="padding-l-r-40">
+                <div class="ftext">
+                    <div class="key press">
+                        <p>F1</p>
+                    </div>
+                    <span style="color:#ffefd5;font-size:18px">- так выглядит нажатая сейчас клавиша.</span>
+                </div>
+                <div class="ftext">
+                    <div class="key active">
+                        <p>F1</p>
+                    </div>
+                    <span style="color:#ffefd5;font-size:18px">- а это исправная клавиша, она была нажата и вернулась в исходное положение.</span>
+                </div>
+            </div>
+        </div>
+        <div class="keybord">
+            <div class="blur"></div>
+            <div class="fade"></div>
+            <div class="content">
+                <div class="keybord-top"></div>
+                <div class="key-block">
+                    <div class="key k27">
+                        <p>Esc</p>
+                    </div>
+                    <div class="key vh"></div>
+                    <div class="key k112">
+                        <p>F1</p>
+                    </div>
+                    <div class="key k113">
+                        <p>F2</p>
+                    </div>
+                    <div class="key k114">
+                        <p>F3</p>
+                    </div>
+                    <div class="key k115">
+                        <p>F4</p>
+                    </div>
+                    <div class="key vh half"></div>
+                    <div class="key k116">
+                        <p>F5</p>
+                    </div>
+                    <div class="key k117">
+                        <p>F6</p>
+                    </div>
+                    <div class="key k118">
+                        <p>F7</p>
+                    </div>
+                    <div class="key k119">
+                        <p>F8</p>
+                    </div>
+                    <div class="key vh half"></div>
+                    <div class="key k120">
+                        <p>F9</p>
+                    </div>
+                    <div class="key k121">
+                        <p>F10</p>
+                    </div>
+                    <div class="key k122">
+                        <p>F11</p>
+                    </div>
+                    <div class="key k123">
+                        <p>F12</p>
+                    </div>
+                    <div class="key dl brackets k44">
+                        <p>Prt<br>Sc</p>
+                    </div>
+                    <div class="key dl k145">
+                        <p>Scr<br>Lk</p>
+                    </div>
+                    <div class="key dl k19">
+                        <p>Pause<br>break</p>
+                    </div>
+                    <div class="key t16 k36">
+                        <p>Home</p>
+                    </div>
+                    <div class="key t16 k35">
+                        <p>End</p>
+                    </div>
+                    <div class="key dl k192">
+                        <p>~<br>`</p>
+                    </div>
+                    <div class="key k49">
+                        <p>1</p>
+                    </div>
+                    <div class="key k50">
+                        <p>2</p>
+                    </div>
+                    <div class="key k51">
+                        <p>3</p>
+                    </div>
+                    <div class="key k52">
+                        <p>4</p>
+                    </div>
+                    <div class="key k53">
+                        <p>5</p>
+                    </div>
+                    <div class="key k54">
+                        <p>6</p>
+                    </div>
+                    <div class="key k55">
+                        <p>7</p>
+                    </div>
+                    <div class="key k56">
+                        <p>8</p>
+                    </div>
+                    <div class="key k57">
+                        <p>9</p>
+                    </div>
+                    <div class="key k48">
+                        <p>0</p>
+                    </div>
+                    <div class="key dl smin k173 k189">
+                        <p>_<br>-</p>
+                    </div>
+                    <div class="key dl splus k61 k187">
+                        <p>+<br>=</p>
+                    </div>
+                    <div class="key bs k8">
+                        <p>⟵</p>
+                    </div>
+                    <div class="key dl brackets k33">
+                        <p>Page<br>up</p>
+                    </div>
+                    <div class="key dl k144">
+                        <p>Num<br>Lock</p>
+                    </div>
+                    <div class="key k111">
+                        <p>/</p>
+                    </div>
+                    <div class="key k106">
+                        <p>*</p>
+                    </div>
+                    <div class="key dl k109">
+                        <p>_</p>
+                    </div>
+                    <div class="key tab k9">
+                        <p>Tab</p>
+                    </div>
+                    <div class="key k81">
+                        <p>Q</p>
+                    </div>
+                    <div class="key k87">
+                        <p>W</p>
+                    </div>
+                    <div class="key k69">
+                        <p>E</p>
+                    </div>
+                    <div class="key k82">
+                        <p>R</p>
+                    </div>
+                    <div class="key k84">
+                        <p>T</p>
+                    </div>
+                    <div class="key k89">
+                        <p>Y</p>
+                    </div>
+                    <div class="key k85">
+                        <p>U</p>
+                    </div>
+                    <div class="key k73">
+                        <p>I</p>
+                    </div>
+                    <div class="key k79">
+                        <p>O</p>
+                    </div>
+                    <div class="key k80">
+                        <p>P</p>
+                    </div>
+                    <div class="key ds k219">
+                        <p>{<br>[</p>
+                    </div>
+                    <div class="key ds k221">
+                        <p>}<br>]</p>
+                    </div>
+                    <div class="key ds sum k220">
+                        <p>|<br>\</p>
+                    </div>
+                    <div class="key dl brackets k34">
+                        <p>Page<br>down</p>
+                    </div>
+                    <div class="key k103">
+                        <p>7</p>
+                    </div>
+                    <div class="key k104">
+                        <p>8</p>
+                    </div>
+                    <div class="key k105">
+                        <p>9</p>
+                    </div>
+                    <div class="key plus k107">
+                        <p>+</p>
+                    </div>
+                    <div class="key caps k20">
+                        <p>Caps Lock</p>
+                    </div>
+                    <div class="key k65">
+                        <p>A</p>
+                    </div>
+                    <div class="key k83">
+                        <p>S</p>
+                    </div>
+                    <div class="key k68">
+                        <p>D</p>
+                    </div>
+                    <div class="key k70">
+                        <p>F</p>
+                    </div>
+                    <div class="key k71">
+                        <p>G</p>
+                    </div>
+                    <div class="key k72">
+                        <p>H</p>
+                    </div>
+                    <div class="key k74">
+                        <p>J</p>
+                    </div>
+                    <div class="key k75">
+                        <p>K</p>
+                    </div>
+                    <div class="key k76">
+                        <p>L</p>
+                    </div>
+                    <div class="key ds k59 k186">
+                        <p>:<br>;</p>
+                    </div>
+                    <div class="key ds k222">
+                        <p>"<br>'</p>
+                    </div>
+                    <div class="key enter k13">
+                        <p><span></span> ENTER</p>
+                    </div>
+                    <div class="key brackets k45">
+                        <p>ins</p>
+                    </div>
+                    <div class="key k100">
+                        <p>4</p>
+                    </div>
+                    <div class="key k101">
+                        <p>5</p>
+                    </div>
+                    <div class="key k102">
+                        <p>6</p>
+                    </div>
+                    <div class="key shift1 k16">
+                        <p>SHIFT</p>
+                    </div>
+                    <div class="key k90">
+                        <p>Z</p>
+                    </div>
+                    <div class="key k88">
+                        <p>X</p>
+                    </div>
+                    <div class="key k67">
+                        <p>C</p>
+                    </div>
+                    <div class="key k86">
+                        <p>V</p>
+                    </div>
+                    <div class="key k66">
+                        <p>B</p>
+                    </div>
+                    <div class="key k78">
+                        <p>N</p>
+                    </div>
+                    <div class="key k77">
+                        <p>M</p>
+                    </div>
+                    <div class="key ds k188">
+                        <p>&lt;<br>,</p>
+                    </div>
+                    <div class="key ds k190">
+                        <p>&gt;<br>.</p>
+                    </div>
+                    <div class="key ds k191">
+                        <p>?<br>/</p>
+                    </div>
+                    <div class="key shift2 k16">
+                        <p>SHIFT</p>
+                    </div>
+                    <div class="key brackets k46">
+                        <p>del</p>
+                    </div>
+                    <div class="key k97">
+                        <p>1</p>
+                    </div>
+                    <div class="key k98">
+                        <p>2</p>
+                    </div>
+                    <div class="key k99">
+                        <p>3</p>
+                    </div>
+                    <div class="key enter2 k13">
+                        <p>Enter</p>
+                    </div>
+                    <div class="key ctrl1 k17">
+                        <p>CTRL</p>
+                    </div>
+                    <div class="key wndw k91">
+                        <p><span></span></p>
+                    </div>
+                    <div class="key alt k18">
+                        <p>ALT</p>
+                    </div>
+                    <div class="key space k32"></div>
+                    <div class="key alt k18">
+                        <p>ALT</p>
+                    </div>
+                    <div class="key cont k93">
+                        <div class="cblock"><span></span> <span></span> <span></span></div>
+                    </div>
+                    <div class="key ctrl2 k17">
+                        <p>CTRL</p>
+                    </div>
+                    <div class="key arup brackets k38">
+                        <p>↑</p>
+                    </div>
+                    <div class="key zero k96">
+                        <p>0</p>
+                    </div>
+                    <div class="key k110">
+                        <p>.,</p>
+                    </div>
+                    <div class="m-block">
+                        <div class="key lclick k0"></div>
+                        <div class="key cclick k1"></div>
+                        <div class="key rclick k2"></div>
+                    </div>
+                    <div class="key arleft k37">
+                        <p>←</p>
+                    </div>
+                    <div class="key ardown k40">
+                        <p>↓</p>
+                    </div>
+                    <div class="key arright k39">
+                        <p>→</p>
+                    </div>
+                </div>
+                <div class="keybord-footer">
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </header>
+    <footer class="footer">
+        <div class="fcontent">
+            <h2 class="title">KeyTest Тест клавиатуры онлайн</h2>
+            <p class="fdesc">Для тестирования клавиатуры нажимайте клавиши (предварительно переключившись на английскую
+                раскладку клавиатуры)</p>
+            <div class="ftext">
+                <div class="key press">
+                    <p>A</p>
+                </div><span>- вид кнопки, которую вы держите нажатой</span>
+            </div>
+            <div class="ftext">
+                <div class="key active">
+                    <p>A</p>
+                </div><span>- вид кнопки после того, как вы ее отпустили - означает ее исправность</span>
+            </div>
+        </div>
+        <br>
+        <div class="fcontent">
+            <div class="ftext">
+                <h2 class="title">Онлайн сервис для тестирования клавиатуры</h2>
+                <h3 class="title">
+                    Вы можете провести онлайн тест печати на клавиатуре в онлайн режиме.
+                </h3>
+                <p> Это может быть необходимо в ряде случаев:</p>
+                <br>
+                <ol>
+                    <li>
+                        <p>После замены клавиатуры на ноутбуке рекомендуется протестировать каждую клавишу для выявления
+                            неисправных кнопок.</p>
+                    </li>
+                    <li>
+                        <p>Проверить работу всех кнопок клавиатуры при покупке б/у ноутбука.</p>
+                    </li>
+                    <li>
+                        <p>После чистки клавиатуры или ремонта механизма необходимо проверить работу клавиш от F1
+                            до F12, а так же вспомогательные клавиши Insert, home, end, PrtSc, PgUp, PgDn и других кнопок которые
+                            сложно проверить в стандартном текстовом документе.</p>
+                    </li>
+                    <li>
+                        <p>Убедиться, что клавиатура должным образом подключена к ноутбуку, и нет никаких видимых
+                            признаков повреждений
+                            проводов или разъемов.</p>
+                    </li>
+                    <li>
+                        <p>Проверить работу клавиш с функциональными сочетаниями, такими как Ctrl, Alt и Shift, а
+                            также их
+                            сочетания с другими клавишами. Убедиться, что эти клавиши работают корректно.</p>
+                    </li>
+                    <li>
+                        <p>Убедиться, что клавиши из раздела с цифрами и символами работают должным образом, и все
+                            символы выводятся
+                            корректно.</p>
+                    </li>
+                    <li>
+                        <p>Проверить отсутствие "прокрутов" (задержек) между нажатием клавиши и вводом символа на
+                            экране.</p>
+                    </li>
+                    <li>
+                        <p>Выполнить тест клавиш "Caps Lock" и "Num Lock", чтобы убедиться, что они включаются и
+                            выключаются должным
+                            образом.</p>
+                    </li>
+                    <li>
+                        <p>Проверить клавиатурный шорткат для вызова системного меню "Пуск" (если присутствует), чтобы
+                            убедиться, что
+                            он функционирует.</p>
+                    </li>
+                    <li>
+                        <p>Испытать клавишу "Delete" или "Backspace", чтобы увидеть, как они влияют на введенный
+                            текст.</p>
+                    </li>
+                    <li>
+                        <p>Проверить клавишу "Enter" или "Return", которая используется для подтверждения введенного
+                            текста.</p>
+                    </li>
+                    <li>
+                        <p>Убедиться, что клавиши со стрелками работают корректно и способны перемещать курсор в
+                            текстовых документах
+                            и на веб-страницах.</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <br>
+        <div class="fcontent">
+            <div class="ftext">
+                <h3 class="title">Проверить работу клавиатуры можно без регистраций и полностью бесплатно</h3>
+
+                <h4 class="subtitle">Как проверить клавиатуру ноутбука?</h4>
+                <p class="top-p1" style="padding-top:5px">
+                    Чтобы проверить клавиатуру ноутбука, вы можете выполнить следующие действия:<br>
+                    - Последовательно нажать каждую клавишу и убедиться, что она реагирует и символ выводится на
+                    экране.<br>
+                    - Использовать встроенное в ОС или стороннее программное средство для проверки клавиш.<br>
+                    - Можно использовать наш сайт для проверки исправности клавиатуры онлайн бесплатно и без
+                    регистрации.<br>
+                    - Проверить работу специальных клавиш и комбинаций клавиш (Ctrl, Alt, Shift и т.д.).<br>
+                </p>
+                <br>
+                <h4 class="subtitle">Как проверить работу клавиш и сделать тест клавиатуры?</h4>
+                <p class="top-p1" style="padding-top:5px">
+                    Чтобы проверить работу отдельных клавиш, вы можете:<br>
+                    - Открыть текстовый редактор и последовательно нажимать каждую клавишу для проверки вывода символа.<br>
+                    - Использовать онлайн-инструменты для тестирования клавиш, которые отображают нажатия клавиш на
+                    экране.<br>
+                    - Использовать программы для тестирования клавиш, которые могут помочь выявить проблемы с работой
+                    клавиш.
+                </p>
+                <br>
+                <h4 class="subtitle">Что делать если на клавиатуру попала вода?</h4>
+                <p class="top-p1" style="padding-top:5px">
+                    Если на клавиатуру ноутбука попала жидкость, следует предпринять следующие шаги:<br>
+                    - Немедленно выключите ноутбук и отключите его от источника питания.<br>
+                    - Вытряхните избыток жидкости, но не трясите ноутбук сильно, так как это может вызвать
+                    повреждения.<br>
+                    - Переверните ноутбук вверх дном, чтобы жидкость могла вытекать.<br>
+                    - Не включайте ноутбук, пока вы не убедитесь, что весь компонент полностью высох.<br>
+                    - Если жидкость содержала сахар или другие растворенные вещества, может быть целесообразно обратиться к
+                    профессионалам для чистки.<br>
+                    Всегда будьте осторожны с жидкостью возле электроники, так как она может вызвать серьезные
+                    повреждения.
+                </p>
+                <br>
+                <h4 class="subtitle">Почему некоторые клавиши не работают или работают неправильно?</h4>
+                <p class="top-p1" style="padding-top:5px">
+                    Самые частые причины – это физическое повреждение, попадание грязи или жидкости под клавиши, а также проблемы с драйверами. Наш тест поможет определить, является ли проблема механической.
+                </p>
+                <br>
+                <h4 class="subtitle">Что такое "залипание" клавиш и как его выявить?</h4>
+                <p class="top-p1" style="padding-top:5px">
+                    "Залипание" или замыкание происходит, когда клавиша не возвращается в исходное положение или продолжает посылать сигнал. На нашем тесте такая клавиша останется подсвеченной синим цветом даже после того, как вы ее отпустили.
+                </p>
+                <br>
+                <h4 class="subtitle">Нужно ли устанавливать программы для тестирования?</h4>
+                <p class="top-p1" style="padding-top:5px">
+                    Нет, наш сервис работает полностью онлайн в вашем браузере. Вам не нужно ничего скачивать или устанавливать, что делает процесс проверки быстрым и безопасным.
+                </p>
+            </div>
+            <br>
+
+            <div class="ftext">
+                <br>
+                Онлайн-сервис проверки клавиатуры <b>KeyTest</b>
+                позволяет наглядно убедиться в том, исправна ли клавиатура вашего компьютера или же часть клавиш
+                работают неправильно или не работают совсем.<br>
+                Открыв в браузере сайт <a href="/" style="color:inherit;text-transform:uppercase">keytest.pp.ua</a>
+                можно сразу приступить к
+                тестированию, никаких программ скачивать не нужно.<br>Начинайте последовательно нажимать клавиши, те
+                кнопки, которые в данный момент нажаты, будут отображаться на экране синим цветом. Уже
+                протестированные - серым (значит ранее кнопка была нажата, а затем отпущена, значит она
+                исправна).<br>Если еще до начала тестирования на экране есть клавиши синего цвета - они, скорее
+                всего, замкнуты (вероятно залиты водой), а клавиатуру придется менять. Если при нажатии одной
+                кнопки синим обозначаются две или более - это так же говорит о неисправности клавиатуры
+                ноутбука.<br><br>Клавиатура ноутбука обычно выходит из строя из-за попадания в нее жидкости.<br>Не
+                стоит пользоваться ноутбуком мокрыми руками, из-за этого влага может попасть внутрь и замкнуть
+                токопроводящие дорожки.<br>Чаще всего такая клавиатура требует замены, починить ее вряд ли
+                удастся.<br></p>
+            </div>
+        </div>
+    </footer>
+
+    <br>
+    <style>
+        .link {
+            color: #fff;
+            padding: 3px;
+            display: block;
+        }
+    </style>
+    <footer class="footer">
+        <div class="fcontent">
+            <h5 class="title">Другие бесплатные сервисы</h5>
+            <!-- <a class="link" target="_blank" rel="follow" href="https://tools.apartner.pro" title="Безкоштовні онлайн сервіси | Free online services">Безкоштовні онлайн сервіси | Free online services</a><br> -->
+            <!-- <a class="link" target="_blank" rel="follow" href="https://monitor-test.apartner.pro" title="Безкоштовний онлайн сервіс тест монітора | Free online monitor test service">Безкоштовний онлайн сервіс тест монітора | Free online monitor test service</a><br> -->
+            <a class="link" target="_blank" rel="follow" href="https://monitortest.pp.ua" title="Бесплатный онлайн тест монитора | Free online monitor test">Бесплатный онлайн тест монитора | Free online monitor test</a>
+            <br>
+            <h5 class="title">Наши партнеры | Our Partners</h5>
+            <a class="link" target="_blank" rel="follow" href="https://hire-web-developer.com" title="Hire Web Developer">Hire Web Developer</a><br>
+            <a class="link" target="_blank" rel="follow" href="https://romandev.pp.ua" title="Roman Dev - Web Development">Roman Dev - Web Development</a><br>
+            <a class="link" target="_blank" rel="follow" href="https://programist.pp.ua" title="Programist - Web Development Services">Programist - Web Development Services</a><br>
+            <a class="link" target="_blank" rel="follow" href="https://fullstack.matviy.pp.ua" title="Full Stack Developer Services">Full Stack Developer Services</a><br>
+            <a class="link" target="_blank" rel="follow" href="https://programist.matviy.pp.ua" title="Programist Matviy - Web Solutions">Programist Matviy - Web Solutions</a>
+        </div>
+    </footer>
+    <br>
+    <footer class="footer">
+        <div class="keybord-footer">
+            <a class="right" href="https://keytest.pp.ua/ru/" rel="follow" title="keytest.pp.ua проверка клавиатуры онлайн"> 2018-2025, KeyTest.pp.ua</a>
+        </div>
+    </footer>
+    <br>
+    <section class="copyright">
+        <div class="container">
+            Сайт создан компанией <a href="https://apartner.pro" target="_blank" rel="follow"
+                title="Development of sites on cms prestashop, wordpress, laravel, Разработка сайтов на cms prestashop, wordpress, laravel">APARTNER.PRO</a>
+            | <a href="https://programist.top" target="_blank" rel="follow" title="Development of sites on cms prestashop, wordpress, laravel, Розробка сайтів на cms prestashop,
+                wordpress, laravel">PROGRAMIST.TOP</a>
+        </div>
+
+        <div class="container">
+            <a href="https://roman.matviy.pp.ua" 
+            target="_blank" rel="follow"
+            title="Hire prestashop, laravel, wordpress, php developer">
+                Hire fullstack freelancer prestashop, laravel, wordpress, php, vue, sql
+            </a>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="../assets/index.js"></script>
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "KeyTest",
+        "url": "https://keytest.pp.ua/ru/",
+        "logo": "https://keytest.pp.ua/ru/assets/img/logo.png",
+        "sameAs": [
+            "https://apartner.pro",
+            "https://programist.top"
+        ]
+    }
+    </script>
+    <!-- WebSite Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "KeyTest - Тест клавіатури онлайн",
+        "url": "https://keytest.pp.ua/ru/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://keytest.pp.ua/ru/search/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Главная",
+            "item": "https://keytest.pp.ua/ru/"
+        },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Тест клавиатуры ✅",
+            "item": "https://keytest.pp.ua/ru/"
+        }]
+    }
+    </script>
+    <!-- WebPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Бесплатный тест клавиатуры онлайн | KeyTest",
+        "description": "Проверьте работу всех клавиш на клавиатуре ноутбука или ПК. Быстрый и бесплатный онлайн тест клавиатуры без регистрации.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "KeyTest",
+            "logo": {
+            "@type": "ImageObject",
+            "url": "https://keytest.pp.ua/ru/assets/img/logo.png"
+            }
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "KeyTest - Безкоштовний тест клавіатури онлайн",
+        "description": "Проверьте работу всех клавиш на клавиатуре ноутбука или ПК. Быстрый и бесплатный онлайн тест клавиатуры без регистрации.",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "UAH"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "ratingCount": "7859",
+            "bestRating": "5"
+        }
+    }
+    </script>
+
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Как проверить клавиатуру ноутбука?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Чтобы проверить клавиатуру ноутбука, вы можете выполнить следующие действия: - Последовательно нажать каждую клавишу и убедиться, что она реагирует и символ выводится на экране. - Использовать встроенное в ОС или стороннее программное средство для проверки клавиш. - Можно использовать наш сайт для проверки исправности клавиатуры онлайн бесплатно и без регистрации. - Проверить работу специальных клавиш и комбинаций клавиш (Ctrl, Alt, Shift и т.д.)."
+        }
+      },{
+        "@type": "Question",
+        "name": "Как проверить работу клавиш и сделать тест клавиатуры?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Чтобы проверить работу отдельных клавиш, вы можете: - Открыть текстовый редактор и последовательно нажимать каждую клавишу для проверки вывода символа. - Использовать онлайн-инструменты для тестирования клавиш, которые отображают нажатия клавиш на экране. - Использовать программы для тестирования клавиш, которые могут помочь выявить проблемы с работой клавиш."
+        }
+      },{
+        "@type": "Question",
+        "name": "Что делать если на клавиатуру попала вода?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Если на клавиатуру ноутбука попала жидкость, следует предпринять следующие шаги: - Немедленно выключите ноутбук и отключите его от источника питания. - Вытряхните избыток жидкости, но не трясите ноутбук сильно, так как это может вызвать повреждения. - Переверните ноутбук вверх дном, чтобы жидкость могла вытекать. - Не включайте ноутбук, пока вы не убедитесь, что весь компонент полностью высох. - Если жидкость содержала сахар или другие растворенные вещества, может быть целесообразно обратиться к профессионалам для чистки."
+        }
+      },{
+        "@type": "Question",
+        "name": "Почему некоторые клавиши не работают или работают неправильно?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Самые частые причины – это физическое повреждение, попадание грязи или жидкости под клавиши, а также проблемы с драйверами. Наш тест поможет определить, является ли проблема механической."
+        }
+      },{
+        "@type": "Question",
+        "name": "Что такое 'залипание' клавиш и как его выявить?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "'Залипание' или замыкание происходит, когда клавиша не возвращается в исходное положение или продолжает посылать сигнал. На нашем тесте такая клавиша останется подсвеченной синим цветом даже после того, как вы ее отпустили."
+        }
+      },{
+        "@type": "Question",
+        "name": "Нужно ли устанавливать программы для тестирования?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет, наш сервис работает полностью онлайн в вашем браузере. Вам не нужно ничего скачивать или устанавливать, что делает процесс проверки быстрым и безопасным."
+        }
+      }]
+    }
+    </script>
+
+    <!--<script type="application/ld+json">
+        {
+          "@context": "https://schema.org/",
+          "@type": "AggregateRating",
+          "itemReviewed": {
+            "@type": "Service",
+            "image": "https://keytest.pp.ua/ru/assets/img/keytest.png",
+            "name": "Тест клавіатури онлайн безкоштовно"
+          },
+          "ratingValue": "5",
+          "bestRating": "5",
+          "ratingCount": "7859"
+        }
+    </script>-->
+
+    <!--<script type="application/ld+json">
+        {
+          "@context": "https://schema.org/",
+          "@type": "AggregateRating",
+          "itemReviewed": {
+            "@type": "Restaurant",
+            "image": "https://www.example.com/seafood-restaurant.jpg",
+            "name": "Legal Seafood",
+            "telephone": "1234567",
+            "address" : {
+              "@type": "PostalAddress",
+              "streetAddress": "123 William St",
+              "addressLocality": "New York",
+              "addressRegion": "NY",
+              "postalCode": "10038",
+              "addressCountry": "US"
+            }
+          },
+          "ratingValue": "88",
+          "bestRating": "100",
+          "ratingCount": "20"
+        }
+    </script>-->
+
+    <!-- <script type="application/ld+json">
+            {
+              "@context": "http://schema.org",
+              "@type": "Service",
+              "name": "Назва вашого сервісу",
+              "description": "Опис вашого сервісу",
+              "url": "URL вашого сервісу",
+              "provider": {
+                "@type": "Organization",
+                "name": "Назва вашої організації",
+                "url": "URL вашого веб-сайту",
+                "logo": "URL логотипу вашої організації"
+              }
+            }
+    </script> -->
+</body>
+
+</html>
