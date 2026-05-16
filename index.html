@@ -25,6 +25,17 @@
     <link rel="preload" href="assets/style.min.css" as="style">
     <link rel="stylesheet" href="assets/style.min.css">
     <!--<link rel="stylesheet" href="assets/style.css">-->
+    <style>
+        .lang-switcher { position: relative; display: table; margin: 10px auto; z-index: 1000; background-color: rgba(47, 79, 79, 0.8); padding: 8px 20px; border-radius: 20px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); white-space: nowrap; }
+        .lang-switcher .lang-option { color: #fff; text-decoration: none; margin: 0 5px; font-size: 16px; font-weight: 600; transition: color 0.3s ease; }
+        .lang-switcher .lang-option:hover { color: #4CAF50; }
+        .lang-switcher .lang-option.active { color: #4CAF50; text-decoration: underline; }
+        .lang-switcher .lang-separator { color: #fff; margin: 0 2px; }
+        @media (max-width: 768px) {
+            .lang-switcher { padding: 5px 10px; margin: 10px auto; }
+            .lang-switcher .lang-option { font-size: 14px; }
+        }
+    </style>
     <link rel="canonical" href="https://keytest.pp.ua/">
 
     <meta name="twitter:card" content="summary">
@@ -61,13 +72,13 @@
 
 <body cz-shortcut-listen="true">
     <header class="header">
-        <!-- <div class="lang-switcher">
+        <div class="lang-switcher">
             <a href="/" class="lang-option active">UA</a>
             <span class="lang-separator">|</span>
             <a href="/en/" class="lang-option">EN</a>
             <span class="lang-separator">|</span>
             <a href="/ru/" class="lang-option">RU</a>
-        </div> -->
+        </div>
         <div class="top-block">
             <h1><a target="_blank" href="https://keytest.pp.ua" title="KeyTest - безкоштовний тест клавіатури онлайн"
                     style="color:#d3d3d3;text-decoration:none">"KeyTest.pp.ua" - безкоштовний тест клавіатури онлайн</a>
