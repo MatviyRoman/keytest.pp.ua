@@ -21,7 +21,57 @@ body {
 	height: 100%;
 }
 
-header {}
+header {
+    position: relative;
+}
+
+.lang-switcher {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background-color: rgba(47, 79, 79, 0.8);
+    padding: 8px 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+}
+
+.lang-switcher .lang-option {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.lang-switcher .lang-option:hover {
+    color: #4CAF50;
+}
+
+.lang-switcher .lang-option.active {
+    color: #4CAF50;
+    text-decoration: underline;
+}
+
+.lang-switcher .lang-separator {
+    color: #fff;
+    margin: 0 2px;
+}
+
+@media (max-width: 768px) {
+    .lang-switcher {
+        top: 10px;
+        right: 10px;
+        padding: 5px 10px;
+    }
+    
+    .lang-switcher .lang-option {
+        font-size: 14px;
+    }
+}
 
 .key {
 	border: 1px solid #fff;
