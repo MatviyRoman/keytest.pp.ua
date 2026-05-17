@@ -242,6 +242,110 @@
             transform: scale(1.05);
             box-shadow: 0 6px 20px rgba(40, 200, 120, 0.5);
         }
+
+        /* Modern fcontent footer styles */
+        .fcontent-modern {
+            background: linear-gradient(135deg, rgba(28, 47, 47, 0.95) 0%, rgba(20, 32, 32, 0.98) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 30px;
+            margin: 0 auto;
+            max-width: 1234px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+            letter-spacing: 0.5px;
+        }
+
+        @media (max-width: 768px) {
+            .fcontent-modern {
+                grid-template-columns: 1fr;
+                gap: 25px;
+                padding: 20px;
+            }
+        }
+
+        .fcontent-column {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .fcontent-modern .title-modern {
+            font-size: 16px;
+            font-weight: 700;
+            color: #5dffa8;
+            margin: 0 0 10px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid rgba(93, 255, 168, 0.15);
+            display: flex;
+            align-items: center;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .fcontent-links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .fcontent-link-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 12px 16px;
+            color: #b0c4de !important;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            font-size: 15px;
+            line-height: 1.4;
+        }
+
+        .fcontent-link-card:hover {
+            background: rgba(93, 255, 168, 0.06);
+            border-color: rgba(93, 255, 168, 0.3);
+            color: #ffffff !important;
+            transform: translateX(4px);
+            box-shadow: 0 4px 15px rgba(93, 255, 168, 0.08);
+        }
+
+        .fcontent-link-card .bullet-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: #5dffa8;
+            margin-top: 7px;
+            flex-shrink: 0;
+            box-shadow: 0 0 8px #5dffa8;
+            transition: transform 0.3s;
+        }
+
+        .fcontent-link-card:hover .bullet-dot {
+            transform: scale(1.3);
+            background-color: #ffffff;
+            box-shadow: 0 0 10px #ffffff;
+        }
+
+        .fcontent-link-card .link-text-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            text-align: left;
+        }
+
+        .fcontent-link-card .link-title {
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .fcontent-link-card:hover .link-title {
+            color: #5dffa8;
+        }
     </style>
     <link rel="canonical" href="https://keytest.pp.ua/pl/">
     <link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/" />
@@ -812,33 +916,90 @@
 
     <br>
     <footer class="footer">
-        <div class="fcontent">
-            <h5 class="title">Inne darmowe serwisy</h5>
-            <!-- <a class="link" target="_blank" rel="follow" href="https://tools.apartner.pro" title="Darmowe usługi online | Free online services">Darmowe usługi online | Free online services</a><br> -->
-            <!-- <a class="link" target="_blank" rel="follow" href="https://monitor-test.apartner.pro" title="Darmowy test monitora online | Free online monitor test service">Darmowy test monitora online | Free online monitor test service</a><br> -->
-            <a class="link" target="_blank" rel="follow" href="https://monitortest.pp.ua"
-                title="Darmowy test monitora online | Free online monitor test">Darmowy test monitora online | Free online monitor test</a>
-            <br>
-            <h5 class="title">Nasi partnerzy | Our Partners</h5>
-            <a class="link" target="_blank" rel="follow" href="https://devroman.pl"
-                title="devroman.pl - Tworzenie stron internetowych, startupów, botów, czatów">devroman.pl - Tworzenie stron internetowych, startupów, botów, czatów</a><br>
-            <a class="link" target="_blank" rel="follow" href="https://programista.devroman.pl"
-                title="programista.devroman.pl - Tworzenie stron internetowych, startupów, botów, czatów">programista.devroman.pl - Tworzenie stron internetowych, startupów, botów, czatów</a><br>
-            <a class="link" rel="follow" href="/pl/partners/"
-                title="Inni partnerzy">Inni partnerzy</a><br>
-            <a class="link" target="_blank" rel="follow" href="https://programist.pp.ua"
-                title="Programist - Web Development Services">Programist - Web Development Services</a><br>
-            <a class="link" target="_blank" rel="follow" href="https://fullstack.matviy.pp.ua"
-                title="Full Stack Developer Services">Full Stack Developer Services</a><br>
-            <a class="link" target="_blank" rel="follow" href="https://programist.matviy.pp.ua"
-                title="Programist Matviy - Web Solutions">Programist Matviy - Web Solutions</a>
+        <div class="fcontent-modern">
+            <!-- Left Column: Services -->
+            <div class="fcontent-column">
+                <h5 class="title-modern">Inne darmowe usługi</h5>
+                <div class="fcontent-links">
+                    <a class="fcontent-link-card" target="_blank" rel="follow" href="https://monitortest.pp.ua" title="Darmowy test monitora online | Free online monitor test">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">MonitorTest.pp.ua</span>
+                            <span>Darmowy test monitora online</span>
+                        </span>
+                    </a>
+                    <a class="fcontent-link-card" target="_blank" rel="follow" href="https://tools.apartner.pro" title="Darmowe usługi online | Free online services">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">Tools.apartner.pro</span>
+                            <span>Darmowe usługi online</span>
+                        </span>
+                    </a>
+                    <a class="fcontent-link-card" target="_blank" rel="follow" href="https://pctest.pp.ua" title="Darmowy test komputera online | Free online PC test">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">PCTest.pp.ua</span>
+                            <span>Darmowy test komputera online</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column: Partners -->
+            <div class="fcontent-column">
+                <h5 class="title-modern">Nasi partnerzy</h5>
+                <div class="fcontent-links" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px;">
+                    <a class="fcontent-link-card" target="_blank" rel="follow" href="https://devroman.pl" title="devroman.pl - Tworzenie stron internetowych, startupów, botów, czatów">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">devroman.pl</span>
+                            <span>Tworzenie stron internetowych i botów</span>
+                        </span>
+                    </a>
+                    <a class="fcontent-link-card" target="_blank" rel="follow" href="https://programista.devroman.pl" title="programista.devroman.pl - Tworzenie stron internetowych, startupów, botów, czatów">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">programista.devroman.pl</span>
+                            <span>Projektowanie aplikacji webowych</span>
+                        </span>
+                    </a>
+                    <a class="fcontent-link-card" rel="follow" href="/pl/partners/" title="Inni partnerzy">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">Inni partnerzy</span>
+                            <span>Zobacz wszystkich partnerów</span>
+                        </span>
+                    </a>
+                    <a class="fcontent-link-card" target="_blank" rel="follow" href="https://programist.pp.ua" title="Programist - Web Development Services">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">Programist.pp.ua</span>
+                            <span>Web Development Services</span>
+                        </span>
+                    </a>
+                    <a class="fcontent-link-card" target="_blank" rel="follow" href="https://fullstack.matviy.pp.ua" title="Full Stack Developer Services">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">Full Stack Services</span>
+                            <span>Developer Services</span>
+                        </span>
+                    </a>
+                    <a class="fcontent-link-card" target="_blank" rel="follow" href="https://programist.matviy.pp.ua" title="Programist Matviy - Web Solutions">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">Programist Matviy</span>
+                            <span>Zaawansowane rozwiązania webowe</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
     <br>
     <footer class="footer">
         <div class="keybord-footer">
             <a class="right" href="https://keytest.pp.ua/pl/" rel="follow" title="keytest.pp.ua sprawdzanie klawiatury online">
-                2018-2025, KeyTest.pp.ua</a>
+                2018-2026, KeyTest.pp.ua</a>
         </div>
     </footer>
     <br>
