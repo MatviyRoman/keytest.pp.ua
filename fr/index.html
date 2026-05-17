@@ -26,20 +26,58 @@
     <link rel="stylesheet" href="../assets/style.min.css">
     <!--<link rel="stylesheet" href="../assets/style.css">-->
     <style>
-        .lang-switcher { position: relative; display: table; margin: 10px auto; z-index: 1000; background-color: rgba(47, 79, 79, 0.8); padding: 8px 20px; border-radius: 20px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); white-space: nowrap; }
-        .lang-switcher .lang-option { color: #fff; text-decoration: none; margin: 0 5px; font-size: 16px; font-weight: 600; transition: color 0.3s ease; }
-        .lang-switcher .lang-option:hover { color: #4CAF50; }
-        .lang-switcher .lang-option.active { color: #4CAF50; text-decoration: underline; }
-        .lang-switcher .lang-separator { color: #fff; margin: 0 2px; }
-        @media (max-width: 768px) {
-            .lang-switcher { padding: 5px 10px; margin: 10px auto; }
-            .lang-switcher .lang-option { font-size: 14px; }
+        .lang-switcher {
+            position: relative;
+            display: table;
+            margin: 10px auto;
+            z-index: 1000;
+            background-color: rgba(47, 79, 79, 0.8);
+            padding: 8px 20px;
+            border-radius: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            white-space: nowrap;
         }
+
+        .lang-switcher .lang-option {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 5px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .lang-switcher .lang-option:hover {
+            color: #4CAF50;
+        }
+
+        .lang-switcher .lang-option.active {
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+
+        .lang-switcher .lang-separator {
+            color: #fff;
+            margin: 0 2px;
+        }
+
+        @media (max-width: 768px) {
+            .lang-switcher {
+                padding: 5px 10px;
+                margin: 10px auto;
+            }
+
+            .lang-switcher .lang-option {
+                font-size: 14px;
+            }
+        }
+
         .link {
             color: #fff;
             padding: 3px;
             display: block;
         }
+
         .hosting-promo {
             background: linear-gradient(135deg, rgba(25, 42, 86, 0.9) 0%, rgba(10, 15, 30, 0.95) 100%);
             border: 1px solid rgba(74, 144, 226, 0.4);
@@ -53,11 +91,13 @@
             -webkit-backdrop-filter: blur(4px);
             transition: all 0.3s ease;
         }
+
         .hosting-promo:hover {
             box-shadow: 0 12px 40px 0 rgba(74, 144, 226, 0.3);
             border-color: rgba(74, 144, 226, 0.6);
             transform: translateY(-2px);
         }
+
         .hosting-promo h3 {
             color: #4a90e2;
             font-size: 20px;
@@ -66,12 +106,14 @@
             font-weight: 700;
             letter-spacing: 0.5px;
         }
+
         .hosting-promo p {
             color: #e0e0e0;
             font-size: 15px;
             line-height: 1.5;
             margin-bottom: 18px;
         }
+
         .hosting-promo a {
             display: inline-block;
             background: linear-gradient(90deg, #4a90e2 0%, #357abd 100%);
@@ -84,11 +126,13 @@
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
         }
+
         .hosting-promo a:hover {
             background: linear-gradient(90deg, #357abd 0%, #4a90e2 100%);
             transform: scale(1.05);
             box-shadow: 0 6px 20px rgba(74, 144, 226, 0.5);
         }
+
         .indexfast-promo {
             background: linear-gradient(135deg, rgba(75, 15, 120, 0.85) 0%, rgba(10, 15, 30, 0.95) 100%);
             border: 1px solid rgba(160, 32, 240, 0.4);
@@ -102,11 +146,13 @@
             -webkit-backdrop-filter: blur(4px);
             transition: all 0.3s ease;
         }
+
         .indexfast-promo:hover {
             box-shadow: 0 12px 40px 0 rgba(160, 32, 240, 0.3);
             border-color: rgba(160, 32, 240, 0.6);
             transform: translateY(-2px);
         }
+
         .indexfast-promo h3 {
             color: #d896ff;
             font-size: 20px;
@@ -115,12 +161,14 @@
             font-weight: 700;
             letter-spacing: 0.5px;
         }
+
         .indexfast-promo p {
             color: #e0e0e0;
             font-size: 15px;
             line-height: 1.5;
             margin-bottom: 18px;
         }
+
         .indexfast-promo a {
             display: inline-block;
             background: linear-gradient(90deg, #a020f0 0%, #7d12cb 100%);
@@ -133,6 +181,7 @@
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(160, 32, 240, 0.3);
         }
+
         .indexfast-promo a:hover {
             background: linear-gradient(90deg, #7d12cb 0%, #a020f0 100%);
             transform: scale(1.05);
@@ -159,7 +208,8 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@APARTNER.PRO">
     <meta name="twitter:title" content="keytest.pp.ua - test de clavier en ligne">
-    <meta name="twitter:description" content="Test gratuit en ligne de clavier, de touches et de souris pour ordinateur portable ou PC. Test rapide de clavier sans publicité et sans inscription.">
+    <meta name="twitter:description"
+        content="Test gratuit en ligne de clavier, de touches et de souris pour ordinateur portable ou PC. Test rapide de clavier sans publicité et sans inscription.">
     <meta name="twitter:image" content="https://keytest.pp.ua/assets/img/fav.jpg">
 
     <meta property="og:type" content="website">
@@ -170,18 +220,19 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="KeyTest - test de clavier en ligne">
-    <meta property="og:description" content="Test gratuit en ligne de clavier, de touches et de souris pour ordinateur portable ou PC. Test rapide de clavier sans publicité et sans inscription.">
+    <meta property="og:description"
+        content="Test gratuit en ligne de clavier, de touches et de souris pour ordinateur portable ou PC. Test rapide de clavier sans publicité et sans inscription.">
     <meta property="og:locale" content="fr_FR">
     <title>KeyTest - service de test de clavier en ligne gratuit sans inscription</title>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-X54XV8ZP8C"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'G-X54XV8ZP8C');
+        gtag('config', 'G-X54XV8ZP8C');
     </script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@graph":[{"@type":"Corporation","name":"KeyTest","description":"KeyTest - test de clavier en ligne gratuit pour vérifier les touches, les boutons et la souris sur un ordinateur portable ou un PC","url":"https://keytest.pp.ua/fr/","logo":{"@type":"ImageObject","@id":"https://keytest.pp.ua/fr/#logo","url":"https://keytest.pp.ua/assets/img/fav.jpg","width":300,"height":300,"caption":"KeyTest"},"image":{"@id":"https://keytest.pp.ua/fr/#logo"},"location":{"@type":"PostalAddress","addressCountry":"Ukraine","postalCode":"01001","addressLocality":"Kiev, Ukraine","addressRegion":"Région de Kiev","streetAddress":"Rue Khreshchatyk, 1"}},{"@type":"BreadcrumbList","name":"Breadcrumbs","description":"Breadcrumbs list","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://keytest.pp.ua/fr/"},{"@type":"ListItem","position":2,"name":"Test de clavier ✅","item":"https://keytest.pp.ua/fr/"}]},{"@type":"CreativeWorkSeries","name":"KeyTest - Test de clavier en ligne","aggregateRating":{"@type":"AggregateRating","ratingValue":4.9,"reviewCount":7859}},{"@type":"QAPage","mainEntity":{"@type":"Question","name":"KeyTest - test de clavier en ligne gratuit","text":"KeyTest - test de clavier en ligne gratuit pour vérifier les touches, les boutons et la souris sur un ordinateur portable ou un PC","answerCount":2847391,"upvoteCount":2847391,"acceptedAnswer":{"@type":"Answer","text":"KeyTest - service de test de clavier en ligne gratuit sans inscription","upvoteCount":1239989,"url":"https://keytest.pp.ua/fr/"},"suggestedAnswer":[{"@type":"Answer","text":"KeyTest - test de clavier en ligne gratuit pour vérifier les touches, les boutons et la souris","upvoteCount":534323,"url":"https://keytest.pp.ua/fr/"}]}}]}
@@ -207,23 +258,30 @@
             <h1><a target="_blank" href="https://keytest.pp.ua/fr/" title="KeyTest - test de clavier en ligne gratuit"
                     style="color:#d3d3d3;text-decoration:none">"KeyTest.pp.ua" - test de clavier en ligne gratuit</a>
             </h1>
-            <div class="rating" style="text-align: center; margin: 5px 0 15px 0;" title="Note: 4.9 sur 5 basée sur 7859 avis">
+            <div class="rating" style="text-align: center; margin: 5px 0 15px 0;"
+                title="Note: 4.9 sur 5 basée sur 7859 avis">
                 <span style="color: #fbbc04; font-size: 22px;">★★★★★</span>
-                <span style="color: #d3d3d3; font-size: 15px; margin-left: 8px;">Note: 4.9 / 5 (basée sur 7859 avis)</span>
+                <span style="color: #d3d3d3; font-size: 15px; margin-left: 8px;">Note: 4.9 / 5 (basée sur 7859
+                    avis)</span>
             </div>
-            <p class="top-p">Ici, vous pouvez vérifier le fonctionnement de toutes les touches d'un clavier d'ordinateur portable ou de bureau gratuitement et sans inscription.<br>Un bouton pressé est mis en évidence en bleu, un relâché - en gris. Si la couleur ne change pas, la touche est défectueuse.<br>Pour une détection correcte des touches, utilisez la disposition du clavier <b>anglais</b>!</p>
+            <p class="top-p">Ici, vous pouvez vérifier le fonctionnement de toutes les touches d'un clavier d'ordinateur
+                portable ou de bureau gratuitement et sans inscription.<br>Un bouton pressé est mis en évidence en bleu,
+                un relâché - en gris. Si la couleur ne change pas, la touche est défectueuse.<br>Pour une détection
+                correcte des touches, utilisez la disposition du clavier <b>anglais</b>!</p>
             <div class="padding-l-r-40">
                 <div class="ftext">
                     <div class="key press">
                         <p>F1</p>
                     </div>
-                    <span style="color:#ffefd5;font-size:18px">- voici à quoi ressemble une touche actuellement pressée.</span>
+                    <span style="color:#ffefd5;font-size:18px">- voici à quoi ressemble une touche actuellement
+                        pressée.</span>
                 </div>
                 <div class="ftext">
                     <div class="key active">
                         <p>F1</p>
                     </div>
-                    <span style="color:#ffefd5;font-size:18px">- c'est une touche qui fonctionne, elle a été pressée et est revenue à sa position initiale.</span>
+                    <span style="color:#ffefd5;font-size:18px">- c'est une touche qui fonctionne, elle a été pressée et
+                        est revenue à sa position initiale.</span>
                 </div>
             </div>
         </div>
@@ -555,19 +613,20 @@
             </div>
         </div>
     </header>
-    
+
     <div class="hosting-promo">
-      <h3>Besoin d'un hébergement pour votre site ?</h3>
-      <p>Nous recommandons HostPro — un hébergement fiable pour sites sur NVMe SSD avec cPanel, PHP et Node.js.</p>
-      <a href="https://hostpro.apartner.pro/pricing" target="_blank" rel="noopener noreferrer">
-        Hébergement web sur NVMe SSD avec cPanel et PHP
-      </a>
+        <h3>Besoin d'un hébergement pour votre site ?</h3>
+        <p>Nous recommandons HostPro — un hébergement fiable pour sites sur NVMe SSD avec cPanel, PHP et Node.js.</p>
+        <a href="https://hostpro.apartner.pro/pricing/" target="_blank" rel="noopener noreferrer">
+            Hébergement web sur NVMe SSD avec cPanel et PHP
+        </a>
     </div>
 
     <footer class="footer">
         <div class="fcontent">
             <h2 class="title">KeyTest Test de clavier en ligne</h2>
-            <p class="fdesc">Pour tester le clavier, appuyez sur les touches (en passant au préalable à la disposition de clavier anglais)</p>
+            <p class="fdesc">Pour tester le clavier, appuyez sur les touches (en passant au préalable à la disposition
+                de clavier anglais)</p>
             <div class="ftext">
                 <div class="key press">
                     <p>A</p>
@@ -590,40 +649,53 @@
                 <br>
                 <ol>
                     <li>
-                        <p>Après avoir remplacé le clavier de l'ordinateur portable, il est recommandé de tester chaque touche pour détecter les boutons défectueux.</p>
+                        <p>Après avoir remplacé le clavier de l'ordinateur portable, il est recommandé de tester chaque
+                            touche pour détecter les boutons défectueux.</p>
                     </li>
                     <li>
-                        <p>Vérifier le fonctionnement de toutes les touches lors de l'achat d'un ordinateur portable d'occasion.</p>
+                        <p>Vérifier le fonctionnement de toutes les touches lors de l'achat d'un ordinateur portable
+                            d'occasion.</p>
                     </li>
                     <li>
-                        <p>Après avoir nettoyé le clavier ou réparé le mécanisme, il est nécessaire de tester les touches F1 à F12, ainsi que les touches auxiliaires Insert, Home, End, PrtSc, PgUp, PgDn et d'autres boutons qui sont difficiles à vérifier dans un document texte standard.</p>
+                        <p>Après avoir nettoyé le clavier ou réparé le mécanisme, il est nécessaire de tester les
+                            touches F1 à F12, ainsi que les touches auxiliaires Insert, Home, End, PrtSc, PgUp, PgDn et
+                            d'autres boutons qui sont difficiles à vérifier dans un document texte standard.</p>
                     </li>
                     <li>
-                        <p>Assurez-vous que le clavier est correctement connecté à l'ordinateur portable et qu'il n'y a aucun signe visible de dommage aux fils ou aux connecteurs.</p>
+                        <p>Assurez-vous que le clavier est correctement connecté à l'ordinateur portable et qu'il n'y a
+                            aucun signe visible de dommage aux fils ou aux connecteurs.</p>
                     </li>
                     <li>
-                        <p>Vérifiez les touches avec des combinaisons fonctionnelles telles que Ctrl, Alt et Shift, ainsi que leurs combinaisons avec d'autres touches. Assurez-vous qu'elles fonctionnent correctement.</p>
+                        <p>Vérifiez les touches avec des combinaisons fonctionnelles telles que Ctrl, Alt et Shift,
+                            ainsi que leurs combinaisons avec d'autres touches. Assurez-vous qu'elles fonctionnent
+                            correctement.</p>
                     </li>
                     <li>
-                        <p>Assurez-vous que les touches des sections de nombres et de symboles fonctionnent correctement et que tous les symboles s'affichent correctement.</p>
+                        <p>Assurez-vous que les touches des sections de nombres et de symboles fonctionnent correctement
+                            et que tous les symboles s'affichent correctement.</p>
                     </li>
                     <li>
-                        <p>Vérifier l'absence de retards entre la pression d'une touche et la saisie du caractère à l'écran.</p>
+                        <p>Vérifier l'absence de retards entre la pression d'une touche et la saisie du caractère à
+                            l'écran.</p>
                     </li>
                     <li>
-                        <p>Effectuer un test des touches 'Caps Lock' et 'Num Lock' pour s'assurer qu'elles s'allument et s'éteignent correctement.</p>
+                        <p>Effectuer un test des touches 'Caps Lock' et 'Num Lock' pour s'assurer qu'elles s'allument et
+                            s'éteignent correctement.</p>
                     </li>
                     <li>
-                        <p>Vérifiez le raccourci clavier pour appeler le menu système (s'il est présent) afin de vous assurer qu'il fonctionne.</p>
+                        <p>Vérifiez le raccourci clavier pour appeler le menu système (s'il est présent) afin de vous
+                            assurer qu'il fonctionne.</p>
                     </li>
                     <li>
-                        <p>Testez la touche 'Delete' ou 'Backspace' pour voir comment elles affectent le texte saisi.</p>
+                        <p>Testez la touche 'Delete' ou 'Backspace' pour voir comment elles affectent le texte saisi.
+                        </p>
                     </li>
                     <li>
                         <p>Vérifiez la touche 'Enter' ou 'Return', utilisée pour confirmer le texte saisi.</p>
                     </li>
                     <li>
-                        <p>Assurez-vous que les touches fléchées fonctionnent correctement et peuvent déplacer le curseur dans les documents textuels et les pages web.</p>
+                        <p>Assurez-vous que les touches fléchées fonctionnent correctement et peuvent déplacer le
+                            curseur dans les documents textuels et les pages web.</p>
                     </li>
                 </ol>
             </div>
@@ -636,16 +708,19 @@
                 <h4 class="subtitle">Comment vérifier un clavier d'ordinateur portable ?</h4>
                 <p class="top-p1" style="padding-top:5px">
                     Pour vérifier le clavier de votre ordinateur portable, vous pouvez :<br>
-                    - Appuyer séquentiellement sur chaque touche et s'assurer qu'elle réagit et que le caractère s'affiche à l'écran.<br>
+                    - Appuyer séquentiellement sur chaque touche et s'assurer qu'elle réagit et que le caractère
+                    s'affiche à l'écran.<br>
                     - Utiliser un outil intégré à l'OS ou un logiciel tiers pour tester les touches.<br>
-                    - Vous pouvez utiliser notre site web pour vérifier l'état du clavier en ligne, gratuitement et sans inscription.<br>
+                    - Vous pouvez utiliser notre site web pour vérifier l'état du clavier en ligne, gratuitement et sans
+                    inscription.<br>
                     - Vérifier le fonctionnement des touches spéciales et des combinaisons (Ctrl, Alt, Shift, etc.).<br>
                 </p>
                 <br>
                 <h4 class="subtitle">Comment vérifier le fonctionnement des touches et effectuer un test clavier ?</h4>
                 <p class="top-p1" style="padding-top:5px">
                     Pour vérifier les touches individuelles, vous pouvez :<br>
-                    - Ouvrir un éditeur de texte et appuyer séquentiellement sur chaque touche pour vérifier la sortie des caractères.<br>
+                    - Ouvrir un éditeur de texte et appuyer séquentiellement sur chaque touche pour vérifier la sortie
+                    des caractères.<br>
                     - Utiliser des outils de test de clavier en ligne qui affichent les frappes à l'écran.<br>
                     - Utiliser des programmes de test de clavier qui peuvent aider à identifier les problèmes.
                 </p>
@@ -656,42 +731,63 @@
                     - Éteignez immédiatement l'ordinateur portable et débranchez-le de la source d'alimentation.<br>
                     - Secouez l'excès de liquide, mais pas trop fort car cela pourrait l'endommager.<br>
                     - Retournez l'ordinateur portable pour que le liquide s'écoule.<br>
-                    - N'allumez pas l'ordinateur portable tant que vous n'êtes pas sûr que le composant est complètement sec.<br>
-                    - Si le liquide contenait du sucre ou d'autres substances dissoutes, il peut être judicieux de consulter des professionnels pour le nettoyage.<br>
-                    Soyez toujours prudent avec les liquides près de l'électronique car ils peuvent causer de graves dommages.
+                    - N'allumez pas l'ordinateur portable tant que vous n'êtes pas sûr que le composant est complètement
+                    sec.<br>
+                    - Si le liquide contenait du sucre ou d'autres substances dissoutes, il peut être judicieux de
+                    consulter des professionnels pour le nettoyage.<br>
+                    Soyez toujours prudent avec les liquides près de l'électronique car ils peuvent causer de graves
+                    dommages.
                 </p>
                 <br>
                 <h4 class="subtitle">Pourquoi certaines touches ne fonctionnent pas ou fonctionnent mal ?</h4>
                 <p class="top-p1" style="padding-top:5px">
-                    Les causes les plus courantes sont des dommages physiques, la saleté ou le liquide sous les touches, ainsi que des problèmes de pilotes. Notre test vous aidera à déterminer si le problème est mécanique.
+                    Les causes les plus courantes sont des dommages physiques, la saleté ou le liquide sous les touches,
+                    ainsi que des problèmes de pilotes. Notre test vous aidera à déterminer si le problème est
+                    mécanique.
                 </p>
                 <br>
                 <h4 class="subtitle">Qu'est-ce qu'une touche "collante" et comment la détecter ?</h4>
                 <p class="top-p1" style="padding-top:5px">
-                    Un "collage" ou court-circuit se produit lorsqu'une touche ne revient pas à sa position initiale ou continue d'envoyer un signal. Sur notre test, cette touche restera en surbrillance bleue même après l'avoir relâchée.
+                    Un "collage" ou court-circuit se produit lorsqu'une touche ne revient pas à sa position initiale ou
+                    continue d'envoyer un signal. Sur notre test, cette touche restera en surbrillance bleue même après
+                    l'avoir relâchée.
                 </p>
                 <br>
                 <h4 class="subtitle">Dois-je installer des programmes pour tester ?</h4>
                 <p class="top-p1" style="padding-top:5px">
-                    Non, notre service fonctionne entièrement en ligne dans votre navigateur. Vous n'avez rien à télécharger ou à installer, ce qui rend le processus de vérification rapide et sûr.
+                    Non, notre service fonctionne entièrement en ligne dans votre navigateur. Vous n'avez rien à
+                    télécharger ou à installer, ce qui rend le processus de vérification rapide et sûr.
                 </p>
             </div>
             <br>
 
             <div class="ftext">
                 <br>
-                Le service de vérification de clavier en ligne <b>KeyTest</b> vous permet de voir visuellement si le clavier de votre ordinateur fonctionne correctement ou si certaines touches fonctionnent mal ou pas du tout.<br>
-                En ouvrant le site <a href="/" style="color:inherit;text-transform:uppercase">keytest.pp.ua</a> dans un navigateur, vous pouvez immédiatement commencer à tester, pas besoin de télécharger de programmes.<br>Commencez à appuyer sur les touches l'une après l'autre, les boutons actuellement enfoncés seront affichés en bleu à l'écran. Ceux déjà testés - en gris (signifie que le bouton a été pressé puis relâché, donc il fonctionne).<br>S'il y a des touches bleues à l'écran avant le début du test, elles sont probablement en court-circuit (probablement inondées d'eau) et le clavier devra être remplacé. Si deux boutons ou plus s'allument en bleu lorsque vous appuyez sur un seul, cela indique également un dysfonctionnement.<br><br>Le clavier d'un ordinateur portable échoue généralement en raison d'une infiltration de liquide.<br>Vous ne devriez pas utiliser un ordinateur portable avec les mains mouillées, l'humidité peut pénétrer à l'intérieur et court-circuiter les chemins conducteurs.<br>Le plus souvent, un tel clavier nécessite un remplacement, il est peu probable qu'il soit réparé.<br></p>
+                Le service de vérification de clavier en ligne <b>KeyTest</b> vous permet de voir visuellement si le
+                clavier de votre ordinateur fonctionne correctement ou si certaines touches fonctionnent mal ou pas du
+                tout.<br>
+                En ouvrant le site <a href="/" style="color:inherit;text-transform:uppercase">keytest.pp.ua</a> dans un
+                navigateur, vous pouvez immédiatement commencer à tester, pas besoin de télécharger de
+                programmes.<br>Commencez à appuyer sur les touches l'une après l'autre, les boutons actuellement
+                enfoncés seront affichés en bleu à l'écran. Ceux déjà testés - en gris (signifie que le bouton a été
+                pressé puis relâché, donc il fonctionne).<br>S'il y a des touches bleues à l'écran avant le début du
+                test, elles sont probablement en court-circuit (probablement inondées d'eau) et le clavier devra être
+                remplacé. Si deux boutons ou plus s'allument en bleu lorsque vous appuyez sur un seul, cela indique
+                également un dysfonctionnement.<br><br>Le clavier d'un ordinateur portable échoue généralement en raison
+                d'une infiltration de liquide.<br>Vous ne devriez pas utiliser un ordinateur portable avec les mains
+                mouillées, l'humidité peut pénétrer à l'intérieur et court-circuiter les chemins conducteurs.<br>Le plus
+                souvent, un tel clavier nécessite un remplacement, il est peu probable qu'il soit réparé.<br></p>
             </div>
         </div>
     </footer>
 
     <div class="indexfast-promo">
-      <h3>Besoin d'une indexation rapide de vos pages sur Google ?</h3>
-      <p>Je recommande IndexFast — un service SEO pour soumettre des URL à l'indexation, suivre le statut des pages et accélérer l'apparition de nouveaux contenus dans les résultats de recherche.</p>
-      <a href="https://indexfast.pp.ua" target="_blank" rel="noopener noreferrer">
-        Service SEO pour l'indexation de pages sur Google
-      </a>
+        <h3>Besoin d'une indexation rapide de vos pages sur Google ?</h3>
+        <p>Je recommande IndexFast — un service SEO pour soumettre des URL à l'indexation, suivre le statut des pages et
+            accélérer l'apparition de nouveaux contenus dans les résultats de recherche.</p>
+        <a href="https://indexfast.pp.ua" target="_blank" rel="noopener noreferrer">
+            Service SEO pour l'indexation de pages sur Google
+        </a>
     </div>
 
     <br>
@@ -700,22 +796,34 @@
             <h5 class="title">Autres services gratuits</h5>
             <!-- <a class="link" target="_blank" rel="follow" href="https://tools.apartner.pro" title="Services en ligne gratuits | Free online services">Services en ligne gratuits | Free online services</a><br> -->
             <!-- <a class="link" target="_blank" rel="follow" href="https://monitor-test.apartner.pro" title="Test de moniteur en ligne gratuit | Free online monitor test service">Test de moniteur en ligne gratuit | Free online monitor test service</a><br> -->
-            <a class="link" target="_blank" rel="follow" href="https://monitortest.pp.ua" title="Test de moniteur en ligne gratuit | Free online monitor test">Test de moniteur en ligne gratuit | Free online monitor test</a>
+            <a class="link" target="_blank" rel="follow" href="https://monitortest.pp.ua"
+                title="Test de moniteur en ligne gratuit | Free online monitor test">Test de moniteur en ligne gratuit |
+                Free online monitor test</a>
             <br>
             <h5 class="title">Nos partenaires | Our Partners</h5>
-            <a class="link" target="_blank" rel="follow" href="https://devroman.pl" title="devroman.pl - Développement de sites web, startups, bots, chats">devroman.pl - Développement de sites web, startups, bots, chats</a><br>
-            <a class="link" target="_blank" rel="follow" href="https://programista.devroman.pl" title="programista.devroman.pl - Développement de sites web, startups, bots, chats">programista.devroman.pl - Développement de sites web, startups, bots, chats</a><br>
-            <a class="link" target="_blank" rel="follow" href="https://hire-web-developer.com" title="Hire Web Developer">Hire Web Developer</a><br>
-            <a class="link" target="_blank" rel="follow" href="https://romandev.pp.ua" title="Roman Dev - Web Development">Roman Dev - Web Development</a><br>
-            <a class="link" target="_blank" rel="follow" href="https://programist.pp.ua" title="Programist - Web Development Services">Programist - Web Development Services</a><br>
-            <a class="link" target="_blank" rel="follow" href="https://fullstack.matviy.pp.ua" title="Full Stack Developer Services">Full Stack Developer Services</a><br>
-            <a class="link" target="_blank" rel="follow" href="https://programist.matviy.pp.ua" title="Programist Matviy - Web Solutions">Programist Matviy - Web Solutions</a>
+            <a class="link" target="_blank" rel="follow" href="https://devroman.pl"
+                title="devroman.pl - Développement de sites web, startups, bots, chats">devroman.pl - Développement de
+                sites web, startups, bots, chats</a><br>
+            <a class="link" target="_blank" rel="follow" href="https://programista.devroman.pl"
+                title="programista.devroman.pl - Développement de sites web, startups, bots, chats">programista.devroman.pl
+                - Développement de sites web, startups, bots, chats</a><br>
+            <a class="link" target="_blank" rel="follow" href="https://hire-web-developer.com"
+                title="Hire Web Developer">Hire Web Developer</a><br>
+            <a class="link" target="_blank" rel="follow" href="https://romandev.pp.ua"
+                title="Roman Dev - Web Development">Roman Dev - Web Development</a><br>
+            <a class="link" target="_blank" rel="follow" href="https://programist.pp.ua"
+                title="Programist - Web Development Services">Programist - Web Development Services</a><br>
+            <a class="link" target="_blank" rel="follow" href="https://fullstack.matviy.pp.ua"
+                title="Full Stack Developer Services">Full Stack Developer Services</a><br>
+            <a class="link" target="_blank" rel="follow" href="https://programist.matviy.pp.ua"
+                title="Programist Matviy - Web Solutions">Programist Matviy - Web Solutions</a>
         </div>
     </footer>
     <br>
     <footer class="footer">
         <div class="keybord-footer">
-            <a class="right" href="https://keytest.pp.ua/fr/" rel="follow" title="keytest.pp.ua test de clavier en ligne"> 2018-2025, KeyTest.pp.ua</a>
+            <a class="right" href="https://keytest.pp.ua/fr/" rel="follow"
+                title="keytest.pp.ua test de clavier en ligne"> 2018-2025, KeyTest.pp.ua</a>
         </div>
     </footer>
     <br>
@@ -728,9 +836,8 @@
         </div>
 
         <div class="container">
-            <a href="https://roman.matviy.pp.ua" 
-            target="_blank" rel="follow"
-            title="Hire prestashop, laravel, wordpress, php developer">
+            <a href="https://roman.matviy.pp.ua" target="_blank" rel="follow"
+                title="Hire prestashop, laravel, wordpress, php developer">
                 Hire fullstack freelancer prestashop, laravel, wordpress, php, vue, sql
             </a>
         </div>
