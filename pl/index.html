@@ -26,20 +26,58 @@
     <link rel="stylesheet" href="../assets/style.min.css">
     <!--<link rel="stylesheet" href="../assets/style.css">-->
     <style>
-        .lang-switcher { position: relative; display: table; margin: 10px auto; z-index: 1000; background-color: rgba(47, 79, 79, 0.8); padding: 8px 20px; border-radius: 20px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); white-space: nowrap; }
-        .lang-switcher .lang-option { color: #fff; text-decoration: none; margin: 0 5px; font-size: 16px; font-weight: 600; transition: color 0.3s ease; }
-        .lang-switcher .lang-option:hover { color: #4CAF50; }
-        .lang-switcher .lang-option.active { color: #4CAF50; text-decoration: underline; }
-        .lang-switcher .lang-separator { color: #fff; margin: 0 2px; }
-        @media (max-width: 768px) {
-            .lang-switcher { padding: 5px 10px; margin: 10px auto; }
-            .lang-switcher .lang-option { font-size: 14px; }
+        .lang-switcher {
+            position: relative;
+            display: table;
+            margin: 10px auto;
+            z-index: 1000;
+            background-color: rgba(47, 79, 79, 0.8);
+            padding: 8px 20px;
+            border-radius: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            white-space: nowrap;
         }
+
+        .lang-switcher .lang-option {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 5px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .lang-switcher .lang-option:hover {
+            color: #4CAF50;
+        }
+
+        .lang-switcher .lang-option.active {
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+
+        .lang-switcher .lang-separator {
+            color: #fff;
+            margin: 0 2px;
+        }
+
+        @media (max-width: 768px) {
+            .lang-switcher {
+                padding: 5px 10px;
+                margin: 10px auto;
+            }
+
+            .lang-switcher .lang-option {
+                font-size: 14px;
+            }
+        }
+
         .link {
             color: #fff;
             padding: 3px;
             display: block;
         }
+
         .hosting-promo {
             background: linear-gradient(135deg, rgba(25, 42, 86, 0.9) 0%, rgba(10, 15, 30, 0.95) 100%);
             border: 1px solid rgba(74, 144, 226, 0.4);
@@ -53,11 +91,13 @@
             -webkit-backdrop-filter: blur(4px);
             transition: all 0.3s ease;
         }
+
         .hosting-promo:hover {
             box-shadow: 0 12px 40px 0 rgba(74, 144, 226, 0.3);
             border-color: rgba(74, 144, 226, 0.6);
             transform: translateY(-2px);
         }
+
         .hosting-promo h3 {
             color: #4a90e2;
             font-size: 20px;
@@ -66,12 +106,14 @@
             font-weight: 700;
             letter-spacing: 0.5px;
         }
+
         .hosting-promo p {
             color: #e0e0e0;
             font-size: 15px;
             line-height: 1.5;
             margin-bottom: 18px;
         }
+
         .hosting-promo a {
             display: inline-block;
             background: linear-gradient(90deg, #4a90e2 0%, #357abd 100%);
@@ -84,11 +126,13 @@
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
         }
+
         .hosting-promo a:hover {
             background: linear-gradient(90deg, #357abd 0%, #4a90e2 100%);
             transform: scale(1.05);
             box-shadow: 0 6px 20px rgba(74, 144, 226, 0.5);
         }
+
         .indexfast-promo {
             background: linear-gradient(135deg, rgba(75, 15, 120, 0.85) 0%, rgba(10, 15, 30, 0.95) 100%);
             border: 1px solid rgba(160, 32, 240, 0.4);
@@ -102,11 +146,13 @@
             -webkit-backdrop-filter: blur(4px);
             transition: all 0.3s ease;
         }
+
         .indexfast-promo:hover {
             box-shadow: 0 12px 40px 0 rgba(160, 32, 240, 0.3);
             border-color: rgba(160, 32, 240, 0.6);
             transform: translateY(-2px);
         }
+
         .indexfast-promo h3 {
             color: #d896ff;
             font-size: 20px;
@@ -115,12 +161,14 @@
             font-weight: 700;
             letter-spacing: 0.5px;
         }
+
         .indexfast-promo p {
             color: #e0e0e0;
             font-size: 15px;
             line-height: 1.5;
             margin-bottom: 18px;
         }
+
         .indexfast-promo a {
             display: inline-block;
             background: linear-gradient(90deg, #a020f0 0%, #7d12cb 100%);
@@ -133,6 +181,7 @@
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(160, 32, 240, 0.3);
         }
+
         .indexfast-promo a:hover {
             background: linear-gradient(90deg, #7d12cb 0%, #a020f0 100%);
             transform: scale(1.05);
@@ -159,7 +208,8 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@APARTNER.PRO">
     <meta name="twitter:title" content="keytest.pp.ua - test klawiatury online">
-    <meta name="twitter:description" content="Darmowy test klawiatury online, przycisków i myszy dla laptopa lub komputera PC. Szybki test klawiatury bez reklam i rejestracji.">
+    <meta name="twitter:description"
+        content="Darmowy test klawiatury online, przycisków i myszy dla laptopa lub komputera PC. Szybki test klawiatury bez reklam i rejestracji.">
     <meta name="twitter:image" content="https://keytest.pp.ua/assets/img/fav.jpg">
 
     <meta property="og:type" content="website">
@@ -170,18 +220,19 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="KeyTest - test klawiatury online">
-    <meta property="og:description" content="Darmowy test klawiatury online, przycisków i myszy dla laptopa lub komputera PC. Szybki test klawiatury bez reklam i rejestracji.">
+    <meta property="og:description"
+        content="Darmowy test klawiatury online, przycisków i myszy dla laptopa lub komputera PC. Szybki test klawiatury bez reklam i rejestracji.">
     <meta property="og:locale" content="pl_PL">
     <title>KeyTest - darmowy test klawiatury online bez rejestracji</title>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-X54XV8ZP8C"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'G-X54XV8ZP8C');
+        gtag('config', 'G-X54XV8ZP8C');
     </script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@graph":[{"@type":"Corporation","name":"KeyTest","description":"KeyTest - bezpłatny test klawiatury online do sprawdzania przycisków, klawiszy i myszy na laptopie lub komputerze stacjonarnym","url":"https://keytest.pp.ua/pl/","logo":{"@type":"ImageObject","@id":"https://keytest.pp.ua/pl/#logo","url":"https://keytest.pp.ua/assets/img/fav.jpg","width":300,"height":300,"caption":"KeyTest"},"image":{"@id":"https://keytest.pp.ua/pl/#logo"},"location":{"@type":"PostalAddress","addressCountry":"Ukraina","postalCode":"01001","addressLocality":"Kijów, Ukraina","addressRegion":"Obwód kijowski","streetAddress":"ul. Chreszczatyk, 1"}},{"@type":"BreadcrumbList","name":"Breadcrumbs","description":"Breadcrumbs list","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://keytest.pp.ua/pl/"},{"@type":"ListItem","position":2,"name":"Test klawiatury ✅","item":"https://keytest.pp.ua/pl/"}]},{"@type":"CreativeWorkSeries","name":"KeyTest - Test klawiatury online","aggregateRating":{"@type":"AggregateRating","ratingValue":4.9,"reviewCount":7859}},{"@type":"QAPage","mainEntity":{"@type":"Question","name":"KeyTest - darmowy test klawiatury online","text":"KeyTest - bezpłatny test klawiatury online do sprawdzania przycisków, klawiszy i myszy na laptopie lub komputerze stacjonarnym","answerCount":2847391,"upvoteCount":2847391,"acceptedAnswer":{"@type":"Answer","text":"KeyTest - darmowy test klawiatury online bez rejestracji","upvoteCount":1239989,"url":"https://keytest.pp.ua/pl/"},"suggestedAnswer":[{"@type":"Answer","text":"KeyTest - bezpłatny test klawiatury online do sprawdzania przycisków, klawiszy i myszy","upvoteCount":534323,"url":"https://keytest.pp.ua/pl/"}]}}]}
@@ -207,11 +258,16 @@
             <h1><a target="_blank" href="https://keytest.pp.ua/pl/" title="KeyTest - darmowy test klawiatury online"
                     style="color:#d3d3d3;text-decoration:none">"KeyTest.pp.ua" - darmowy test klawiatury online</a>
             </h1>
-            <div class="rating" style="text-align: center; margin: 5px 0 15px 0;" title="Ocena: 4.9 z 5 na podstawie 7859 opinii">
+            <div class="rating" style="text-align: center; margin: 5px 0 15px 0;"
+                title="Ocena: 4.9 z 5 na podstawie 7859 opinii">
                 <span style="color: #fbbc04; font-size: 22px;">★★★★★</span>
-                <span style="color: #d3d3d3; font-size: 15px; margin-left: 8px;">Ocena: 4.9 / 5 (na podstawie 7859 opinii)</span>
+                <span style="color: #d3d3d3; font-size: 15px; margin-left: 8px;">Ocena: 4.9 / 5 (na podstawie 7859
+                    opinii)</span>
             </div>
-            <p class="top-p">Tutaj możesz bezpłatnie i bez rejestracji sprawdzić działanie wszystkich klawiszy na klawiaturze laptopa lub komputera stacjonarnego.<br>Wciśnięty przycisk jest podświetlany na niebiesko, zwolniony - na szaro. Jeśli kolor się nie zmienia - klawisz jest uszkodzony.<br>Aby poprawnie wykrywać klawisze, użyj układu klawiatury <b>angielskiej</b>!</p>
+            <p class="top-p">Tutaj możesz bezpłatnie i bez rejestracji sprawdzić działanie wszystkich klawiszy na
+                klawiaturze laptopa lub komputera stacjonarnego.<br>Wciśnięty przycisk jest podświetlany na niebiesko,
+                zwolniony - na szaro. Jeśli kolor się nie zmienia - klawisz jest uszkodzony.<br>Aby poprawnie wykrywać
+                klawisze, użyj układu klawiatury <b>angielskiej</b>!</p>
             <div class="padding-l-r-40">
                 <div class="ftext">
                     <div class="key press">
@@ -223,7 +279,8 @@
                     <div class="key active">
                         <p>F1</p>
                     </div>
-                    <span style="color:#ffefd5;font-size:18px">- to jest działający klawisz, został naciśnięty i powrócił do swojej pierwotnej pozycji.</span>
+                    <span style="color:#ffefd5;font-size:18px">- to jest działający klawisz, został naciśnięty i
+                        powrócił do swojej pierwotnej pozycji.</span>
                 </div>
             </div>
         </div>
@@ -555,19 +612,20 @@
             </div>
         </div>
     </header>
-    
+
     <div class="hosting-promo">
-      <h3>Potrzebujesz hostingu dla swojej strony?</h3>
-      <p>Polecamy HostPro — niezawodny hosting dla stron na NVMe SSD z cPanel, PHP i Node.js.</p>
-      <a href="https://hostpro.apartner.pro/pricing" target="_blank" rel="noopener noreferrer">
-        Hosting dla stron na NVMe SSD z cPanel i PHP
-      </a>
+        <h3>Potrzebujesz hostingu dla swojej strony?</h3>
+        <p>Polecamy HostPro — niezawodny hosting dla stron na NVMe SSD z cPanel, PHP i Node.js.</p>
+        <a href="https://hostpro.apartner.pro/pricing/" target="_blank" rel="noopener noreferrer">
+            Hosting dla stron na NVMe SSD z cPanel i PHP
+        </a>
     </div>
 
     <footer class="footer">
         <div class="fcontent">
             <h2 class="title">KeyTest Test klawiatury online</h2>
-            <p class="fdesc">Aby przetestować klawiaturę, naciskaj klawisze (po wcześniejszym przełączeniu na angielski układ klawiatury)</p>
+            <p class="fdesc">Aby przetestować klawiaturę, naciskaj klawisze (po wcześniejszym przełączeniu na angielski
+                układ klawiatury)</p>
             <div class="ftext">
                 <div class="key press">
                     <p>A</p>
@@ -590,40 +648,50 @@
                 <br>
                 <ol>
                     <li>
-                        <p>Po wymianie klawiatury w laptopie zaleca się przetestowanie każdego klawisza w celu wykrycia uszkodzonych przycisków.</p>
+                        <p>Po wymianie klawiatury w laptopie zaleca się przetestowanie każdego klawisza w celu wykrycia
+                            uszkodzonych przycisków.</p>
                     </li>
                     <li>
                         <p>Sprawdzenie działania wszystkich klawiszy klawiatury podczas zakupu używanego laptopa.</p>
                     </li>
                     <li>
-                        <p>Po czyszczeniu klawiatury lub naprawie mechanizmu należy sprawdzić działanie klawiszy od F1 do F12, a także klawiszy pomocniczych Insert, Home, End, PrtSc, PgUp, PgDn i innych przycisków, które są trudne do sprawdzenia w standardowym dokumencie tekstowym.</p>
+                        <p>Po czyszczeniu klawiatury lub naprawie mechanizmu należy sprawdzić działanie klawiszy od F1
+                            do F12, a także klawiszy pomocniczych Insert, Home, End, PrtSc, PgUp, PgDn i innych
+                            przycisków, które są trudne do sprawdzenia w standardowym dokumencie tekstowym.</p>
                     </li>
                     <li>
-                        <p>Upewnij się, że klawiatura jest prawidłowo podłączona do laptopa i nie ma widocznych oznak uszkodzenia przewodów lub złączy.</p>
+                        <p>Upewnij się, że klawiatura jest prawidłowo podłączona do laptopa i nie ma widocznych oznak
+                            uszkodzenia przewodów lub złączy.</p>
                     </li>
                     <li>
-                        <p>Sprawdź działanie klawiszy funkcyjnych, takich jak Ctrl, Alt i Shift, a także ich kombinacje z innymi klawiszami. Upewnij się, że działają one prawidłowo.</p>
+                        <p>Sprawdź działanie klawiszy funkcyjnych, takich jak Ctrl, Alt i Shift, a także ich kombinacje
+                            z innymi klawiszami. Upewnij się, że działają one prawidłowo.</p>
                     </li>
                     <li>
-                        <p>Upewnij się, że klawisze w sekcji numerycznej i z symbolami działają prawidłowo, a wszystkie znaki są wprowadzane poprawnie.</p>
+                        <p>Upewnij się, że klawisze w sekcji numerycznej i z symbolami działają prawidłowo, a wszystkie
+                            znaki są wprowadzane poprawnie.</p>
                     </li>
                     <li>
                         <p>Sprawdź brak opóźnień między naciśnięciem klawisza a pojawieniem się znaku na ekranie.</p>
                     </li>
                     <li>
-                        <p>Wykonaj test klawiszy 'Caps Lock' i 'Num Lock', aby upewnić się, że włączają się i wyłączają prawidłowo.</p>
+                        <p>Wykonaj test klawiszy 'Caps Lock' i 'Num Lock', aby upewnić się, że włączają się i wyłączają
+                            prawidłowo.</p>
                     </li>
                     <li>
-                        <p>Sprawdź skrót klawiaturowy wywołujący menu Start (jeśli występuje), aby upewnić się, że działa.</p>
+                        <p>Sprawdź skrót klawiaturowy wywołujący menu Start (jeśli występuje), aby upewnić się, że
+                            działa.</p>
                     </li>
                     <li>
-                        <p>Przetestuj klawisz 'Delete' lub 'Backspace', aby zobaczyć, jak wpływają na wprowadzany tekst.</p>
+                        <p>Przetestuj klawisz 'Delete' lub 'Backspace', aby zobaczyć, jak wpływają na wprowadzany tekst.
+                        </p>
                     </li>
                     <li>
                         <p>Sprawdź klawisz 'Enter' lub 'Return', który służy do potwierdzania wprowadzanego tekstu.</p>
                     </li>
                     <li>
-                        <p>Upewnij się, że klawisze strzałek działają poprawnie i mogą przesuwać kursor w dokumentach tekstowych oraz na stronach internetowych.</p>
+                        <p>Upewnij się, że klawisze strzałek działają poprawnie i mogą przesuwać kursor w dokumentach
+                            tekstowych oraz na stronach internetowych.</p>
                     </li>
                 </ol>
             </div>
@@ -637,61 +705,86 @@
                 <p class="top-p1" style="padding-top:5px">
                     Aby sprawdzić klawiaturę laptopa, możesz wykonać następujące czynności:<br>
                     - Kolejno naciśnij każdy klawisz i upewnij się, że reaguje i pojawia się na ekranie.<br>
-                    - Skorzystaj z wbudowanego w system operacyjny lub zewnętrznego oprogramowania do testowania klawiszy.<br>
-                    - Możesz skorzystać z naszej strony internetowej, aby za darmo i bez rejestracji sprawdzić stan klawiatury online.<br>
+                    - Skorzystaj z wbudowanego w system operacyjny lub zewnętrznego oprogramowania do testowania
+                    klawiszy.<br>
+                    - Możesz skorzystać z naszej strony internetowej, aby za darmo i bez rejestracji sprawdzić stan
+                    klawiatury online.<br>
                     - Sprawdź działanie klawiszy specjalnych i kombinacji klawiszy (Ctrl, Alt, Shift itp.).<br>
                 </p>
                 <br>
-                <h4 class="subtitle">Jak sprawdzić działanie poszczególnych klawiszy i przeprowadzić test klawiatury?</h4>
+                <h4 class="subtitle">Jak sprawdzić działanie poszczególnych klawiszy i przeprowadzić test klawiatury?
+                </h4>
                 <p class="top-p1" style="padding-top:5px">
                     Aby sprawdzić poszczególne klawisze, możesz:<br>
                     - Otwórz edytor tekstu i po kolei naciskaj każdy klawisz, aby sprawdzić wprowadzanie znaków.<br>
-                    - Skorzystaj z narzędzi do testowania klawiatur online, które wyświetlają naciśnięcia klawiszy na ekranie.<br>
-                    - Użyj programów do testowania klawiatury, które mogą pomóc w zidentyfikowaniu problemów z przyciskami.
+                    - Skorzystaj z narzędzi do testowania klawiatur online, które wyświetlają naciśnięcia klawiszy na
+                    ekranie.<br>
+                    - Użyj programów do testowania klawiatury, które mogą pomóc w zidentyfikowaniu problemów z
+                    przyciskami.
                 </p>
                 <br>
                 <h4 class="subtitle">Co zrobić, gdy na klawiaturę rozleje się woda?</h4>
                 <p class="top-p1" style="padding-top:5px">
                     Jeśli na klawiaturę laptopa dostanie się ciecz, wykonaj następujące kroki:<br>
                     - Natychmiast wyłącz laptopa i odłącz go od źródła zasilania.<br>
-                    - Wytrząśnij nadmiar płynu, ale nie potrząsaj laptopem zbyt mocno, ponieważ może to spowodować uszkodzenia.<br>
+                    - Wytrząśnij nadmiar płynu, ale nie potrząsaj laptopem zbyt mocno, ponieważ może to spowodować
+                    uszkodzenia.<br>
                     - Odwróć laptopa do góry nogami, aby płyn mógł spłynąć.<br>
                     - Nie włączaj laptopa, dopóki nie upewnisz się, że cały komponent jest całkowicie suchy.<br>
-                    - Jeśli płyn zawierał cukier lub inne rozpuszczone substancje, może być konieczne skontaktowanie się ze specjalistą w celu wyczyszczenia.<br>
-                    Zawsze należy zachować ostrożność z płynami w pobliżu urządzeń elektronicznych, ponieważ mogą one spowodować poważne uszkodzenia.
+                    - Jeśli płyn zawierał cukier lub inne rozpuszczone substancje, może być konieczne skontaktowanie się
+                    ze specjalistą w celu wyczyszczenia.<br>
+                    Zawsze należy zachować ostrożność z płynami w pobliżu urządzeń elektronicznych, ponieważ mogą one
+                    spowodować poważne uszkodzenia.
                 </p>
                 <br>
                 <h4 class="subtitle">Dlaczego niektóre klawisze nie działają lub działają nieprawidłowo?</h4>
                 <p class="top-p1" style="padding-top:5px">
-                    Najczęstsze przyczyny to uszkodzenia fizyczne, brud lub płyn pod klawiszami oraz problemy ze sterownikami. Nasz test pomoże sprawdzić, czy problem ma charakter mechaniczny.
+                    Najczęstsze przyczyny to uszkodzenia fizyczne, brud lub płyn pod klawiszami oraz problemy ze
+                    sterownikami. Nasz test pomoże sprawdzić, czy problem ma charakter mechaniczny.
                 </p>
                 <br>
                 <h4 class="subtitle">Czym jest "zacinanie" się klawiszy i jak je wykryć?</h4>
                 <p class="top-p1" style="padding-top:5px">
-                    "Zacięcie" lub zwarcie występuje, gdy klawisz nie wraca do swojego pierwotnego położenia lub kontynuuje wysyłanie sygnału. W naszym teście taki klawisz pozostanie podświetlony na niebiesko, nawet po jego zwolnieniu.
+                    "Zacięcie" lub zwarcie występuje, gdy klawisz nie wraca do swojego pierwotnego położenia lub
+                    kontynuuje wysyłanie sygnału. W naszym teście taki klawisz pozostanie podświetlony na niebiesko,
+                    nawet po jego zwolnieniu.
                 </p>
                 <br>
                 <h4 class="subtitle">Czy muszę instalować programy do testowania?</h4>
                 <p class="top-p1" style="padding-top:5px">
-                    Nie, nasz serwis działa w całości online w Twojej przeglądarce. Nie musisz niczego pobierać ani instalować, dzięki czemu proces testowania jest szybki i bezpieczny.
+                    Nie, nasz serwis działa w całości online w Twojej przeglądarce. Nie musisz niczego pobierać ani
+                    instalować, dzięki czemu proces testowania jest szybki i bezpieczny.
                 </p>
             </div>
             <br>
 
             <div class="ftext">
                 <br>
-                Serwis internetowy do sprawdzania klawiatury <b>KeyTest</b> pozwala wizualnie zweryfikować, czy klawiatura Twojego komputera działa poprawnie, czy też niektóre z nich działają nieprawidłowo lub w ogóle nie działają.<br>
-                Otwierając stronę <a href="/" style="color:inherit;text-transform:uppercase">keytest.pp.ua</a> w przeglądarce, możesz od razu zacząć testowanie, bez pobierania żadnych programów.<br>Zacznij naciskać kolejno klawisze, aktualnie naciśnięte przyciski zostaną wyświetlone na niebiesko. Już przetestowane klawisze staną się szare (oznacza to, że przycisk został wcześniej wciśnięty, a następnie zwolniony, co oznacza, że działa poprawnie).<br>Jeśli na ekranie pojawią się niebieskie klawisze jeszcze przed rozpoczęciem testu - najprawdopodobniej są one zwarte (prawdopodobnie zalane wodą), a klawiaturę będzie trzeba wymienić. Jeśli po naciśnięciu jednego przycisku, na niebiesko zapalą się dwa lub więcej - również wskazuje to na awarię klawiatury laptopa.<br><br>Klawiatury laptopów zwykle psują się z powodu dostania się do nich płynu.<br>Nie powinieneś używać laptopa z mokrymi rękami, woda może przedostać się do środka i spowodować zwarcie ścieżek prądowych.<br>Najczęściej taka klawiatura wymaga wymiany, trudno będzie ją naprawić.<br></p>
+                Serwis internetowy do sprawdzania klawiatury <b>KeyTest</b> pozwala wizualnie zweryfikować, czy
+                klawiatura Twojego komputera działa poprawnie, czy też niektóre z nich działają nieprawidłowo lub w
+                ogóle nie działają.<br>
+                Otwierając stronę <a href="/" style="color:inherit;text-transform:uppercase">keytest.pp.ua</a> w
+                przeglądarce, możesz od razu zacząć testowanie, bez pobierania żadnych programów.<br>Zacznij naciskać
+                kolejno klawisze, aktualnie naciśnięte przyciski zostaną wyświetlone na niebiesko. Już przetestowane
+                klawisze staną się szare (oznacza to, że przycisk został wcześniej wciśnięty, a następnie zwolniony, co
+                oznacza, że działa poprawnie).<br>Jeśli na ekranie pojawią się niebieskie klawisze jeszcze przed
+                rozpoczęciem testu - najprawdopodobniej są one zwarte (prawdopodobnie zalane wodą), a klawiaturę będzie
+                trzeba wymienić. Jeśli po naciśnięciu jednego przycisku, na niebiesko zapalą się dwa lub więcej -
+                również wskazuje to na awarię klawiatury laptopa.<br><br>Klawiatury laptopów zwykle psują się z powodu
+                dostania się do nich płynu.<br>Nie powinieneś używać laptopa z mokrymi rękami, woda może przedostać się
+                do środka i spowodować zwarcie ścieżek prądowych.<br>Najczęściej taka klawiatura wymaga wymiany, trudno
+                będzie ją naprawić.<br></p>
             </div>
         </div>
     </footer>
 
     <div class="indexfast-promo">
-      <h3>Potrzebujesz szybkiej indeksacji stron w Google?</h3>
-      <p>Polecam IndexFast — usługę SEO do przesyłania adresów URL do indeksacji, monitorowania statusu stron i przyspieszania pojawiania się nowych treści w wynikach wyszukiwania.</p>
-      <a href="https://indexfast.pp.ua" target="_blank" rel="noopener noreferrer">
-        Usługa SEO do indeksacji stron w Google
-      </a>
+        <h3>Potrzebujesz szybkiej indeksacji stron w Google?</h3>
+        <p>Polecam IndexFast — usługę SEO do przesyłania adresów URL do indeksacji, monitorowania statusu stron i
+            przyspieszania pojawiania się nowych treści w wynikach wyszukiwania.</p>
+        <a href="https://indexfast.pp.ua" target="_blank" rel="noopener noreferrer">
+            Usługa SEO do indeksacji stron w Google
+        </a>
     </div>
 
     <br>
@@ -700,22 +793,34 @@
             <h5 class="title">Inne darmowe serwisy</h5>
             <!-- <a class="link" target="_blank" rel="follow" href="https://tools.apartner.pro" title="Darmowe usługi online | Free online services">Darmowe usługi online | Free online services</a><br> -->
             <!-- <a class="link" target="_blank" rel="follow" href="https://monitor-test.apartner.pro" title="Darmowy test monitora online | Free online monitor test service">Darmowy test monitora online | Free online monitor test service</a><br> -->
-            <a class="link" target="_blank" rel="follow" href="https://monitortest.pp.ua" title="Darmowy test monitora online | Free online monitor test">Darmowy test monitora online | Free online monitor test</a>
+            <a class="link" target="_blank" rel="follow" href="https://monitortest.pp.ua"
+                title="Darmowy test monitora online | Free online monitor test">Darmowy test monitora online | Free
+                online monitor test</a>
             <br>
             <h5 class="title">Nasi partnerzy | Our Partners</h5>
-            <a class="link" target="_blank" rel="follow" href="https://devroman.pl" title="devroman.pl - Tworzenie stron internetowych, startupów, botów, czatów">devroman.pl - Tworzenie stron internetowych, startupów, botów, czatów</a><br>
-            <a class="link" target="_blank" rel="follow" href="https://programista.devroman.pl" title="programista.devroman.pl - Tworzenie stron internetowych, startupów, botów, czatów">programista.devroman.pl - Tworzenie stron internetowych, startupów, botów, czatów</a><br>
-            <a class="link" target="_blank" rel="follow" href="https://hire-web-developer.com" title="Hire Web Developer">Hire Web Developer</a><br>
-            <a class="link" target="_blank" rel="follow" href="https://romandev.pp.ua" title="Roman Dev - Web Development">Roman Dev - Web Development</a><br>
-            <a class="link" target="_blank" rel="follow" href="https://programist.pp.ua" title="Programist - Web Development Services">Programist - Web Development Services</a><br>
-            <a class="link" target="_blank" rel="follow" href="https://fullstack.matviy.pp.ua" title="Full Stack Developer Services">Full Stack Developer Services</a><br>
-            <a class="link" target="_blank" rel="follow" href="https://programist.matviy.pp.ua" title="Programist Matviy - Web Solutions">Programist Matviy - Web Solutions</a>
+            <a class="link" target="_blank" rel="follow" href="https://devroman.pl"
+                title="devroman.pl - Tworzenie stron internetowych, startupów, botów, czatów">devroman.pl - Tworzenie
+                stron internetowych, startupów, botów, czatów</a><br>
+            <a class="link" target="_blank" rel="follow" href="https://programista.devroman.pl"
+                title="programista.devroman.pl - Tworzenie stron internetowych, startupów, botów, czatów">programista.devroman.pl
+                - Tworzenie stron internetowych, startupów, botów, czatów</a><br>
+            <a class="link" target="_blank" rel="follow" href="https://hire-web-developer.com"
+                title="Hire Web Developer">Hire Web Developer</a><br>
+            <a class="link" target="_blank" rel="follow" href="https://romandev.pp.ua"
+                title="Roman Dev - Web Development">Roman Dev - Web Development</a><br>
+            <a class="link" target="_blank" rel="follow" href="https://programist.pp.ua"
+                title="Programist - Web Development Services">Programist - Web Development Services</a><br>
+            <a class="link" target="_blank" rel="follow" href="https://fullstack.matviy.pp.ua"
+                title="Full Stack Developer Services">Full Stack Developer Services</a><br>
+            <a class="link" target="_blank" rel="follow" href="https://programist.matviy.pp.ua"
+                title="Programist Matviy - Web Solutions">Programist Matviy - Web Solutions</a>
         </div>
     </footer>
     <br>
     <footer class="footer">
         <div class="keybord-footer">
-            <a class="right" href="https://keytest.pp.ua/pl/" rel="follow" title="keytest.pp.ua sprawdzanie klawiatury online"> 2018-2025, KeyTest.pp.ua</a>
+            <a class="right" href="https://keytest.pp.ua/pl/" rel="follow"
+                title="keytest.pp.ua sprawdzanie klawiatury online"> 2018-2025, KeyTest.pp.ua</a>
         </div>
     </footer>
     <br>
@@ -728,9 +833,8 @@
         </div>
 
         <div class="container">
-            <a href="https://roman.matviy.pp.ua" 
-            target="_blank" rel="follow"
-            title="Hire prestashop, laravel, wordpress, php developer">
+            <a href="https://roman.matviy.pp.ua" target="_blank" rel="follow"
+                title="Hire prestashop, laravel, wordpress, php developer">
                 Hire fullstack freelancer prestashop, laravel, wordpress, php, vue, sql
             </a>
         </div>
