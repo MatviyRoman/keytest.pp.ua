@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos partenaires | KeyTest.pp.ua</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/img/fav.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(rgba(20, 35, 35, 0.9), rgba(15, 20, 20, 0.95)), url(../../assets/img/keytest.jpg) no-repeat;
+            background-color: #1e3535;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 38px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #5dffa8 0%, #28c878 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #b0c4de;
+            font-weight: 300;
+        }
+
+        .partners-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            width: 100%;
+            margin-bottom: 50px;
+        }
+
+        .partner-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 30px;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .partner-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(93, 255, 168, 0.4);
+            box-shadow: 0 12px 40px rgba(40, 200, 120, 0.15);
+        }
+
+        .partner-card h3 {
+            font-size: 22px;
+            color: #ffffff;
+            margin-bottom: 12px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .partner-card:hover h3 {
+            color: #5dffa8;
+        }
+
+        .partner-card p {
+            color: #b0c4de;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            flex-grow: 1;
+            font-weight: 300;
+        }
+
+        .partner-link {
+            display: inline-flex;
+            align-items: center;
+            color: #5dffa8;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 0.3s;
+        }
+
+        .partner-link span {
+            margin-right: 8px;
+        }
+
+        .partner-link svg {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+            transition: transform 0.3s;
+        }
+
+        .partner-card:hover .partner-link svg {
+            transform: translateX(5px);
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 28px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s;
+            backdrop-filter: blur(4px);
+            margin-bottom: 40px;
+        }
+
+        .back-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(93, 255, 168, 0.5);
+            color: #5dffa8;
+            box-shadow: 0 4px 15px rgba(93, 255, 168, 0.2);
+            transform: translateX(-3px);
+        }
+
+        .back-btn svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+            margin-right: 10px;
+            transform: rotate(180deg);
+        }
+
+        footer {
+            margin-top: auto;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 14px;
+            padding: 20px 0;
+            width: 100%;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        footer a {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #5dffa8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/fr/" class="back-btn">
+            <svg viewBox="0 0 24 24"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42 5.43 5.43H5v2z"/></svg>
+            Retour à l'accueil
+        </a>
+
+        <header>
+            <h1>Nos partenaires</h1>
+            <p class="subtitle">Développeurs web et spécialistes SEO de confiance pour vos projets</p>
+        </header>
+
+        <div class="partners-grid">
+            <!-- Roman Dev -->
+            <div class="partner-card">
+                <h3>Roman Dev</h3>
+                <p>Développement web professionnel, création de sites web de toute complexité, intégration d'API, bots et solutions sur mesure.</p>
+                <a href="https://romandev.pp.ua" target="_blank" rel="noopener noreferrer" class="partner-link">
+                    <span>Visiter le site</span>
+                    <svg viewBox="0 0 24 24"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42 5.43 5.43H5v2z"/></svg>
+                </a>
+            </div>
+
+            <!-- devroman.pl -->
+            <div class="partner-card">
+                <h3>devroman.pl</h3>
+                <p>Développement de sites web modernes, de startups à grande échelle, de chatbots intelligents et de chats interactifs pour les entreprises.</p>
+                <a href="https://devroman.pl" target="_blank" rel="noopener noreferrer" class="partner-link">
+                    <span>Visiter le site</span>
+                    <svg viewBox="0 0 24 24"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42 5.43 5.43H5v2z"/></svg>
+                </a>
+            </div>
+
+            <!-- programista.devroman.pl -->
+            <div class="partner-card">
+                <h3>programista.devroman.pl</h3>
+                <p>Cycle complet de développement d'applications web, automatisation des processus, startups hautement évolutives et systèmes de chat.</p>
+                <a href="https://programista.devroman.pl" target="_blank" rel="noopener noreferrer" class="partner-link">
+                    <span>Visiter le site</span>
+                    <svg viewBox="0 0 24 24"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42 5.43 5.43H5v2z"/></svg>
+                </a>
+            </div>
+
+            <!-- Hire Web Developer -->
+            <div class="partner-card">
+                <h3>Hire Web Developer</h3>
+                <p>Services professionnels de développement web : création de boutiques en ligne, d'API et de services web avec PHP, Laravel et WordPress.</p>
+                <a href="https://hire-web-developer.com" target="_blank" rel="noopener noreferrer" class="partner-link">
+                    <span>Visiter le site</span>
+                    <svg viewBox="0 0 24 24"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42 5.43 5.43H5v2z"/></svg>
+                </a>
+            </div>
+
+            <!-- Programist -->
+            <div class="partner-card">
+                <h3>Programist</h3>
+                <p>Développement de logiciels fiables et optimisés, création de services web et de solutions informatiques sur mesure pour les entreprises.</p>
+                <a href="https://programist.pp.ua" target="_blank" rel="noopener noreferrer" class="partner-link">
+                    <span>Visiter le site</span>
+                    <svg viewBox="0 0 24 24"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42 5.43 5.43H5v2z"/></svg>
+                </a>
+            </div>
+
+            <!-- Full Stack Developer Services -->
+            <div class="partner-card">
+                <h3>Full Stack Services</h3>
+                <p>Développement personnalisé frontend et backend, architecture de bases de données et optimisation complète des performances.</p>
+                <a href="https://fullstack.matviy.pp.ua" target="_blank" rel="noopener noreferrer" class="partner-link">
+                    <span>Visiter le site</span>
+                    <svg viewBox="0 0 24 24"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42 5.43 5.43H5v2z"/></svg>
+                </a>
+            </div>
+
+            <!-- Programist Matviy -->
+            <div class="partner-card">
+                <h3>Programist Matviy</h3>
+                <p>Solutions web efficaces, optimisation du temps de chargement, intégration de systèmes de paiement et développement web avancé.</p>
+                <a href="https://programist.matviy.pp.ua" target="_blank" rel="noopener noreferrer" class="partner-link">
+                    <span>Visiter le site</span>
+                    <svg viewBox="0 0 24 24"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42 5.43 5.43H5v2z"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2018-2026 <a href="/fr/">KeyTest.pp.ua</a> - Test de clavier en ligne gratuit</p>
+    </footer>
+</body>
+</html>
