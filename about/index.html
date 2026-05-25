@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про нас та Контакти | KeyTest.pp.ua</title>
+    <meta name="description" content="Дізнайтеся більше про безкоштовний онлайн-тест клавіатури KeyTest та зв'яжіться з нами. Інформація про проєкт, контакти розробників.">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/fav.ico">
+    <link rel="canonical" href="https://keytest.pp.ua/about/">
+    <link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/about/" />
+    <link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/about/" />
+    <link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/about/" />
+    <link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/about/" />
+    <link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/about/" />
+    <link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/about/" />
+    <link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/about/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Outfit', sans-serif;
+        }
+        body {
+            background: linear-gradient(rgba(20, 35, 35, 0.95), rgba(15, 20, 20, 0.98)), url(../assets/img/keytest.jpg) no-repeat;
+            background-color: #1e3535;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #5dffa8 0%, #28c878 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+        }
+        .subtitle {
+            font-size: 16px;
+            color: #b0c4de;
+            font-weight: 300;
+        }
+        .content-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 40px;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            font-size: 22px;
+            color: #5dffa8;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: 600;
+            border-bottom: 1px solid rgba(93, 255, 168, 0.15);
+            padding-bottom: 8px;
+        }
+        h2:first-of-type {
+            margin-top: 0;
+        }
+        p {
+            color: #dcdcdc;
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 15px;
+            font-weight: 300;
+        }
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .contact-item {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .contact-item h3 {
+            color: #5dffa8;
+            font-size: 16px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        .contact-item p {
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 28px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 0.3s;
+            backdrop-filter: blur(4px);
+            margin-bottom: 30px;
+        }
+        .back-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(93, 255, 168, 0.5);
+            color: #5dffa8;
+            box-shadow: 0 4px 15px rgba(93, 255, 168, 0.2);
+            transform: translateX(-3px);
+        }
+        .back-btn svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+            margin-right: 10px;
+            transform: rotate(180deg);
+        }
+        footer {
+            margin-top: auto;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 14px;
+            padding: 20px 0;
+            width: 100%;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        footer a {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #5dffa8;
+        }
+        .lang-switcher {
+            position: relative;
+            display: table;
+            margin: 0 auto 20px auto;
+            z-index: 1000;
+            background-color: rgba(47, 79, 79, 0.8);
+            padding: 8px 20px;
+            border-radius: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            white-space: nowrap;
+        }
+        .lang-switcher .lang-option {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 5px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        .lang-switcher .lang-option:hover { color: #4CAF50; }
+        .lang-switcher .lang-option.active { color: #4CAF50; text-decoration: underline; }
+        .lang-switcher .lang-separator { color: #fff; margin: 0 2px; }
+        @media (max-width: 768px) {
+            .lang-switcher { padding: 5px 10px; margin: 0 auto 15px auto; }
+            .lang-switcher .lang-option { font-size: 14px; }
+            .content-card { padding: 25px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="lang-switcher">
+        <a href="/about/" class="lang-option active">UA</a>
+        <span class="lang-separator">|</span>
+        <a href="/en/about/" class="lang-option">EN</a>
+        <span class="lang-separator">|</span>
+        <a href="/pl/about/" class="lang-option">PL</a>
+        <span class="lang-separator">|</span>
+        <a href="/de/about/" class="lang-option">DE</a>
+        <span class="lang-separator">|</span>
+        <a href="/fr/about/" class="lang-option">FR</a>
+        <span class="lang-separator">|</span>
+        <a href="/ru/about/" class="lang-option">RU</a>
+    </div>
+    <div class="container">
+        <a href="/" class="back-btn">
+            <svg viewBox="0 0 24 24"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42 5.43 5.43H5v2z"/></svg>
+            Повернутися на головну
+        </a>
+
+        <header>
+            <h1>Про проєкт та Контакти</h1>
+            <p class="subtitle">Дізнайтеся більше про KeyTest та нашу команду</p>
+        </header>
+
+        <div class="content-card">
+            <h2>Про сервіс KeyTest.pp.ua</h2>
+            <p><strong>KeyTest.pp.ua</strong> — це безкоштовний, зручний та швидкий онлайн-сервіс для тестування клавіатури вашого комп'ютера, ноутбука чи іншого пристрою. Проєкт був створений у 2018 році з метою допомогти користувачам швидко визначати несправності окремих клавіш без необхідності встановлювати додаткове програмне забезпечення.</p>
+            <p>Наш інструмент є повністю інтерактивним. Кожне натискання клавіші негайно візуалізується на віртуальній клавіатурі на екрані. Ми підтримуємо різні розкладки та підсвічуємо "залипання" клавіш, щоб зробити процес діагностики максимально інформативним.</p>
+
+            <h2>Хто ми?</h2>
+            <p>Сайт розроблено та підтримується командою веброзробників та SEO-фахівців **APARTNER.PRO**. Ми створюємо швидкі, оптимізовані та корисні онлайн-інструменти для вебмайстрів і звичайних користувачів Інтернету.</p>
+
+            <h2>Зв'язатися з нами</h2>
+            <p>Якщо у вас є пропозиції щодо співпраці, покращення сервісу, реклами або ви знайшли помилку в роботі інструменту, ви можете написати нам напряму. Ми відкриті до нових ідей та завжди раді зворотному зв'язку!</p>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Електронна пошта</h3>
+                    <p><a href="mailto:support@apartner.pro" style="color: #5dffa8; text-decoration: underline;">support@apartner.pro</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>Офіційний веб-сайт</h3>
+                    <p><a href="https://apartner.pro" target="_blank" rel="noopener noreferrer" style="color: #5dffa8; text-decoration: underline;">apartner.pro</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2018-2026 <a href="/">KeyTest.pp.ua</a> - Безкоштовний тест клавіатури онлайн</p>
+    </footer>
+</body>
+</html>
