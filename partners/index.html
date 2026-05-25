@@ -183,9 +183,67 @@
         footer a:hover {
             color: #5dffa8;
         }
+        .lang-switcher {
+            position: relative;
+            display: table;
+            margin: 0 auto 20px auto;
+            z-index: 1000;
+            background-color: rgba(47, 79, 79, 0.8);
+            padding: 8px 20px;
+            border-radius: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            white-space: nowrap;
+        }
+
+        .lang-switcher .lang-option {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 5px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .lang-switcher .lang-option:hover {
+            color: #4CAF50;
+        }
+
+        .lang-switcher .lang-option.active {
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+
+        .lang-switcher .lang-separator {
+            color: #fff;
+            margin: 0 2px;
+        }
+
+        @media (max-width: 768px) {
+            .lang-switcher {
+                padding: 5px 10px;
+                margin: 0 auto 15px auto;
+            }
+
+            .lang-switcher .lang-option {
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 <body>
+    <div class="lang-switcher">
+        <a href="/" class="lang-option">UA</a>
+        <span class="lang-separator">|</span>
+        <a href="/en/" class="lang-option">EN</a>
+        <span class="lang-separator">|</span>
+        <a href="/pl/" class="lang-option">PL</a>
+        <span class="lang-separator">|</span>
+        <a href="/de/" class="lang-option">DE</a>
+        <span class="lang-separator">|</span>
+        <a href="/fr/" class="lang-option">FR</a>
+        <span class="lang-separator">|</span>
+        <a href="/ru/" class="lang-option">RU</a>
+    </div>
     <div class="container">
         <a href="/" class="back-btn">
             <svg viewBox="0 0 24 24"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42 5.43 5.43H5v2z"/></svg>
