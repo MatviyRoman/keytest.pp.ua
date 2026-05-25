@@ -1,39 +1,405 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-	<url>
-		<loc>https://keytest.pp.ua/</loc>
-		<lastmod>2026-05-17T02:00:00+03:00</lastmod>
-		<priority>1.0</priority>
-	</url>
-	<url>
-		<loc>https://keytest.pp.ua/en/</loc>
-		<lastmod>2026-05-17T02:00:00+03:00</lastmod>
-		<priority>1.0</priority>
-	</url>
-	<url>
-		<loc>https://keytest.pp.ua/pl/</loc>
-		<lastmod>2026-05-17T02:00:00+03:00</lastmod>
-		<priority>1.0</priority>
-	</url>
-	<url>
-		<loc>https://keytest.pp.ua/de/</loc>
-		<lastmod>2026-05-17T02:00:00+03:00</lastmod>
-		<priority>1.0</priority>
-	</url>
-	<url>
-		<loc>https://keytest.pp.ua/fr/</loc>
-		<lastmod>2026-05-17T02:00:00+03:00</lastmod>
-		<priority>1.0</priority>
-	</url>
-	<url>
-		<loc>https://keytest.pp.ua/ru/</loc>
-		<lastmod>2026-05-17T02:00:00+03:00</lastmod>
-		<priority>1.0</priority>
-	</url>
-	<url>
-		<loc>https://keytest.pp.ua/search/</loc>
-		<lastmod>2026-05-17T02:00:00+03:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.8</priority>
-	</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ==================== HOMEPAGES ==================== -->
+  <url>
+    <loc>https://keytest.pp.ua/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/" />
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://keytest.pp.ua/en/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/" />
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://keytest.pp.ua/pl/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/" />
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://keytest.pp.ua/de/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/" />
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://keytest.pp.ua/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/" />
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://keytest.pp.ua/ru/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/" />
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- ==================== PARTNERS ==================== -->
+  <url>
+    <loc>https://keytest.pp.ua/partners/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/partners/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/partners/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/partners/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/partners/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/partners/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/partners/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/partners/" />
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://keytest.pp.ua/en/partners/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/partners/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/partners/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/partners/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/partners/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/partners/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/partners/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/partners/" />
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://keytest.pp.ua/pl/partners/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/partners/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/partners/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/partners/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/partners/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/partners/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/partners/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/partners/" />
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://keytest.pp.ua/de/partners/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/partners/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/partners/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/partners/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/partners/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/partners/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/partners/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/partners/" />
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://keytest.pp.ua/fr/partners/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/partners/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/partners/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/partners/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/partners/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/partners/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/partners/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/partners/" />
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://keytest.pp.ua/ru/partners/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/partners/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/partners/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/partners/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/partners/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/partners/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/partners/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/partners/" />
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ==================== ABOUT & CONTACTS ==================== -->
+  <url>
+    <loc>https://keytest.pp.ua/about/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/about/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/about/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/about/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/about/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/about/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/about/" />
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://keytest.pp.ua/en/about/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/about/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/about/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/about/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/about/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/about/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/about/" />
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://keytest.pp.ua/pl/about/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/about/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/about/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/about/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/about/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/about/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/about/" />
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://keytest.pp.ua/de/about/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/about/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/about/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/about/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/about/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/about/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/about/" />
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://keytest.pp.ua/fr/about/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/about/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/about/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/about/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/about/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/about/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/about/" />
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://keytest.pp.ua/ru/about/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/about/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/about/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/about/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/about/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/about/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/about/" />
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- ==================== TERMS OF SERVICE ==================== -->
+  <url>
+    <loc>https://keytest.pp.ua/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/terms/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/terms/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/terms/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/terms/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/terms/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/terms/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/terms/" />
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://keytest.pp.ua/en/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/terms/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/terms/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/terms/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/terms/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/terms/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/terms/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/terms/" />
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://keytest.pp.ua/pl/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/terms/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/terms/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/terms/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/terms/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/terms/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/terms/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/terms/" />
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://keytest.pp.ua/de/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/terms/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/terms/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/terms/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/terms/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/terms/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/terms/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/terms/" />
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://keytest.pp.ua/fr/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/terms/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/terms/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/terms/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/terms/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/terms/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/terms/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/terms/" />
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://keytest.pp.ua/ru/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/terms/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/terms/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/terms/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/terms/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/terms/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/terms/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/terms/" />
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- ==================== PRIVACY POLICY ==================== -->
+  <url>
+    <loc>https://keytest.pp.ua/privacy-policy/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/privacy-policy/" />
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://keytest.pp.ua/en/privacy-policy/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/privacy-policy/" />
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://keytest.pp.ua/pl/privacy-policy/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/privacy-policy/" />
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://keytest.pp.ua/de/privacy-policy/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/privacy-policy/" />
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://keytest.pp.ua/fr/privacy-policy/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/privacy-policy/" />
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://keytest.pp.ua/ru/privacy-policy/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/privacy-policy/" />
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
 </urlset>
