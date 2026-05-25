@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warunki korzystania | KeyTest.pp.ua</title>
+    <meta name="description" content="Warunki i zasady korzystania z bezpłatnego serwisu online do testowania klawiatury KeyTest. Dowiedz się więcej o swoich prawach i obowiązkach.">
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/img/fav.ico">
+    <link rel="canonical" href="https://keytest.pp.ua/pl/terms/">
+    <link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/terms/" />
+    <link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/terms/" />
+    <link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/terms/" />
+    <link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/terms/" />
+    <link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/terms/" />
+    <link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/terms/" />
+    <link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/terms/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Outfit', sans-serif;
+        }
+        body {
+            background: linear-gradient(rgba(20, 35, 35, 0.95), rgba(15, 20, 20, 0.98)), url(../../assets/img/keytest.jpg) no-repeat;
+            background-color: #1e3535;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #5dffa8 0%, #28c878 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+        }
+        .subtitle {
+            font-size: 16px;
+            color: #b0c4de;
+            font-weight: 300;
+        }
+        .content-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 40px;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            font-size: 22px;
+            color: #5dffa8;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: 600;
+            border-bottom: 1px solid rgba(93, 255, 168, 0.15);
+            padding-bottom: 8px;
+        }
+        h2:first-of-type {
+            margin-top: 0;
+        }
+        p {
+            color: #dcdcdc;
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 15px;
+            font-weight: 300;
+        }
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+            color: #dcdcdc;
+        }
+        li {
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 8px;
+            font-weight: 300;
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 28px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 0.3s;
+            backdrop-filter: blur(4px);
+            margin-bottom: 30px;
+        }
+        .back-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(93, 255, 168, 0.5);
+            color: #5dffa8;
+            box-shadow: 0 4px 15px rgba(93, 255, 168, 0.2);
+            transform: translateX(-3px);
+        }
+        .back-btn svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+            margin-right: 10px;
+            transform: rotate(180deg);
+        }
+        footer {
+            margin-top: auto;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 14px;
+            padding: 20px 0;
+            width: 100%;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        footer a {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #5dffa8;
+        }
+        .lang-switcher {
+            position: relative;
+            display: table;
+            margin: 0 auto 20px auto;
+            z-index: 1000;
+            background-color: rgba(47, 79, 79, 0.8);
+            padding: 8px 20px;
+            border-radius: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            white-space: nowrap;
+        }
+        .lang-switcher .lang-option {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 5px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        .lang-switcher .lang-option:hover { color: #4CAF50; }
+        .lang-switcher .lang-option.active { color: #4CAF50; text-decoration: underline; }
+        .lang-switcher .lang-separator { color: #fff; margin: 0 2px; }
+        @media (max-width: 768px) {
+            .lang-switcher { padding: 5px 10px; margin: 0 auto 15px auto; }
+            .lang-switcher .lang-option { font-size: 14px; }
+            .content-card { padding: 25px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="lang-switcher">
+        <a href="/terms/" class="lang-option">UA</a>
+        <span class="lang-separator">|</span>
+        <a href="/en/terms/" class="lang-option">EN</a>
+        <span class="lang-separator">|</span>
+        <a href="/pl/terms/" class="lang-option active">PL</a>
+        <span class="lang-separator">|</span>
+        <a href="/de/terms/" class="lang-option">DE</a>
+        <span class="lang-separator">|</span>
+        <a href="/fr/terms/" class="lang-option">FR</a>
+        <span class="lang-separator">|</span>
+        <a href="/ru/terms/" class="lang-option">RU</a>
+    </div>
+    <div class="container">
+        <a href="/pl/" class="back-btn">
+            <svg viewBox="0 0 24 24"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42 5.43 5.43H5v2z"/></svg>
+            Powrót do strony głównej
+        </a>
+
+        <header>
+            <h1>Warunki korzystania</h1>
+            <p class="subtitle">Ostatnia aktualizacja: 25 maja 2026 r.</p>
+        </header>
+
+        <div class="content-card">
+            <h2>1. Akceptacja warunków</h2>
+            <p>Korzystając z witryny KeyTest.pp.ua (zwanej dalej „Stroną”), wyrażasz zgodę na przestrzeganie niniejszych Warunków korzystania oraz wszystkich obowiązujących przepisów prawa i regulacji. Jeśli nie zgadzasz się z którymkolwiek z tych warunków, korzystanie z tej Strony jest zabronione.</p>
+
+            <h2>2. Opis usług</h2>
+            <p>KeyTest.pp.ua to bezpłatny serwis internetowy, który umożliwia użytkownikom testowanie sprawności klawiszy klawiatury w trybie online. Usługa jest świadczona wyłącznie w celach informacyjnych i poglądowych do użytku osobistego, niekomercyjnego.</p>
+
+            <h2>3. Zasady korzystania</h2>
+            <p>Korzystając z naszej Strony, zobowiązujesz się do:</p>
+            <ul>
+                <li>Nieużywania Strony do jakichkolwiek celów niezgodnych z prawem.</li>
+                <li>Niedokonywania prób zakłócenia pracy Strony, serwerów lub sieci poprzez wprowadzanie wirusów lub innych szkodliwych programów.</li>
+                <li>Nieużywania systemów automatycznych (botów, parserów) do zbierania danych z naszej Strony bez uprzedniej zgody.</li>
+            </ul>
+
+            <h2>4. Własność intelektualna</h2>
+            <p>Cała zawartość Strony (w tym teksty, grafika, logo, projekt, kod JavaScript, style) stanowi własność intelektualną KeyTest.pp.ua lub jej licencjodawców i jest chroniona prawem autorskim.</p>
+
+            <h2>5. Wyłączenie odpowiedzialności</h2>
+            <p>Usługi na Stronie są świadczone na zasadzie „tak jak jest” (as is) oraz „w miarę dostępności” (as available). Nie udzielamy żadnych gwarancji, wyraźnych ani dorozumianych, dotyczących dokładności, niezawodności lub przydatności serwisu do określonych celów.</p>
+            <p>Nie ponosimy odpowiedzialności za jakiekolwiek bezpośrednie lub pośrednie szkody powstałe w wyniku korzystania lub braku możliwości korzystania z naszej Strony, utraty danych lub awarii sprzętu komputerowego podczas testowania.</p>
+
+            <h2>6. Zmiany warunków</h2>
+            <p>Zastrzegamy sobie prawo do wprowadzania zmian w niniejszych Warunkach korzystania w dowolnym momencie bez wcześniejszego powiadomienia użytkowników. Zmiany wchodzą w życie z chwilą ich publikacji na tej stronie.</p>
+
+            <h2>7. Kontakt</h2>
+            <p>W przypadku jakichkolwiek pytań dotyczących niniejszych Warunków można skontaktować się z nami pod adresem e-mail: <a href="mailto:support@apartner.pro" style="color: #5dffa8; text-decoration: underline;">support@apartner.pro</a>.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2018-2026 <a href="/pl/">KeyTest.pp.ua</a> - Darmowy test klawiatury online</p>
+    </footer>
+</body>
+</html>
