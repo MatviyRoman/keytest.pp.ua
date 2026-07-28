@@ -1,0 +1,128 @@
+# KeyTest.pp.ua - Full LLM Context
+
+> Free Online Keyboard, Keys & Mouse Test Tool
+
+KeyTest is a free, no-registration-required online tool for testing keyboard keys and mouse buttons on laptops and desktop PCs. Press any key — working keys light up, broken keys stay unchanged. No ads, no downloads, works directly in your browser.
+
+## How It Works
+- Press keys on your keyboard — currently pressed keys are highlighted **blue**
+- Released (working) keys turn **grey**, confirming they function correctly
+- If a key stays blue without being pressed, it may be stuck or damaged
+- Mouse buttons (left, middle, right click) can also be tested
+- Switch to **English keyboard layout** for accurate key detection
+
+## Features
+- Full keyboard layout visualization (F1–F12, modifiers, numpad, arrows, special keys)
+- Mouse button testing (left, middle, right click)
+- Instant visual feedback — no lag
+- No software installation required
+- No registration or account needed
+- Completely free
+- Multi-language support (Ukrainian, English, Polish, German, French, Russian)
+- Rating: 4.9/5 based on 7,859 reviews
+
+## Available Languages & URLs
+- [Українська (Ukrainian)](https://keytest.pp.ua/)
+- [English](https://keytest.pp.ua/en/)
+- [Polski (Polish)](https://keytest.pp.ua/pl/)
+- [Deutsch (German)](https://keytest.pp.ua/de/)
+- [Français (French)](https://keytest.pp.ua/fr/)
+- [Русский (Russian)](https://keytest.pp.ua/ru/)
+
+## Key Pages
+- [Home — Keyboard Test](https://keytest.pp.ua/)
+- [About & Contacts](https://keytest.pp.ua/about/)
+- [Partners](https://keytest.pp.ua/partners/)
+- [Privacy Policy](https://keytest.pp.ua/privacy-policy/)
+- [Terms of Service](https://keytest.pp.ua/terms/)
+
+---
+
+## 📌 Full FAQ Content (Multilingual)
+
+### 🇬🇧 English FAQ
+**How to test a laptop keyboard?**
+To test a laptop keyboard, you can perform the following actions:
+- Sequentially press each key and verify that it responds and the character is displayed on the screen.
+- Use built-in OS tools or third-party software for key testing.
+- Use our website to test your keyboard online for free and without registration.
+- Test the operation of special keys and key combinations (Ctrl, Alt, Shift, etc.).
+
+**How to check individual keys?**
+To check the operation of individual keys, you can:
+- Open a text editor and sequentially press each key to verify character output.
+- Use online key testing tools that display keystrokes on the screen.
+- Use keyboard testing programs that can help identify issues with key functionality.
+
+**What to do if water gets on the keyboard?**
+If liquid spills on a laptop keyboard, take the following steps:
+- Immediately turn off the laptop and disconnect it from the power source.
+- Shake off excess liquid, but do not shake the laptop violently.
+- Turn the laptop upside down to allow liquid to drain.
+- Do not turn the laptop on until it is completely dry.
+- If the liquid contained sugar, it may be advisable to seek professional cleaning.
+
+**Why do some keys not work?**
+Common causes include physical damage, dirt or liquid under the keys, and driver issues. Our test helps determine if the problem is mechanical.
+
+**What is key "sticking"?**
+"Sticking" or short-circuiting occurs when a key does not return to its original position or continues to send a signal. On our test, such a key will remain highlighted in blue even after you release it.
+
+**Do I need to install testing software?**
+No, our service works entirely online in your browser. You do not need to download or install anything, making the testing process fast and safe.
+
+### 🇺🇦 Український FAQ (Ukrainian)
+**Як перевірити клавіатуру ноутбука?**
+- Послідовно натиснути кожну клавішу та переконатися, що вона реагує і символ виводиться на екрані.
+- Використовувати наш сайт для перевірки справності клавіатури онлайн безкоштовно та без реєстрації.
+- Перевірити роботу спеціальних клавіш та комбінацій клавіш (Ctrl, Alt, Shift тощо).
+
+**Що робити якщо на клавіатуру потрапила вода?**
+- Негайно вимкніть ноутбук і відключіть його від джерела живлення.
+- Витрясіть надлишок рідини, але не струсіть ноутбук сильно.
+- Переверніть ноутбук догори дриґом, щоб рідина могла витікати.
+- Не включайте ноутбук, поки він повністю не висохне.
+
+**Чому деякі клавіші не працюють або працюють неправильно?**
+Найчастіші причини – це фізичне пошкодження, потрапляння бруду або рідини під клавіші, а також проблеми з драйверами. Наш тест допоможе визначити, чи є проблема механічною.
+
+**Що таке 'залипання' клавіш і як його виявити?**
+'Залипання' або замикання відбувається, коли клавіша не повертається у вихідне положення або продовжує надсилати сигнал. На нашому тесті така клавіша залишиться підсвіченою синім кольором навіть після того, як ви її відпустили.
+
+### 🇵🇱 Polski FAQ (Polish)
+- **Jak przetestować klawiaturę laptopa?** Naciskaj kolejno każdy klawisz i sprawdzaj, czy pojawia się na ekranie. Użyj naszego testu online.
+- **Co zrobić, gdy na klawiaturę wyleje się woda?** Natychmiast wyłącz laptop, odłącz zasilanie i odwróć urządzenie do góry nogami.
+- **Dlaczego klawisze nie działają?** Powodem może być uszkodzenie mechaniczne, brud lub zalanie.
+
+### 🇩🇪 Deutsch FAQ (German)
+- **Wie teste ich eine Laptop-Tastatur?** Drücken Sie jede Taste nacheinander und prüfen Sie die Reaktion auf dem Bildschirm mit unserem Online-Test.
+- **Was tun bei Wasserschaden?** Laptop sofort ausschalten, vom Strom trennen und umdrehen, damit die Flüssigkeit abfließen kann.
+- **Warum klemmen Tasten?** Schmutz oder mechanische Defekte sind die häufigsten Ursachen. Unser Test zeigt klemmende Tasten dauerhaft blau an.
+
+### 🇫🇷 Français FAQ (French)
+- **Comment tester un clavier d'ordinateur portable ?** Appuyez sur chaque touche une par une et vérifiez si elle s'affiche à l'écran grâce à notre outil.
+- **Que faire si de l'eau tombe sur le clavier ?** Éteignez immédiatement l'ordinateur, débranchez-le et retournez-le pour laisser le liquide s'écouler.
+
+### 🇷🇺 Русский FAQ (Russian)
+- **Как проверить клавиатуру ноутбука?** Последовательно нажимайте каждую клавишу и проверяйте её срабатывание на нашем сайте.
+- **Что делать, если на клавиатуру попала вода?** Немедленно выключите ноутбук, отключите от сети и переверните его.
+- **Что такое "залипание" клавиш?** Это когда клавиша не возвращается в исходное положение. В нашем тесте она останется синей.
+
+---
+
+## Related Free Tools
+- [MonitorTest.pp.ua](https://monitortest.pp.ua) — Free online monitor test
+- [PCTest.pp.ua](https://pctest.pp.ua) — Free online PC test
+- [Tools.apartner.pro](https://tools.apartner.pro) — Free online services collection
+
+## Site Map
+All pages, including localized versions (UK, EN, PL, DE, FR, RU), are listed in the XML sitemap:
+[sitemap.xml](https://keytest.pp.ua/sitemap.xml)
+
+## Built By
+- [APARTNER.PRO](https://apartner.pro) — Web development agency (PrestaShop, WordPress, Laravel)
+- [PROGRAMIST.TOP](https://programist.top) — Web development services
+
+## Contact
+- **Website**: [https://keytest.pp.ua](https://keytest.pp.ua)
+- **Developer**: [APARTNER.PRO](https://apartner.pro)
