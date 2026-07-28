@@ -1,0 +1,62 @@
+# KeyTest.pp.ua
+
+> Free Online Keyboard, Keys & Mouse Test Tool
+
+KeyTest is a free, no-registration-required online tool for testing keyboard keys and mouse buttons on laptops and desktop PCs. Press any key — working keys light up, broken keys stay unchanged. No ads, no downloads, works directly in your browser.
+
+## How It Works
+- Press keys on your keyboard — currently pressed keys are highlighted **blue**
+- Released (working) keys turn **grey**, confirming they function correctly
+- If a key stays blue without being pressed, it may be stuck or damaged
+- Mouse buttons (left, middle, right click) can also be tested
+- Switch to **English keyboard layout** for accurate key detection
+
+## Features
+- Full keyboard layout visualization (F1–F12, modifiers, numpad, arrows, special keys)
+- Mouse button testing (left, middle, right click)
+- Instant visual feedback — no lag
+- No software installation required
+- No registration or account needed
+- Completely free
+- Multi-language support (Ukrainian, English, Polish, German, French, Russian)
+- Rating: 4.9/5 based on 7,859 reviews
+
+## Available Languages
+- [Українська (Ukrainian)](https://keytest.pp.ua/)
+- [English](https://keytest.pp.ua/en/)
+- [Polski (Polish)](https://keytest.pp.ua/pl/)
+- [Deutsch (German)](https://keytest.pp.ua/de/)
+- [Français (French)](https://keytest.pp.ua/fr/)
+- [Русский (Russian)](https://keytest.pp.ua/ru/)
+
+## Key Pages
+- [Home — Keyboard Test](https://keytest.pp.ua/)
+- [About & Contacts](https://keytest.pp.ua/about/)
+- [Partners](https://keytest.pp.ua/partners/)
+- [Privacy Policy](https://keytest.pp.ua/privacy-policy/)
+- [Terms of Service](https://keytest.pp.ua/terms/)
+
+## FAQ
+- **How to test a laptop keyboard?** — Press each key one by one and check if it lights up on the screen. Use our site for free online testing without registration.
+- **How to check individual keys?** — Open any text editor and press keys, or use online tools like KeyTest that visually display each key press.
+- **What to do if water gets on the keyboard?** — Immediately turn off the laptop, unplug it, shake off excess liquid, flip it upside down, and do not turn it on until completely dry.
+- **Why do some keys not work?** — Common causes include physical damage, dirt or liquid under keys, and driver issues. Our test helps determine if the problem is mechanical.
+- **What is key "sticking"?** — When a key doesn't return to its original position or keeps sending signals. On our test, such a key will stay blue even after you release it.
+- **Do I need to install software?** — No, KeyTest works entirely online in your browser. Nothing to download or install.
+
+## Related Free Tools
+- [MonitorTest.pp.ua](https://monitortest.pp.ua) — Free online monitor test
+- [PCTest.pp.ua](https://pctest.pp.ua) — Free online PC test
+- [Tools.apartner.pro](https://tools.apartner.pro) — Free online services collection
+
+## Site Map
+All pages, including localized versions (UK, EN, PL, DE, FR, RU), are listed in the XML sitemap:
+[sitemap.xml](https://keytest.pp.ua/sitemap.xml)
+
+## Built By
+- [APARTNER.PRO](https://apartner.pro) — Web development agency (PrestaShop, WordPress, Laravel)
+- [PROGRAMIST.TOP](https://programist.top) — Web development services
+
+## Contact
+- **Website**: [https://keytest.pp.ua](https://keytest.pp.ua)
+- **Developer**: [APARTNER.PRO](https://apartner.pro)
