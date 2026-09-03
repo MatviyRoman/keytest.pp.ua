@@ -1,634 +1,291 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
     <url>
     <loc>https://keytest.pp.ua/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/" />
     <lastmod>2026-05-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/en/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/" />
     <lastmod>2026-05-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/pl/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/" />
     <lastmod>2026-05-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/de/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/" />
     <lastmod>2026-05-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/fr/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/" />
     <lastmod>2026-05-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/ru/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/" />
     <lastmod>2026-05-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-
     <url>
     <loc>https://keytest.pp.ua/partners/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/partners/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/partners/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/partners/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/partners/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/partners/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/partners/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/partners/" />
     <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/en/partners/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/partners/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/partners/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/partners/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/partners/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/partners/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/partners/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/partners/" />
     <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/pl/partners/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/partners/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/partners/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/partners/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/partners/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/partners/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/partners/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/partners/" />
     <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/de/partners/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/partners/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/partners/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/partners/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/partners/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/partners/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/partners/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/partners/" />
     <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/fr/partners/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/partners/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/partners/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/partners/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/partners/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/partners/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/partners/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/partners/" />
     <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/ru/partners/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/partners/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/partners/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/partners/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/partners/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/partners/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/partners/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/partners/" />
     <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
     <url>
     <loc>https://keytest.pp.ua/about/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/about/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/about/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/about/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/about/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/about/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/about/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/about/" />
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/en/about/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/about/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/about/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/about/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/about/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/about/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/about/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/about/" />
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/pl/about/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/about/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/about/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/about/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/about/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/about/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/about/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/about/" />
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/de/about/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/about/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/about/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/about/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/about/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/about/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/about/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/about/" />
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/fr/about/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/about/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/about/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/about/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/about/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/about/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/about/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/about/" />
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/ru/about/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/about/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/about/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/about/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/about/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/about/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/about/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/about/" />
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
-
     <url>
     <loc>https://keytest.pp.ua/terms/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/terms/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/terms/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/terms/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/terms/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/terms/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/terms/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/terms/" />
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/en/terms/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/terms/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/terms/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/terms/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/terms/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/terms/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/terms/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/terms/" />
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/pl/terms/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/terms/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/terms/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/terms/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/terms/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/terms/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/terms/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/terms/" />
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/de/terms/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/terms/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/terms/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/terms/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/terms/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/terms/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/terms/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/terms/" />
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/fr/terms/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/terms/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/terms/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/terms/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/terms/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/terms/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/terms/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/terms/" />
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/ru/terms/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/terms/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/terms/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/terms/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/terms/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/terms/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/terms/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/terms/" />
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
-
     <url>
     <loc>https://keytest.pp.ua/privacy-policy/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/privacy-policy/" />
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/en/privacy-policy/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/privacy-policy/" />
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/pl/privacy-policy/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/privacy-policy/" />
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/de/privacy-policy/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/privacy-policy/" />
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/fr/privacy-policy/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/privacy-policy/" />
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/ru/privacy-policy/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/privacy-policy/" />
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
-
   <url>
     <loc>https://keytest.pp.ua/macbook-keyboard-test/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/macbook-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/macbook-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/macbook-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/macbook-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/macbook-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/macbook-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/macbook-keyboard-test/" />
     <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/en/macbook-keyboard-test/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/macbook-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/macbook-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/macbook-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/macbook-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/macbook-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/macbook-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/macbook-keyboard-test/" />
     <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/ru/macbook-keyboard-test/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/macbook-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/macbook-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/macbook-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/macbook-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/macbook-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/macbook-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/macbook-keyboard-test/" />
     <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/pl/macbook-keyboard-test/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/macbook-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/macbook-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/macbook-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/macbook-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/macbook-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/macbook-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/macbook-keyboard-test/" />
     <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/de/macbook-keyboard-test/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/macbook-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/macbook-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/macbook-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/macbook-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/macbook-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/macbook-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/macbook-keyboard-test/" />
     <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/fr/macbook-keyboard-test/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/macbook-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/macbook-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/macbook-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/macbook-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/macbook-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/macbook-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/macbook-keyboard-test/" />
     <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/mechanical-keyboard-test/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/mechanical-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/mechanical-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/mechanical-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/mechanical-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/mechanical-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/mechanical-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/mechanical-keyboard-test/" />
     <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/en/mechanical-keyboard-test/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/mechanical-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/mechanical-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/mechanical-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/mechanical-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/mechanical-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/mechanical-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/mechanical-keyboard-test/" />
     <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/ru/mechanical-keyboard-test/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/mechanical-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/mechanical-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/mechanical-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/mechanical-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/mechanical-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/mechanical-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/mechanical-keyboard-test/" />
     <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/pl/mechanical-keyboard-test/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/mechanical-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/mechanical-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/mechanical-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/mechanical-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/mechanical-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/mechanical-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/mechanical-keyboard-test/" />
     <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/de/mechanical-keyboard-test/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/mechanical-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/mechanical-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/mechanical-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/mechanical-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/mechanical-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/mechanical-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/mechanical-keyboard-test/" />
     <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/fr/mechanical-keyboard-test/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/mechanical-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/mechanical-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/mechanical-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/mechanical-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/mechanical-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/mechanical-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/mechanical-keyboard-test/" />
     <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/laptop-keyboard-test/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/laptop-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/laptop-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/laptop-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/laptop-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/laptop-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/laptop-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/laptop-keyboard-test/" />
     <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/en/laptop-keyboard-test/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/laptop-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/laptop-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/laptop-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/laptop-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/laptop-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/laptop-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/laptop-keyboard-test/" />
     <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/ru/laptop-keyboard-test/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/laptop-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/laptop-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/laptop-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/laptop-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/laptop-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/laptop-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/laptop-keyboard-test/" />
     <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/pl/laptop-keyboard-test/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/laptop-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/laptop-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/laptop-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/laptop-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/laptop-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/laptop-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/laptop-keyboard-test/" />
     <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/de/laptop-keyboard-test/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/laptop-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/laptop-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/laptop-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/laptop-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/laptop-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/laptop-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/laptop-keyboard-test/" />
     <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://keytest.pp.ua/fr/laptop-keyboard-test/</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/laptop-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/laptop-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/laptop-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/laptop-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/laptop-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/laptop-keyboard-test/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/laptop-keyboard-test/" />
     <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
