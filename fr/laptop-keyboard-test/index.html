@@ -1,0 +1,1204 @@
+﻿<!DOCTYPE html>
+<html lang="fr" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <!-- <meta name="viewport" content="width=1264"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="max-content"> -->
+    <meta name="robots" content="all">
+    <meta name="description"
+        content="Test gratuit en ligne de clavier, de touches et de souris pour ordinateur portable ou PC. Test rapide de clavier sans publicité et sans inscription.">
+    <meta name="keywords"
+        content="test, clavier, souris, touches, touche, en ligne, keytest, key-test, online test keyboard, ">
+    <meta http-equiv="Content-Language" content="fr">
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/img/fav.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicon-32x32.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/img/apple-touch-icon.png">
+    <link rel="manifest" href="../../assets/img/site.webmanifest">
+    <link rel="preload" href="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js" as="script">
+    <link rel="preload" href="../../assets/index.js" as="script">
+    <link rel="preload" href="../../assets/style.min.css" as="style">
+    <link rel="stylesheet" href="../../assets/style.min.css">
+    <!--<link rel="stylesheet" href="../../assets/style.css">-->
+    <style>
+        .lang-switcher {
+            position: relative;
+            display: table;
+            margin: 10px auto;
+            z-index: 1000;
+            background-color: rgba(47, 79, 79, 0.8);
+            padding: 8px 20px;
+            border-radius: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            white-space: nowrap;
+        }
+
+        .lang-switcher .lang-option {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 5px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .lang-switcher .lang-option:hover {
+            color: #4CAF50;
+        }
+
+        .lang-switcher .lang-option.active {
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+
+        .lang-switcher .lang-separator {
+            color: #fff;
+            margin: 0 2px;
+        }
+
+        @media (max-width: 768px) {
+            .lang-switcher {
+                padding: 5px 10px;
+                margin: 10px auto;
+            }
+
+            .lang-switcher .lang-option {
+                font-size: 14px;
+            }
+        }
+
+        .link {
+            color: #fff;
+            padding: 3px;
+            display: block;
+        }
+
+        .hosting-promo {
+            background: linear-gradient(135deg, rgba(25, 42, 86, 0.9) 0%, rgba(10, 15, 30, 0.95) 100%);
+            border: 1px solid rgba(74, 144, 226, 0.4);
+            border-radius: 12px;
+            padding: 20px 25px;
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: center;
+            box-shadow: 0 8px 32px 0 rgba(74, 144, 226, 0.15);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            transition: all 0.3s ease;
+        }
+
+        .hosting-promo:hover {
+            box-shadow: 0 12px 40px 0 rgba(74, 144, 226, 0.3);
+            border-color: rgba(74, 144, 226, 0.6);
+            transform: translateY(-2px);
+        }
+
+        .hosting-promo h3 {
+            color: #4a90e2;
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .hosting-promo p {
+            color: #e0e0e0;
+            font-size: 15px;
+            line-height: 1.5;
+            margin-bottom: 18px;
+        }
+
+        .hosting-promo a {
+            display: inline-block;
+            background: linear-gradient(90deg, #4a90e2 0%, #357abd 100%);
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 15px;
+            padding: 10px 24px;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
+        }
+
+        .hosting-promo a:hover {
+            background: linear-gradient(90deg, #357abd 0%, #4a90e2 100%);
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(74, 144, 226, 0.5);
+        }
+
+        .indexfast-promo {
+            background: linear-gradient(135deg, rgba(75, 15, 120, 0.85) 0%, rgba(10, 15, 30, 0.95) 100%);
+            border: 1px solid rgba(160, 32, 240, 0.4);
+            border-radius: 12px;
+            padding: 20px 25px;
+            margin: 25px auto;
+            max-width: 800px;
+            text-align: center;
+            box-shadow: 0 8px 32px 0 rgba(160, 32, 240, 0.15);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            transition: all 0.3s ease;
+        }
+
+        .indexfast-promo:hover {
+            box-shadow: 0 12px 40px 0 rgba(160, 32, 240, 0.3);
+            border-color: rgba(160, 32, 240, 0.6);
+            transform: translateY(-2px);
+        }
+
+        .indexfast-promo h3 {
+            color: #d896ff;
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .indexfast-promo p {
+            color: #e0e0e0;
+            font-size: 15px;
+            line-height: 1.5;
+            margin-bottom: 18px;
+        }
+
+        .indexfast-promo a {
+            display: inline-block;
+            background: linear-gradient(90deg, #a020f0 0%, #7d12cb 100%);
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 15px;
+            padding: 10px 24px;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(160, 32, 240, 0.3);
+        }
+
+        .indexfast-promo a:hover {
+            background: linear-gradient(90deg, #7d12cb 0%, #a020f0 100%);
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(160, 32, 240, 0.5);
+        }
+
+        .developer-promo {
+            background: linear-gradient(135deg, rgba(10, 80, 50, 0.9) 0%, rgba(5, 25, 15, 0.97) 100%);
+            border: 1px solid rgba(40, 200, 120, 0.4);
+            border-radius: 12px;
+            padding: 20px 25px;
+            margin: 25px auto;
+            max-width: 800px;
+            text-align: center;
+            box-shadow: 0 8px 32px 0 rgba(40, 200, 120, 0.15);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            transition: all 0.3s ease;
+        }
+
+        .developer-promo:hover {
+            box-shadow: 0 12px 40px 0 rgba(40, 200, 120, 0.3);
+            border-color: rgba(40, 200, 120, 0.6);
+            transform: translateY(-2px);
+        }
+
+        .developer-promo h3 {
+            color: #5dffa8;
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .developer-promo p {
+            color: #e0e0e0;
+            font-size: 15px;
+            line-height: 1.5;
+            margin-bottom: 18px;
+        }
+
+        .developer-promo a {
+            display: inline-block;
+            background: linear-gradient(90deg, #28c878 0%, #1a9e58 100%);
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 15px;
+            padding: 10px 24px;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(40, 200, 120, 0.3);
+        }
+
+        .developer-promo a:hover {
+            background: linear-gradient(90deg, #1a9e58 0%, #28c878 100%);
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(40, 200, 120, 0.5);
+        }
+
+        /* Modern fcontent footer styles */
+        .fcontent-modern {
+            background: linear-gradient(135deg, rgba(28, 47, 47, 0.95) 0%, rgba(20, 32, 32, 0.98) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 30px;
+            margin: 0 auto;
+            max-width: 1234px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+            letter-spacing: 0.5px;
+        }
+
+        @media (max-width: 768px) {
+            .fcontent-modern {
+                grid-template-columns: 1fr;
+                gap: 25px;
+                padding: 20px;
+            }
+        }
+
+        .fcontent-column {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .fcontent-modern .title-modern {
+            font-size: 16px;
+            font-weight: 700;
+            color: #5dffa8;
+            margin: 0 0 10px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid rgba(93, 255, 168, 0.15);
+            display: flex;
+            align-items: center;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .fcontent-links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .fcontent-link-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 12px 16px;
+            color: #b0c4de !important;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            font-size: 15px;
+            line-height: 1.4;
+        }
+
+        .fcontent-link-card:hover {
+            background: rgba(93, 255, 168, 0.06);
+            border-color: rgba(93, 255, 168, 0.3);
+            color: #ffffff !important;
+            transform: translateX(4px);
+            box-shadow: 0 4px 15px rgba(93, 255, 168, 0.08);
+        }
+
+        .fcontent-link-card .bullet-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: #5dffa8;
+            margin-top: 7px;
+            flex-shrink: 0;
+            box-shadow: 0 0 8px #5dffa8;
+            transition: transform 0.3s;
+        }
+
+        .fcontent-link-card:hover .bullet-dot {
+            transform: scale(1.3);
+            background-color: #ffffff;
+            box-shadow: 0 0 10px #ffffff;
+        }
+
+        .fcontent-link-card .link-text-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            text-align: left;
+        }
+
+        .fcontent-link-card .link-title {
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .fcontent-link-card:hover .link-title {
+            color: #5dffa8;
+        }
+    </style>
+    <link rel="canonical" href="https://keytest.pp.ua/fr/">
+    <link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/laptop-keyboard-test/" />
+    <link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/laptop-keyboard-test/" />
+    <link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/laptop-keyboard-test/" />
+    <link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/laptop-keyboard-test/" />
+    <link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/laptop-keyboard-test/" />
+    <link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/laptop-keyboard-test/" />
+    <link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/laptop-keyboard-test/" />
+
+    <link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/laptop-keyboard-test/" />
+    <link rel="alternate" hreflang="en" href="https://keytest.pp.ua/fr/en/laptop-keyboard-test/" />
+    <link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/fr/pl/laptop-keyboard-test/" />
+    <link rel="alternate" hreflang="de" href="https://keytest.pp.ua/fr/de/laptop-keyboard-test/" />
+    <link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/fr/laptop-keyboard-test/" />
+    <link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/fr/ru/laptop-keyboard-test/" />
+    <link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/fr/laptop-keyboard-test/" />
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@APARTNER.PRO">
+    <meta name="twitter:title" content="keytest.pp.ua - test de clavier en ligne">
+    <meta name="twitter:description"
+        content="Test gratuit en ligne de clavier, de touches et de souris pour ordinateur portable ou PC. Test rapide de clavier sans publicité et sans inscription.">
+    <meta name="twitter:image" content="https://keytest.pp.ua/assets/img/fav.jpg">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Test clavier ordinateur portable en ligne">
+    <meta property="og:site_name" content="KeyTest" />
+    <meta property="og:url" content="https://keytest.pp.ua/fr/laptop-keyboard-test/">
+    <meta property="og:image" content="https://keytest.pp.ua/assets/img/keyboard-test-preview.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="KeyTest - test de clavier en ligne">
+    <meta property="og:description"
+        content="Test gratuit en ligne de clavier, de touches et de souris pour ordinateur portable ou PC. Test rapide de clavier sans publicité et sans inscription.">
+    <meta property="og:locale" content="fr_FR">
+    <title>⭐Test clavier ordinateur portable en ligne⭐</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X54XV8ZP8C"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-X54XV8ZP8C');
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@graph":[{"@type":"Corporation","name":"KeyTest","description":"KeyTest - test de clavier en ligne gratuit pour vérifier les touches, les boutons et la souris sur un ordinateur portable ou un PC","url":"https://keytest.pp.ua/fr/laptop-keyboard-test/","logo":{"@type":"ImageObject","@id":"https://keytest.pp.ua/fr/#logo","url":"https://keytest.pp.ua/assets/img/fav.jpg","width":300,"height":300,"caption":"KeyTest"},"image":{"@id":"https://keytest.pp.ua/fr/#logo"},"location":{"@type":"PostalAddress","addressCountry":"Ukraine","postalCode":"01001","addressLocality":"Kiev, Ukraine","addressRegion":"Région de Kiev","streetAddress":"Rue Khreshchatyk, 1"}},{"@type":"BreadcrumbList","name":"Breadcrumbs","description":"Breadcrumbs list","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://keytest.pp.ua/fr/laptop-keyboard-test/"},{"@type":"ListItem","position":2,"name":"Test de clavier ✅","item":"https://keytest.pp.ua/fr/laptop-keyboard-test/"}]},{"@type":"CreativeWorkSeries","name":"KeyTest - Test de clavier en ligne","aggregateRating":{"@type":"AggregateRating","ratingValue":4.9,"reviewCount":7859}},{"@type":"QAPage","mainEntity":{"@type":"Question","name":"KeyTest - test de clavier en ligne gratuit","text":"KeyTest - test de clavier en ligne gratuit pour vérifier les touches, les boutons et la souris sur un ordinateur portable ou un PC","answerCount":2847391,"upvoteCount":2847391,"acceptedAnswer":{"@type":"Answer","text":"KeyTest - service de test de clavier en ligne gratuit sans inscription","upvoteCount":1239989,"url":"https://keytest.pp.ua/fr/laptop-keyboard-test/"},"suggestedAnswer":[{"@type":"Answer","text":"KeyTest - test de clavier en ligne gratuit pour vérifier les touches, les boutons et la souris","upvoteCount":534323,"url":"https://keytest.pp.ua/fr/laptop-keyboard-test/"}]}}]}
+    </script>
+    <link rel="help" type="text/markdown" href="https://keytest.pp.ua/llms.txt">
+</head>
+
+<body cz-shortcut-listen="true">
+    <header class="header">
+        <div class="lang-switcher">
+            <a href="/" class="lang-option">UA</a>
+            <span class="lang-separator">|</span>
+            <a href="/en/" class="lang-option">EN</a>
+            <span class="lang-separator">|</span>
+            <a href="/pl/" class="lang-option">PL</a>
+            <span class="lang-separator">|</span>
+            <a href="/de/" class="lang-option">DE</a>
+            <span class="lang-separator">|</span>
+            <a href="/fr/" class="lang-option active">FR</a>
+            <span class="lang-separator">|</span>
+            <a href="/ru/" class="lang-option">RU</a>
+        </div>
+        <div class="top-block">
+            <h1 style="color:#d3d3d3;font-size:2em;margin-bottom:10px;">Test clavier PC portable : vérifier tous les boutons</h1>
+            <div class="rating" style="text-align: center; margin: 5px 0 15px 0;"
+                title="Note: 4.9 sur 5 basée sur 7859 avis">
+                <span style="color: #fbbc04; font-size: 22px;">★★★★★</span>
+                <span style="color: #d3d3d3; font-size: 15px; margin-left: 8px;">Note: 4.9 / 5 (basée sur 7859 avis)</span>
+            </div>
+            <p class="top-p">Ici, vous pouvez vérifier le fonctionnement de toutes les touches d'un clavier d'ordinateur portable ou de bureau gratuitement et sans inscription.<br>Un bouton pressé est mis en évidence en bleu, un relâché - en gris. Si la couleur ne change pas, la touche est défectueuse.<br>Pour une détection correcte des touches, utilisez la disposition du clavier <b>anglais</b>!</p>
+            <div class="padding-l-r-40">
+                <div class="ftext">
+                    <div class="key press">
+                        <p>F1</p>
+                    </div>
+                    <span style="color:#ffefd5;font-size:18px">- voici à quoi ressemble une touche actuellement pressée.</span>
+                </div>
+                <div class="ftext">
+                    <div class="key active">
+                        <p>F1</p>
+                    </div>
+                    <span style="color:#ffefd5;font-size:18px">- c'est une touche qui fonctionne, elle a été pressée et est revenue à sa position initiale.</span>
+                </div>
+            </div>
+        </div>
+        <div class="keybord">
+            <div class="blur"></div>
+            <div class="fade"></div>
+            <div class="content">
+                <div class="keybord-top"></div>
+                <div class="key-block">
+                    <div class="key k27">
+                        <p>Esc</p>
+                    </div>
+                    <div class="key vh"></div>
+                    <div class="key k112">
+                        <p>F1</p>
+                    </div>
+                    <div class="key k113">
+                        <p>F2</p>
+                    </div>
+                    <div class="key k114">
+                        <p>F3</p>
+                    </div>
+                    <div class="key k115">
+                        <p>F4</p>
+                    </div>
+                    <div class="key vh half"></div>
+                    <div class="key k116">
+                        <p>F5</p>
+                    </div>
+                    <div class="key k117">
+                        <p>F6</p>
+                    </div>
+                    <div class="key k118">
+                        <p>F7</p>
+                    </div>
+                    <div class="key k119">
+                        <p>F8</p>
+                    </div>
+                    <div class="key vh half"></div>
+                    <div class="key k120">
+                        <p>F9</p>
+                    </div>
+                    <div class="key k121">
+                        <p>F10</p>
+                    </div>
+                    <div class="key k122">
+                        <p>F11</p>
+                    </div>
+                    <div class="key k123">
+                        <p>F12</p>
+                    </div>
+                    <div class="key dl brackets k44">
+                        <p>Prt<br>Sc</p>
+                    </div>
+                    <div class="key dl k145">
+                        <p>Scr<br>Lk</p>
+                    </div>
+                    <div class="key dl k19">
+                        <p>Pause<br>break</p>
+                    </div>
+                    <div class="key t16 k36">
+                        <p>Home</p>
+                    </div>
+                    <div class="key t16 k35">
+                        <p>End</p>
+                    </div>
+                    <div class="key dl k192">
+                        <p>~<br>`</p>
+                    </div>
+                    <div class="key k49">
+                        <p>1</p>
+                    </div>
+                    <div class="key k50">
+                        <p>2</p>
+                    </div>
+                    <div class="key k51">
+                        <p>3</p>
+                    </div>
+                    <div class="key k52">
+                        <p>4</p>
+                    </div>
+                    <div class="key k53">
+                        <p>5</p>
+                    </div>
+                    <div class="key k54">
+                        <p>6</p>
+                    </div>
+                    <div class="key k55">
+                        <p>7</p>
+                    </div>
+                    <div class="key k56">
+                        <p>8</p>
+                    </div>
+                    <div class="key k57">
+                        <p>9</p>
+                    </div>
+                    <div class="key k48">
+                        <p>0</p>
+                    </div>
+                    <div class="key dl smin k173 k189">
+                        <p>_<br>-</p>
+                    </div>
+                    <div class="key dl splus k61 k187">
+                        <p>+<br>=</p>
+                    </div>
+                    <div class="key bs k8">
+                        <p>⟵</p>
+                    </div>
+                    <div class="key dl brackets k33">
+                        <p>Page<br>up</p>
+                    </div>
+                    <div class="key dl k144">
+                        <p>Num<br>Lock</p>
+                    </div>
+                    <div class="key k111">
+                        <p>/</p>
+                    </div>
+                    <div class="key k106">
+                        <p>*</p>
+                    </div>
+                    <div class="key dl k109">
+                        <p>_</p>
+                    </div>
+                    <div class="key tab k9">
+                        <p>Tab</p>
+                    </div>
+                    <div class="key k81">
+                        <p>Q</p>
+                    </div>
+                    <div class="key k87">
+                        <p>W</p>
+                    </div>
+                    <div class="key k69">
+                        <p>E</p>
+                    </div>
+                    <div class="key k82">
+                        <p>R</p>
+                    </div>
+                    <div class="key k84">
+                        <p>T</p>
+                    </div>
+                    <div class="key k89">
+                        <p>Y</p>
+                    </div>
+                    <div class="key k85">
+                        <p>U</p>
+                    </div>
+                    <div class="key k73">
+                        <p>I</p>
+                    </div>
+                    <div class="key k79">
+                        <p>O</p>
+                    </div>
+                    <div class="key k80">
+                        <p>P</p>
+                    </div>
+                    <div class="key ds k219">
+                        <p>{<br>[</p>
+                    </div>
+                    <div class="key ds k221">
+                        <p>}<br>]</p>
+                    </div>
+                    <div class="key ds sum k220">
+                        <p>|<br>\</p>
+                    </div>
+                    <div class="key dl brackets k34">
+                        <p>Page<br>down</p>
+                    </div>
+                    <div class="key k103">
+                        <p>7</p>
+                    </div>
+                    <div class="key k104">
+                        <p>8</p>
+                    </div>
+                    <div class="key k105">
+                        <p>9</p>
+                    </div>
+                    <div class="key plus k107">
+                        <p>+</p>
+                    </div>
+                    <div class="key caps k20">
+                        <p>Caps Lock</p>
+                    </div>
+                    <div class="key k65">
+                        <p>A</p>
+                    </div>
+                    <div class="key k83">
+                        <p>S</p>
+                    </div>
+                    <div class="key k68">
+                        <p>D</p>
+                    </div>
+                    <div class="key k70">
+                        <p>F</p>
+                    </div>
+                    <div class="key k71">
+                        <p>G</p>
+                    </div>
+                    <div class="key k72">
+                        <p>H</p>
+                    </div>
+                    <div class="key k74">
+                        <p>J</p>
+                    </div>
+                    <div class="key k75">
+                        <p>K</p>
+                    </div>
+                    <div class="key k76">
+                        <p>L</p>
+                    </div>
+                    <div class="key ds k59 k186">
+                        <p>:<br>;</p>
+                    </div>
+                    <div class="key ds k222">
+                        <p>"<br>'</p>
+                    </div>
+                    <div class="key enter k13">
+                        <p><span></span> ENTER</p>
+                    </div>
+                    <div class="key brackets k45">
+                        <p>ins</p>
+                    </div>
+                    <div class="key k100">
+                        <p>4</p>
+                    </div>
+                    <div class="key k101">
+                        <p>5</p>
+                    </div>
+                    <div class="key k102">
+                        <p>6</p>
+                    </div>
+                    <div class="key shift1 k16">
+                        <p>SHIFT</p>
+                    </div>
+                    <div class="key k90">
+                        <p>Z</p>
+                    </div>
+                    <div class="key k88">
+                        <p>X</p>
+                    </div>
+                    <div class="key k67">
+                        <p>C</p>
+                    </div>
+                    <div class="key k86">
+                        <p>V</p>
+                    </div>
+                    <div class="key k66">
+                        <p>B</p>
+                    </div>
+                    <div class="key k78">
+                        <p>N</p>
+                    </div>
+                    <div class="key k77">
+                        <p>M</p>
+                    </div>
+                    <div class="key ds k188">
+                        <p>&lt;<br>,</p>
+                    </div>
+                    <div class="key ds k190">
+                        <p>&gt;<br>.</p>
+                    </div>
+                    <div class="key ds k191">
+                        <p>?<br>/</p>
+                    </div>
+                    <div class="key shift2 k16">
+                        <p>SHIFT</p>
+                    </div>
+                    <div class="key brackets k46">
+                        <p>del</p>
+                    </div>
+                    <div class="key k97">
+                        <p>1</p>
+                    </div>
+                    <div class="key k98">
+                        <p>2</p>
+                    </div>
+                    <div class="key k99">
+                        <p>3</p>
+                    </div>
+                    <div class="key enter2 k13">
+                        <p>Enter</p>
+                    </div>
+                    <div class="key ctrl1 k17">
+                        <p>CTRL</p>
+                    </div>
+                    <div class="key wndw k91">
+                        <p><span></span></p>
+                    </div>
+                    <div class="key alt k18">
+                        <p>ALT</p>
+                    </div>
+                    <div class="key space k32"></div>
+                    <div class="key alt k18">
+                        <p>ALT</p>
+                    </div>
+                    <div class="key cont k93">
+                        <div class="cblock"><span></span> <span></span> <span></span></div>
+                    </div>
+                    <div class="key ctrl2 k17">
+                        <p>CTRL</p>
+                    </div>
+                    <div class="key arup brackets k38">
+                        <p>↑</p>
+                    </div>
+                    <div class="key zero k96">
+                        <p>0</p>
+                    </div>
+                    <div class="key k110">
+                        <p>.,</p>
+                    </div>
+                    <div class="m-block">
+                        <div class="key lclick k0"></div>
+                        <div class="key cclick k1"></div>
+                        <div class="key rclick k2"></div>
+                    </div>
+                    <div class="key arleft k37">
+                        <p>←</p>
+                    </div>
+                    <div class="key ardown k40">
+                        <p>↓</p>
+                    </div>
+                    <div class="key arright k39">
+                        <p>→</p>
+                    </div>
+                </div>
+                <div class="keybord-footer">
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="hosting-promo">
+        <h3>Besoin d'un hébergement pour votre site ?</h3>
+        <p>Nous recommandons HostPro — un hébergement fiable pour sites sur NVMe SSD avec cPanel, PHP et Node.js.</p>
+        <a href="https://hostpro.apartner.pro/pricing/" target="_blank" rel="noopener noreferrer">
+            Hébergement web sur NVMe SSD avec cPanel et PHP
+        </a>
+    </div>
+
+    <footer class="footer">
+        <div class="fcontent">
+            <h2 class="title">KeyTest Test de clavier en ligne</h2>
+            <p class="fdesc">Pour tester le clavier, appuyez sur les touches (en passant au préalable à la disposition de clavier anglais)</p>
+            <div class="ftext">
+                <div class="key press">
+                    <p>A</p>
+                </div><span>- l'apparence du bouton que vous maintenez pressé</span>
+            </div>
+            <div class="ftext">
+                <div class="key active">
+                    <p>A</p>
+                </div><span>- l'apparence du bouton après l'avoir relâché - indique son bon fonctionnement</span>
+            </div>
+        </div>
+        <br>
+        <div class="fcontent">
+            <div class="ftext">
+                <h2 class="title">Service en ligne pour tester le clavier</h2>
+                <h3 class="title">
+                    Vous pouvez effectuer un test de frappe au clavier en ligne.
+                </h3>
+                <p> Cela peut être nécessaire dans plusieurs cas:</p>
+                <br>
+                <ol>
+                    <li>
+                        <p>Après avoir remplacé le clavier de l'ordinateur portable, il est recommandé de tester chaque touche pour détecter les boutons défectueux.</p>
+                    </li>
+                    <li>
+                        <p>Vérifier le fonctionnement de toutes les touches lors de l'achat d'un ordinateur portable d'occasion.</p>
+                    </li>
+                    <li>
+                        <p>Après avoir nettoyé le clavier ou réparé le mécanisme, il est nécessaire de tester les touches F1 à F12, ainsi que les touches auxiliaires Insert, Home, End, PrtSc, PgUp, PgDn et d'autres boutons qui sont difficiles à vérifier dans un document texte standard.</p>
+                    </li>
+                    <li>
+                        <p>Assurez-vous que le clavier est correctement connecté à l'ordinateur portable et qu'il n'y a aucun signe visible de dommage aux fils ou aux connecteurs.</p>
+                    </li>
+                    <li>
+                        <p>Vérifiez les touches avec des combinaisons fonctionnelles telles que Ctrl, Alt et Shift, ainsi que leurs combinaisons avec d'autres touches. Assurez-vous qu'elles fonctionnent correctement.</p>
+                    </li>
+                    <li>
+                        <p>Assurez-vous que les touches des sections de nombres et de symboles fonctionnent correctement et que tous les symboles s'affichent correctement.</p>
+                    </li>
+                    <li>
+                        <p>Vérifier l'absence de retards entre la pression d'une touche et la saisie du caractère à l'écran.</p>
+                    </li>
+                    <li>
+                        <p>Effectuer un test des touches 'Caps Lock' et 'Num Lock' pour s'assurer qu'elles s'allument et s'éteignent correctement.</p>
+                    </li>
+                    <li>
+                        <p>Vérifiez le raccourci clavier pour appeler le menu système (s'il est présent) afin de vous assurer qu'il fonctionne.</p>
+                    </li>
+                    <li>
+                        <p>Testez la touche 'Delete' ou 'Backspace' pour voir comment elles affectent le texte saisi.</p>
+                    </li>
+                    <li>
+                        <p>Vérifiez la touche 'Enter' ou 'Return', utilisée pour confirmer le texte saisi.</p>
+                    </li>
+                    <li>
+                        <p>Assurez-vous que les touches fléchées fonctionnent correctement et peuvent déplacer le curseur dans les documents textuels et les pages web.</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+    <div class="developer-promo">
+        <h3>Besoin d'un développeur web pour votre projet ?</h3>
+        <p>Nous développons des sites web, boutiques en ligne, API et services web en PHP, Laravel, WordPress, PrestaShop, Node.js et Next.js pour les entreprises et startups.</p>
+        <a href="https://hire-web-developer.com" target="_blank" rel="noopener noreferrer">
+            Développement web — PHP, Laravel &amp; WordPress
+        </a>
+    </div>
+
+        <br>
+        <div class="fcontent">
+            <div class="ftext">
+                <h2 class="title">Vous pouvez vérifier le clavier sans inscription et totalement gratuitement</h2>
+
+                <h3 class="subtitle">Comment vérifier un clavier d'ordinateur portable ?</h3>
+                <p class="top-p1" style="padding-top:5px">
+                    Pour vérifier le clavier de votre ordinateur portable, vous pouvez :<br>
+                    - Appuyer séquentiellement sur chaque touche et s'assurer qu'elle réagit et que le caractère s'affiche à l'écran.<br>
+                    - Utiliser un outil intégré à l'OS ou un logiciel tiers pour tester les touches.<br>
+                    - Vous pouvez utiliser notre site web pour vérifier l'état du clavier en ligne, gratuitement et sans inscription.<br>
+                    - Vérifier le fonctionnement des touches spéciales et des combinaisons (Ctrl, Alt, Shift, etc.).<br>
+                </p>
+                <br>
+                <h3 class="subtitle">Comment vérifier le fonctionnement des touches et effectuer un test clavier ?</h3>
+                <p class="top-p1" style="padding-top:5px">
+                    Pour vérifier les touches individuelles, vous pouvez :<br>
+                    - Ouvrir un éditeur de texte et appuyer séquentiellement sur chaque touche pour vérifier la sortie des caractères.<br>
+                    - Utiliser des outils de test de clavier en ligne qui affichent les frappes à l'écran.<br>
+                    - Utiliser des programmes de test de clavier qui peuvent aider à identifier les problèmes.
+                </p>
+                <br>
+                <h3 class="subtitle">Que faire si de l'eau est renversée sur le clavier ?</h3>
+                <p class="top-p1" style="padding-top:5px">
+                    Si du liquide est renversé sur le clavier de l'ordinateur portable, suivez ces étapes :<br>
+                    - Éteignez immédiatement l'ordinateur portable et débranchez-le de la source d'alimentation.<br>
+                    - Secouez l'excès de liquide, mais pas trop fort car cela pourrait l'endommager.<br>
+                    - Retournez l'ordinateur portable pour que le liquide s'écoule.<br>
+                    - N'allumez pas l'ordinateur portable tant que vous n'êtes pas sûr que le composant est complètement sec.<br>
+                    - Si le liquide contenait du sucre ou d'autres substances dissoutes, il peut être judicieux de consulter des professionnels pour le nettoyage.<br>
+                    Soyez toujours prudent avec les liquides près de l'électronique car ils peuvent causer de graves dommages.
+                </p>
+                <br>
+                <h3 class="subtitle">Pourquoi certaines touches ne fonctionnent pas ou fonctionnent mal ?</h3>
+                <p class="top-p1" style="padding-top:5px">
+                    Les causes les plus courantes sont des dommages physiques, la saleté ou le liquide sous les touches, ainsi que des problèmes de pilotes. Notre test vous aidera à déterminer si le problème est mécanique.
+                </p>
+                <br>
+                <h3 class="subtitle">Qu'est-ce qu'une touche "collante" et comment la détecter ?</h3>
+                <p class="top-p1" style="padding-top:5px">
+                    Un "collage" ou court-circuit se produit lorsqu'une touche ne revient pas à sa position initiale ou continue d'envoyer un signal. Sur notre test, cette touche restera en surbrillance bleue même après l'avoir relâchée.
+                </p>
+                <br>
+                <h3 class="subtitle">Dois-je installer des programmes pour tester ?</h3>
+                <p class="top-p1" style="padding-top:5px">
+                    Non, notre service fonctionne entièrement en ligne dans votre navigateur. Vous n'avez rien à télécharger ou à installer, ce qui rend le processus de vérification rapide et sûr.
+                </p>
+            </div>
+            <br>
+
+            <div class="ftext">
+                <br>
+                Le service de vérification de clavier en ligne <b>KeyTest</b> vous permet de voir visuellement si le clavier de votre ordinateur fonctionne correctement ou si certaines touches fonctionnent mal ou pas du tout.<br>
+                En ouvrant le site <a href="/" style="color:inherit;text-transform:uppercase">keytest.pp.ua</a> dans un navigateur, vous pouvez immédiatement commencer à tester, pas besoin de télécharger de programmes.<br>Commencez à appuyer sur les touches l'une après l'autre, les boutons actuellement enfoncés seront affichés en bleu à l'écran. Ceux déjà testés - en gris (signifie que le bouton a été pressé puis relâché, donc il fonctionne).<br>S'il y a des touches bleues à l'écran avant le début du test, elles sont probablement en court-circuit (probablement inondées d'eau) et le clavier devra être remplacé. Si deux boutons ou plus s'allument en bleu lorsque vous appuyez sur un seul, cela indique également un dysfonctionnement.<br><br>Le clavier d'un ordinateur portable échoue généralement en raison d'une infiltration de liquide.<br>Vous ne devriez pas utiliser un ordinateur portable avec les mains mouillées, l'humidité peut pénétrer à l'intérieur et court-circuiter les chemins conducteurs.<br>Le plus souvent, un tel clavier nécessite un remplacement, il est peu probable qu'il soit réparé.<br><br><b>Fonctionnalités supplémentaires :</b> Notre service est parfait si vous avez besoin d'un test clavier MacBook ou d'une vérification clavier mécanique. Vous pouvez également tester les touches rémanentes Windows 10/11 et effectuer un test de double clic (double click test).</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="indexfast-promo">
+        <h3>Besoin d'une indexation rapide de vos pages sur Google ?</h3>
+        <p>Nous recommandons IndexFast — un service SEO pour soumettre des URL à l'indexation, suivre le statut des pages et accélérer l'apparition de nouveaux contenus dans les résultats de recherche.</p>
+        <a href="https://indexfast.pp.ua" target="_blank" rel="noopener noreferrer">
+            Service SEO pour l'indexation de pages sur Google
+        </a>
+    </div>
+
+    <br>
+    <footer class="footer">
+        <div class="fcontent-modern">
+            <!-- Left Column: Services -->
+            <div class="fcontent-column">
+                <h5 class="title-modern">Autres services gratuits</h5>
+                <div class="fcontent-links">
+                    <a class="fcontent-link-card" target="_blank" rel="follow" href="https://monitortest.pp.ua" title="Test de moniteur en ligne gratuit | Free online monitor test">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">MonitorTest.pp.ua</span>
+                            <span>Test de moniteur en ligne gratuit</span>
+                        </span>
+                    </a>
+                    <a class="fcontent-link-card" target="_blank" rel="follow" href="https://tools.apartner.pro" title="Services en ligne gratuits | Free online services">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">Tools.apartner.pro</span>
+                            <span>Services en ligne gratuits</span>
+                        </span>
+                    </a>
+                    <a class="fcontent-link-card" target="_blank" rel="follow" href="https://pctest.pp.ua" title="Test de PC en ligne gratuit | Free online PC test">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">PCTest.pp.ua</span>
+                            <span>Test de PC en ligne gratuit</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column: Partners -->
+            <div class="fcontent-column">
+                <h5 class="title-modern">Nos partenaires</h5>
+                <div class="fcontent-links" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px;">
+                    <a class="fcontent-link-card" target="_blank" rel="follow" href="https://devroman.pl" title="devroman.pl - Développement de sites web, startups, bots, chats">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">devroman.pl</span>
+                            <span>Développement de sites web et de bots</span>
+                        </span>
+                    </a>
+                    <a class="fcontent-link-card" target="_blank" rel="follow" href="https://programista.devroman.pl" title="programista.devroman.pl - Développement de sites web, startups, bots, chats">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">programista.devroman.pl</span>
+                            <span>Création d'applications web et de bots</span>
+                        </span>
+                    </a>
+                    <a class="fcontent-link-card" rel="follow" href="/fr/partners/" title="Autres partenaires">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">Autres partenaires</span>
+                            <span>Voir tous nos partenaires</span>
+                        </span>
+                    </a>
+                    <a class="fcontent-link-card" target="_blank" rel="follow" href="https://programist.pp.ua" title="Programist - Web Development Services">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">Programist.pp.ua</span>
+                            <span>Web Development Services</span>
+                        </span>
+                    </a>
+                    <a class="fcontent-link-card" target="_blank" rel="follow" href="https://fullstack.matviy.pp.ua" title="Full Stack Developer Services">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">Full Stack Services</span>
+                            <span>Developer Services</span>
+                        </span>
+                    </a>
+                    <a class="fcontent-link-card" target="_blank" rel="follow" href="https://programist.matviy.pp.ua" title="Programist Matviy - Web Solutions">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">Programist Matviy</span>
+                            <span>Solutions web avancées</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <br>
+    <footer class="footer">
+        <div class="keybord-footer">
+            <a class="right" href="https://keytest.pp.ua/fr/" rel="follow" title="keytest.pp.ua test de clavier en ligne">
+                2018-2026, KeyTest.pp.ua</a>
+        </div>
+    </footer>
+    <br>
+    <section class="copyright">
+        <div class="container" style="margin-bottom: 8px;">
+            <a href="/fr/privacy-policy/" title="Politique de confidentialité">Politique de confidentialité</a> | 
+            <a href="/fr/terms/" title="Conditions d`'utilisation">Conditions d`'utilisation</a> | 
+            <a href="/fr/about/" title="À propos & Contact">À propos & Contact</a>
+        </div>
+        <div class="container">
+            Site créé par <a href="https://apartner.pro" target="_blank" rel="follow"
+                title="Development of sites on cms prestashop, wordpress, laravel, Розробка сайтів на cms prestashop, wordpress, laravel">APARTNER.PRO</a>
+            | <a href="https://programist.top" target="_blank" rel="follow" title="Development of sites on cms prestashop, wordpress, laravel, Розробка сайтів на cms prestashop,
+                wordpress, laravel">PROGRAMIST.TOP</a>
+        </div>
+
+        <div class="container">
+            <a href="https://roman.matviy.pp.ua" target="_blank" rel="follow"
+                title="Hire prestashop, laravel, wordpress, php developer">
+                Hire fullstack freelancer prestashop, laravel, wordpress, php, vue, sql
+            </a>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="../../assets/index.js"></script>
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "KeyTest",
+        "url": "https://keytest.pp.ua/fr/",
+        "logo": "https://keytest.pp.ua/assets/img/logo.png",
+        "sameAs": [
+            "https://apartner.pro",
+            "https://programist.top"
+        ]
+    }
+    </script>
+    <!-- WebSite Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "KeyTest - Test de clavier en ligne",
+        "url": "https://keytest.pp.ua/fr/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://keytest.pp.ua/fr/search/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Accueil",
+            "item": "https://keytest.pp.ua/fr/"
+        },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Test de clavier ✅",
+            "item": "https://keytest.pp.ua/fr/"
+        }]
+    }
+    </script>
+    <!-- WebPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Test de clavier en ligne gratuit | KeyTest",
+        "description": "Vérifiez le fonctionnement de toutes les touches sur le clavier de l'ordinateur portable ou du PC. Test de clavier en ligne rapide et gratuit sans inscription.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "KeyTest",
+            "logo": {
+            "@type": "ImageObject",
+            "url": "https://keytest.pp.ua/assets/img/logo.png"
+            }
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "KeyTest - Test de clavier en ligne gratuit",
+        "description": "Vérifiez le fonctionnement de toutes les touches sur le clavier de l'ordinateur portable ou du PC. Test de clavier en ligne rapide et gratuit sans inscription.",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "UAH"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "ratingCount": "7859",
+            "bestRating": "5"
+        }
+    }
+    </script>
+
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Comment vérifier un clavier d'ordinateur portable ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pour vérifier le clavier de votre ordinateur portable, vous pouvez : - Appuyer séquentiellement sur chaque touche et s'assurer qu'elle réagit et que le caractère s'affiche à l'écran. - Utiliser un outil intégré à l'OS ou un logiciel tiers pour tester les touches. - Vous pouvez utiliser notre site web pour vérifier l'état du clavier en ligne, gratuitement et sans inscription. - Vérifier le fonctionnement des touches spéciales et des combinaisons (Ctrl, Alt, Shift, etc.)."
+        }
+      },{
+        "@type": "Question",
+        "name": "Comment vérifier le fonctionnement des touches et effectuer un test clavier ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pour vérifier les touches individuelles, vous pouvez : - Ouvrir un éditeur de texte et appuyer séquentiellement sur chaque touche pour vérifier la sortie des caractères. - Utiliser des outils de test de clavier en ligne qui affichent les frappes à l'écran. - Utiliser des programmes de test de clavier qui peuvent aider à identifier les problèmes."
+        }
+      },{
+        "@type": "Question",
+        "name": "Que faire si de l'eau est renversée sur le clavier ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Si du liquide est renversé sur le clavier de l'ordinateur portable, suivez ces étapes : - Éteignez immédiatement l'ordinateur portable et débranchez-le de la source d'alimentation. - Secouez l'excès de liquide, mais pas trop fort. - Retournez l'ordinateur portable pour que le liquide s'écoule. - N'allumez pas l'ordinateur portable tant qu'il n'est pas complètement sec. - Si le liquide contenait du sucre, il peut être judicieux de consulter des professionnels pour le nettoyage."
+        }
+      },{
+        "@type": "Question",
+        "name": "Pourquoi certaines touches ne fonctionnent pas ou fonctionnent mal ?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Les causes les plus courantes sont des dommages physiques, la saleté ou le liquide sous les touches, ainsi que des problèmes de pilotes. Notre test vous aidera à déterminer si le problème est mécanique."
+        }
+      },{
+        "@type": "Question",
+        "name": "Qu'est-ce qu'une touche 'collante' et comment la détecter ?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Un 'collage' ou court-circuit se produit lorsqu'une touche ne revient pas à sa position initiale ou continue d'envoyer un signal. Sur notre test, cette touche restera en surbrillance bleue même après l'avoir relâchée."
+        }
+      },{
+        "@type": "Question",
+        "name": "Dois-je installer des programmes pour tester ?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non, notre service fonctionne entièrement en ligne dans votre navigateur. Vous n'avez rien à télécharger ou à installer, ce qui rend le processus de vérification rapide et sûr."
+        }
+      }]
+    }
+    </script>
+
+    <!--<script type="application/ld+json">
+        {
+          "@context": "https://schema.org/",
+          "@type": "AggregateRating",
+          "itemReviewed": {
+            "@type": "Service",
+            "image": "https://keytest.pp.ua/assets/img/keytest.png",
+            "name": "Test de clavier en ligne gratuit"
+          },
+          "ratingValue": "5",
+          "bestRating": "5",
+          "ratingCount": "7859"
+        }
+    </script>-->
+
+    <!-- Lazy load AdSense -->
+    <script>
+        (function() {
+            var adsLoaded = false;
+            function loadAds() {
+                if (!adsLoaded) {
+                    adsLoaded = true;
+                    var script = document.createElement('script');
+                    script.async = true;
+                    script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2646134257100461";
+                    script.crossOrigin = "anonymous";
+                    document.body.appendChild(script);
+                    
+                    window.removeEventListener('scroll', loadAds);
+                    window.removeEventListener('mousemove', loadAds);
+                    window.removeEventListener('touchstart', loadAds);
+                }
+            }
+            window.addEventListener('scroll', loadAds, {passive: true});
+            window.addEventListener('mousemove', loadAds, {passive: true});
+            window.addEventListener('touchstart', loadAds, {passive: true});
+            setTimeout(loadAds, 3500);
+        })();
+    </script>
+</body>
+
+</html>

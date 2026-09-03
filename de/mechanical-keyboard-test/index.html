@@ -1,0 +1,1204 @@
+﻿<!DOCTYPE html>
+<html lang="de" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <!-- <meta name="viewport" content="width=1264"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="max-content"> -->
+    <meta name="robots" content="all">
+    <meta name="description"
+        content="Kostenloser Online-Tastatur-, Tasten- und Maustest für Laptop oder PC. Schneller Tastaturtest ohne Werbung und Registrierung.">
+    <meta name="keywords"
+        content="test, tastatur, maus, tasten, taste, online, keytest, key-test, online test keyboard, ">
+    <meta http-equiv="Content-Language" content="de">
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/img/fav.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicon-32x32.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/img/apple-touch-icon.png">
+    <link rel="manifest" href="../../assets/img/site.webmanifest">
+    <link rel="preload" href="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js" as="script">
+    <link rel="preload" href="../../assets/index.js" as="script">
+    <link rel="preload" href="../../assets/style.min.css" as="style">
+    <link rel="stylesheet" href="../../assets/style.min.css">
+    <!--<link rel="stylesheet" href="../../assets/style.css">-->
+    <style>
+        .lang-switcher {
+            position: relative;
+            display: table;
+            margin: 10px auto;
+            z-index: 1000;
+            background-color: rgba(47, 79, 79, 0.8);
+            padding: 8px 20px;
+            border-radius: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            white-space: nowrap;
+        }
+
+        .lang-switcher .lang-option {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 5px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .lang-switcher .lang-option:hover {
+            color: #4CAF50;
+        }
+
+        .lang-switcher .lang-option.active {
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+
+        .lang-switcher .lang-separator {
+            color: #fff;
+            margin: 0 2px;
+        }
+
+        @media (max-width: 768px) {
+            .lang-switcher {
+                padding: 5px 10px;
+                margin: 10px auto;
+            }
+
+            .lang-switcher .lang-option {
+                font-size: 14px;
+            }
+        }
+
+        .link {
+            color: #fff;
+            padding: 3px;
+            display: block;
+        }
+
+        .hosting-promo {
+            background: linear-gradient(135deg, rgba(25, 42, 86, 0.9) 0%, rgba(10, 15, 30, 0.95) 100%);
+            border: 1px solid rgba(74, 144, 226, 0.4);
+            border-radius: 12px;
+            padding: 20px 25px;
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: center;
+            box-shadow: 0 8px 32px 0 rgba(74, 144, 226, 0.15);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            transition: all 0.3s ease;
+        }
+
+        .hosting-promo:hover {
+            box-shadow: 0 12px 40px 0 rgba(74, 144, 226, 0.3);
+            border-color: rgba(74, 144, 226, 0.6);
+            transform: translateY(-2px);
+        }
+
+        .hosting-promo h3 {
+            color: #4a90e2;
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .hosting-promo p {
+            color: #e0e0e0;
+            font-size: 15px;
+            line-height: 1.5;
+            margin-bottom: 18px;
+        }
+
+        .hosting-promo a {
+            display: inline-block;
+            background: linear-gradient(90deg, #4a90e2 0%, #357abd 100%);
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 15px;
+            padding: 10px 24px;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
+        }
+
+        .hosting-promo a:hover {
+            background: linear-gradient(90deg, #357abd 0%, #4a90e2 100%);
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(74, 144, 226, 0.5);
+        }
+
+        .indexfast-promo {
+            background: linear-gradient(135deg, rgba(75, 15, 120, 0.85) 0%, rgba(10, 15, 30, 0.95) 100%);
+            border: 1px solid rgba(160, 32, 240, 0.4);
+            border-radius: 12px;
+            padding: 20px 25px;
+            margin: 25px auto;
+            max-width: 800px;
+            text-align: center;
+            box-shadow: 0 8px 32px 0 rgba(160, 32, 240, 0.15);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            transition: all 0.3s ease;
+        }
+
+        .indexfast-promo:hover {
+            box-shadow: 0 12px 40px 0 rgba(160, 32, 240, 0.3);
+            border-color: rgba(160, 32, 240, 0.6);
+            transform: translateY(-2px);
+        }
+
+        .indexfast-promo h3 {
+            color: #d896ff;
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .indexfast-promo p {
+            color: #e0e0e0;
+            font-size: 15px;
+            line-height: 1.5;
+            margin-bottom: 18px;
+        }
+
+        .indexfast-promo a {
+            display: inline-block;
+            background: linear-gradient(90deg, #a020f0 0%, #7d12cb 100%);
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 15px;
+            padding: 10px 24px;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(160, 32, 240, 0.3);
+        }
+
+        .indexfast-promo a:hover {
+            background: linear-gradient(90deg, #7d12cb 0%, #a020f0 100%);
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(160, 32, 240, 0.5);
+        }
+
+        .developer-promo {
+            background: linear-gradient(135deg, rgba(10, 80, 50, 0.9) 0%, rgba(5, 25, 15, 0.97) 100%);
+            border: 1px solid rgba(40, 200, 120, 0.4);
+            border-radius: 12px;
+            padding: 20px 25px;
+            margin: 25px auto;
+            max-width: 800px;
+            text-align: center;
+            box-shadow: 0 8px 32px 0 rgba(40, 200, 120, 0.15);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            transition: all 0.3s ease;
+        }
+
+        .developer-promo:hover {
+            box-shadow: 0 12px 40px 0 rgba(40, 200, 120, 0.3);
+            border-color: rgba(40, 200, 120, 0.6);
+            transform: translateY(-2px);
+        }
+
+        .developer-promo h3 {
+            color: #5dffa8;
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .developer-promo p {
+            color: #e0e0e0;
+            font-size: 15px;
+            line-height: 1.5;
+            margin-bottom: 18px;
+        }
+
+        .developer-promo a {
+            display: inline-block;
+            background: linear-gradient(90deg, #28c878 0%, #1a9e58 100%);
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 15px;
+            padding: 10px 24px;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(40, 200, 120, 0.3);
+        }
+
+        .developer-promo a:hover {
+            background: linear-gradient(90deg, #1a9e58 0%, #28c878 100%);
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(40, 200, 120, 0.5);
+        }
+
+        /* Modern fcontent footer styles */
+        .fcontent-modern {
+            background: linear-gradient(135deg, rgba(28, 47, 47, 0.95) 0%, rgba(20, 32, 32, 0.98) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 30px;
+            margin: 0 auto;
+            max-width: 1234px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+            letter-spacing: 0.5px;
+        }
+
+        @media (max-width: 768px) {
+            .fcontent-modern {
+                grid-template-columns: 1fr;
+                gap: 25px;
+                padding: 20px;
+            }
+        }
+
+        .fcontent-column {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .fcontent-modern .title-modern {
+            font-size: 16px;
+            font-weight: 700;
+            color: #5dffa8;
+            margin: 0 0 10px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid rgba(93, 255, 168, 0.15);
+            display: flex;
+            align-items: center;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .fcontent-links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .fcontent-link-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 12px 16px;
+            color: #b0c4de !important;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            font-size: 15px;
+            line-height: 1.4;
+        }
+
+        .fcontent-link-card:hover {
+            background: rgba(93, 255, 168, 0.06);
+            border-color: rgba(93, 255, 168, 0.3);
+            color: #ffffff !important;
+            transform: translateX(4px);
+            box-shadow: 0 4px 15px rgba(93, 255, 168, 0.08);
+        }
+
+        .fcontent-link-card .bullet-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: #5dffa8;
+            margin-top: 7px;
+            flex-shrink: 0;
+            box-shadow: 0 0 8px #5dffa8;
+            transition: transform 0.3s;
+        }
+
+        .fcontent-link-card:hover .bullet-dot {
+            transform: scale(1.3);
+            background-color: #ffffff;
+            box-shadow: 0 0 10px #ffffff;
+        }
+
+        .fcontent-link-card .link-text-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            text-align: left;
+        }
+
+        .fcontent-link-card .link-title {
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .fcontent-link-card:hover .link-title {
+            color: #5dffa8;
+        }
+    </style>
+    <link rel="canonical" href="https://keytest.pp.ua/de/">
+    <link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/mechanical-keyboard-test/" />
+    <link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/mechanical-keyboard-test/" />
+    <link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/mechanical-keyboard-test/" />
+    <link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/mechanical-keyboard-test/" />
+    <link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/mechanical-keyboard-test/" />
+    <link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/mechanical-keyboard-test/" />
+    <link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/mechanical-keyboard-test/" />
+
+    <link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/mechanical-keyboard-test/" />
+    <link rel="alternate" hreflang="en" href="https://keytest.pp.ua/de/en/mechanical-keyboard-test/" />
+    <link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/de/pl/mechanical-keyboard-test/" />
+    <link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/de/mechanical-keyboard-test/" />
+    <link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/de/fr/mechanical-keyboard-test/" />
+    <link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/de/ru/mechanical-keyboard-test/" />
+    <link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/de/mechanical-keyboard-test/" />
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@APARTNER.PRO">
+    <meta name="twitter:title" content="keytest.pp.ua - Online-Tastaturtest">
+    <meta name="twitter:description"
+        content="Kostenloser Online-Tastatur-, Tasten- und Maustest für Laptop oder PC. Schneller Tastaturtest ohne Werbung und Registrierung.">
+    <meta name="twitter:image" content="https://keytest.pp.ua/assets/img/fav.jpg">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mechanische Tastatur Test online">
+    <meta property="og:site_name" content="KeyTest" />
+    <meta property="og:url" content="https://keytest.pp.ua/de/mechanical-keyboard-test/">
+    <meta property="og:image" content="https://keytest.pp.ua/assets/img/keyboard-test-preview.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="KeyTest - Online-Tastaturtest">
+    <meta property="og:description"
+        content="Kostenloser Online-Tastatur-, Tasten- und Maustest für Laptop oder PC. Schneller Tastaturtest ohne Werbung und Registrierung.">
+    <meta property="og:locale" content="de_DE">
+    <title>⭐Mechanische Tastatur Test online⭐</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X54XV8ZP8C"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-X54XV8ZP8C');
+    </script>
+<script type="application/ld+json">
+    {"@context":"https://schema.org","@graph":[{"@type":"Corporation","name":"KeyTest","description":"KeyTest - kostenloser Online-Tastaturtest zum Überprüfen von Tasten, Knöpfen und der Maus auf einem Laptop oder PC","url":"https://keytest.pp.ua/de/mechanical-keyboard-test/","logo":{"@type":"ImageObject","@id":"https://keytest.pp.ua/de/#logo","url":"https://keytest.pp.ua/assets/img/fav.jpg","width":300,"height":300,"caption":"KeyTest"},"image":{"@id":"https://keytest.pp.ua/de/#logo"},"location":{"@type":"PostalAddress","addressCountry":"Ukraine","postalCode":"01001","addressLocality":"Kiew, Ukraine","addressRegion":"Region Kiew","streetAddress":"Chreschtschatyk-Str., 1"}},{"@type":"BreadcrumbList","name":"Breadcrumbs","description":"Breadcrumbs list","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://keytest.pp.ua/de/mechanical-keyboard-test/"},{"@type":"ListItem","position":2,"name":"Tastaturtest ✅","item":"https://keytest.pp.ua/de/mechanical-keyboard-test/"}]},{"@type":"CreativeWorkSeries","name":"KeyTest - Online-Tastaturtest","aggregateRating":{"@type":"AggregateRating","ratingValue":4.9,"reviewCount":7859}},{"@type":"QAPage","mainEntity":{"@type":"Question","name":"KeyTest - kostenloser Online-Tastaturtest","text":"KeyTest - kostenloser Online-Tastaturtest zum Überprüfen von Tasten, Knöpfen und der Maus auf einem Laptop oder PC","answerCount":2847391,"upvoteCount":2847391,"acceptedAnswer":{"@type":"Answer","text":"KeyTest - kostenloser Online-Tastaturtest ohne Registrierung","upvoteCount":1239989,"url":"https://keytest.pp.ua/de/mechanical-keyboard-test/"},"suggestedAnswer":[{"@type":"Answer","text":"KeyTest - kostenloser Online-Tastaturtest zum Überprüfen von Tasten, Knöpfen und der Maus","upvoteCount":534323,"url":"https://keytest.pp.ua/de/mechanical-keyboard-test/"}]}}]}
+    </script>
+    <link rel="help" type="text/markdown" href="https://keytest.pp.ua/llms.txt">
+</head>
+
+<body cz-shortcut-listen="true">
+    <header class="header">
+        <div class="lang-switcher">
+            <a href="/" class="lang-option">UA</a>
+            <span class="lang-separator">|</span>
+            <a href="/en/" class="lang-option">EN</a>
+            <span class="lang-separator">|</span>
+            <a href="/pl/" class="lang-option">PL</a>
+            <span class="lang-separator">|</span>
+            <a href="/de/" class="lang-option active">DE</a>
+            <span class="lang-separator">|</span>
+            <a href="/fr/" class="lang-option">FR</a>
+            <span class="lang-separator">|</span>
+            <a href="/ru/" class="lang-option">RU</a>
+        </div>
+        <div class="top-block">
+            <h1 style="color:#d3d3d3;font-size:2em;margin-bottom:10px;">Mechanische Tastatur testen: Alle Schalter prüfen</h1>
+            <div class="rating" style="text-align: center; margin: 5px 0 15px 0;"
+                title="Bewertung: 4.9 von 5 basierend auf 7859 Bewertungen">
+                <span style="color: #fbbc04; font-size: 22px;">★★★★★</span>
+                <span style="color: #d3d3d3; font-size: 15px; margin-left: 8px;">Bewertung: 4.9 / 5 (basierend auf 7859 Bewertungen)</span>
+            </div>
+            <p class="top-p">Hier können Sie kostenlos und ohne Registrierung alle Tasten auf der Tastatur eines Laptops oder Desktop-Computers überprüfen.<br>Eine gedrückte Taste wird blau hervorgehoben, eine losgelassene - grau. Wenn sich die Farbe nicht ändert, ist die Taste defekt.<br>Verwenden Sie für die korrekte Tastenerkennung das <b>englische</b> Tastaturlayout!</p>
+            <div class="padding-l-r-40">
+                <div class="ftext">
+                    <div class="key press">
+                        <p>F1</p>
+                    </div>
+                    <span style="color:#ffefd5;font-size:18px">- so sieht eine aktuell gedrückte Taste aus.</span>
+                </div>
+                <div class="ftext">
+                    <div class="key active">
+                        <p>F1</p>
+                    </div>
+                    <span style="color:#ffefd5;font-size:18px">- dies ist eine funktionierende Taste, sie wurde gedrückt und ist in ihre Ausgangsposition zurückgekehrt.</span>
+                </div>
+            </div>
+        </div>
+        <div class="keybord">
+            <div class="blur"></div>
+            <div class="fade"></div>
+            <div class="content">
+                <div class="keybord-top"></div>
+                <div class="key-block">
+                    <div class="key k27">
+                        <p>Esc</p>
+                    </div>
+                    <div class="key vh"></div>
+                    <div class="key k112">
+                        <p>F1</p>
+                    </div>
+                    <div class="key k113">
+                        <p>F2</p>
+                    </div>
+                    <div class="key k114">
+                        <p>F3</p>
+                    </div>
+                    <div class="key k115">
+                        <p>F4</p>
+                    </div>
+                    <div class="key vh half"></div>
+                    <div class="key k116">
+                        <p>F5</p>
+                    </div>
+                    <div class="key k117">
+                        <p>F6</p>
+                    </div>
+                    <div class="key k118">
+                        <p>F7</p>
+                    </div>
+                    <div class="key k119">
+                        <p>F8</p>
+                    </div>
+                    <div class="key vh half"></div>
+                    <div class="key k120">
+                        <p>F9</p>
+                    </div>
+                    <div class="key k121">
+                        <p>F10</p>
+                    </div>
+                    <div class="key k122">
+                        <p>F11</p>
+                    </div>
+                    <div class="key k123">
+                        <p>F12</p>
+                    </div>
+                    <div class="key dl brackets k44">
+                        <p>Prt<br>Sc</p>
+                    </div>
+                    <div class="key dl k145">
+                        <p>Scr<br>Lk</p>
+                    </div>
+                    <div class="key dl k19">
+                        <p>Pause<br>break</p>
+                    </div>
+                    <div class="key t16 k36">
+                        <p>Home</p>
+                    </div>
+                    <div class="key t16 k35">
+                        <p>End</p>
+                    </div>
+                    <div class="key dl k192">
+                        <p>~<br>`</p>
+                    </div>
+                    <div class="key k49">
+                        <p>1</p>
+                    </div>
+                    <div class="key k50">
+                        <p>2</p>
+                    </div>
+                    <div class="key k51">
+                        <p>3</p>
+                    </div>
+                    <div class="key k52">
+                        <p>4</p>
+                    </div>
+                    <div class="key k53">
+                        <p>5</p>
+                    </div>
+                    <div class="key k54">
+                        <p>6</p>
+                    </div>
+                    <div class="key k55">
+                        <p>7</p>
+                    </div>
+                    <div class="key k56">
+                        <p>8</p>
+                    </div>
+                    <div class="key k57">
+                        <p>9</p>
+                    </div>
+                    <div class="key k48">
+                        <p>0</p>
+                    </div>
+                    <div class="key dl smin k173 k189">
+                        <p>_<br>-</p>
+                    </div>
+                    <div class="key dl splus k61 k187">
+                        <p>+<br>=</p>
+                    </div>
+                    <div class="key bs k8">
+                        <p>⟵</p>
+                    </div>
+                    <div class="key dl brackets k33">
+                        <p>Page<br>up</p>
+                    </div>
+                    <div class="key dl k144">
+                        <p>Num<br>Lock</p>
+                    </div>
+                    <div class="key k111">
+                        <p>/</p>
+                    </div>
+                    <div class="key k106">
+                        <p>*</p>
+                    </div>
+                    <div class="key dl k109">
+                        <p>_</p>
+                    </div>
+                    <div class="key tab k9">
+                        <p>Tab</p>
+                    </div>
+                    <div class="key k81">
+                        <p>Q</p>
+                    </div>
+                    <div class="key k87">
+                        <p>W</p>
+                    </div>
+                    <div class="key k69">
+                        <p>E</p>
+                    </div>
+                    <div class="key k82">
+                        <p>R</p>
+                    </div>
+                    <div class="key k84">
+                        <p>T</p>
+                    </div>
+                    <div class="key k89">
+                        <p>Y</p>
+                    </div>
+                    <div class="key k85">
+                        <p>U</p>
+                    </div>
+                    <div class="key k73">
+                        <p>I</p>
+                    </div>
+                    <div class="key k79">
+                        <p>O</p>
+                    </div>
+                    <div class="key k80">
+                        <p>P</p>
+                    </div>
+                    <div class="key ds k219">
+                        <p>{<br>[</p>
+                    </div>
+                    <div class="key ds k221">
+                        <p>}<br>]</p>
+                    </div>
+                    <div class="key ds sum k220">
+                        <p>|<br>\</p>
+                    </div>
+                    <div class="key dl brackets k34">
+                        <p>Page<br>down</p>
+                    </div>
+                    <div class="key k103">
+                        <p>7</p>
+                    </div>
+                    <div class="key k104">
+                        <p>8</p>
+                    </div>
+                    <div class="key k105">
+                        <p>9</p>
+                    </div>
+                    <div class="key plus k107">
+                        <p>+</p>
+                    </div>
+                    <div class="key caps k20">
+                        <p>Caps Lock</p>
+                    </div>
+                    <div class="key k65">
+                        <p>A</p>
+                    </div>
+                    <div class="key k83">
+                        <p>S</p>
+                    </div>
+                    <div class="key k68">
+                        <p>D</p>
+                    </div>
+                    <div class="key k70">
+                        <p>F</p>
+                    </div>
+                    <div class="key k71">
+                        <p>G</p>
+                    </div>
+                    <div class="key k72">
+                        <p>H</p>
+                    </div>
+                    <div class="key k74">
+                        <p>J</p>
+                    </div>
+                    <div class="key k75">
+                        <p>K</p>
+                    </div>
+                    <div class="key k76">
+                        <p>L</p>
+                    </div>
+                    <div class="key ds k59 k186">
+                        <p>:<br>;</p>
+                    </div>
+                    <div class="key ds k222">
+                        <p>"<br>'</p>
+                    </div>
+                    <div class="key enter k13">
+                        <p><span></span> ENTER</p>
+                    </div>
+                    <div class="key brackets k45">
+                        <p>ins</p>
+                    </div>
+                    <div class="key k100">
+                        <p>4</p>
+                    </div>
+                    <div class="key k101">
+                        <p>5</p>
+                    </div>
+                    <div class="key k102">
+                        <p>6</p>
+                    </div>
+                    <div class="key shift1 k16">
+                        <p>SHIFT</p>
+                    </div>
+                    <div class="key k90">
+                        <p>Z</p>
+                    </div>
+                    <div class="key k88">
+                        <p>X</p>
+                    </div>
+                    <div class="key k67">
+                        <p>C</p>
+                    </div>
+                    <div class="key k86">
+                        <p>V</p>
+                    </div>
+                    <div class="key k66">
+                        <p>B</p>
+                    </div>
+                    <div class="key k78">
+                        <p>N</p>
+                    </div>
+                    <div class="key k77">
+                        <p>M</p>
+                    </div>
+                    <div class="key ds k188">
+                        <p>&lt;<br>,</p>
+                    </div>
+                    <div class="key ds k190">
+                        <p>&gt;<br>.</p>
+                    </div>
+                    <div class="key ds k191">
+                        <p>?<br>/</p>
+                    </div>
+                    <div class="key shift2 k16">
+                        <p>SHIFT</p>
+                    </div>
+                    <div class="key brackets k46">
+                        <p>del</p>
+                    </div>
+                    <div class="key k97">
+                        <p>1</p>
+                    </div>
+                    <div class="key k98">
+                        <p>2</p>
+                    </div>
+                    <div class="key k99">
+                        <p>3</p>
+                    </div>
+                    <div class="key enter2 k13">
+                        <p>Enter</p>
+                    </div>
+                    <div class="key ctrl1 k17">
+                        <p>CTRL</p>
+                    </div>
+                    <div class="key wndw k91">
+                        <p><span></span></p>
+                    </div>
+                    <div class="key alt k18">
+                        <p>ALT</p>
+                    </div>
+                    <div class="key space k32"></div>
+                    <div class="key alt k18">
+                        <p>ALT</p>
+                    </div>
+                    <div class="key cont k93">
+                        <div class="cblock"><span></span> <span></span> <span></span></div>
+                    </div>
+                    <div class="key ctrl2 k17">
+                        <p>CTRL</p>
+                    </div>
+                    <div class="key arup brackets k38">
+                        <p>↑</p>
+                    </div>
+                    <div class="key zero k96">
+                        <p>0</p>
+                    </div>
+                    <div class="key k110">
+                        <p>.,</p>
+                    </div>
+                    <div class="m-block">
+                        <div class="key lclick k0"></div>
+                        <div class="key cclick k1"></div>
+                        <div class="key rclick k2"></div>
+                    </div>
+                    <div class="key arleft k37">
+                        <p>←</p>
+                    </div>
+                    <div class="key ardown k40">
+                        <p>↓</p>
+                    </div>
+                    <div class="key arright k39">
+                        <p>→</p>
+                    </div>
+                </div>
+                <div class="keybord-footer">
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="hosting-promo">
+        <h3>Benötigen Sie Webhosting für Ihre Website?</h3>
+        <p>Wir empfehlen HostPro — zuverlässiges Hosting für Websites auf NVMe SSD mit cPanel, PHP und Node.js.</p>
+        <a href="https://hostpro.apartner.pro/pricing/" target="_blank" rel="noopener noreferrer">
+            Webhosting auf NVMe SSD mit cPanel und PHP
+        </a>
+    </div>
+
+    <footer class="footer">
+        <div class="fcontent">
+            <h2 class="title">KeyTest Online-Tastaturtest</h2>
+            <p class="fdesc">Drücken Sie zum Testen der Tastatur die Tasten (wechseln Sie vorher zum englischen Tastaturlayout)</p>
+            <div class="ftext">
+                <div class="key press">
+                    <p>A</p>
+                </div><span>- das Aussehen der Taste, die Sie gedrückt halten</span>
+            </div>
+            <div class="ftext">
+                <div class="key active">
+                    <p>A</p>
+                </div><span>- das Aussehen der Taste nach dem Loslassen - zeigt deren Funktionsfähigkeit an</span>
+            </div>
+        </div>
+        <br>
+        <div class="fcontent">
+            <div class="ftext">
+                <h2 class="title">Online-Service zum Testen der Tastatur</h2>
+                <h3 class="title">
+                    Sie können einen Online-Tastaturtest im Online-Modus durchführen.
+                </h3>
+                <p> Dies kann in mehreren Fällen erforderlich sein:</p>
+                <br>
+                <ol>
+                    <li>
+                        <p>Nach dem Austausch der Laptoptastatur wird empfohlen, jede Taste auf defekte Tasten zu testen.</p>
+                    </li>
+                    <li>
+                        <p>Überprüfen Sie alle Tastaturtasten beim Kauf eines gebrauchten Laptops.</p>
+                    </li>
+                    <li>
+                        <p>Nach der Reinigung der Tastatur oder der Reparatur des Mechanismus müssen die Tasten von F1 bis F12 sowie Hilfstasten wie Insert, Home, End, PrtSc, PgUp, PgDn und andere, die in einem normalen Textdokument schwer zu überprüfen sind, getestet werden.</p>
+                    </li>
+                    <li>
+                        <p>Stellen Sie sicher, dass die Tastatur ordnungsgemäß an den Laptop angeschlossen ist und keine sichtbaren Anzeichen von Schäden an Kabeln oder Anschlüssen vorliegen.</p>
+                    </li>
+                    <li>
+                        <p>Überprüfen Sie die Funktionstasten wie Ctrl, Alt und Shift sowie deren Kombinationen mit anderen Tasten. Stellen Sie sicher, dass sie ordnungsgemäß funktionieren.</p>
+                    </li>
+                    <li>
+                        <p>Stellen Sie sicher, dass die Tasten im Zahlen- und Symbolbereich ordnungsgemäß funktionieren und alle Symbole korrekt ausgegeben werden.</p>
+                    </li>
+                    <li>
+                        <p>Überprüfen Sie, ob Verzögerungen zwischen dem Tastendruck und der Eingabe des Zeichens auf dem Bildschirm auftreten.</p>
+                    </li>
+                    <li>
+                        <p>Testen Sie die Tasten 'Caps Lock' und 'Num Lock', um sicherzustellen, dass sie sich ordnungsgemäß ein- und ausschalten lassen.</p>
+                    </li>
+                    <li>
+                        <p>Überprüfen Sie die Tastenkombination zum Aufrufen des Startmenüs (falls vorhanden), um sicherzustellen, dass sie funktioniert.</p>
+                    </li>
+                    <li>
+                        <p>Testen Sie die Taste 'Delete' oder 'Backspace', um zu sehen, wie sie den eingegebenen Text beeinflussen.</p>
+                    </li>
+                    <li>
+                        <p>Überprüfen Sie die Taste 'Enter' oder 'Return', die zur Bestätigung des eingegebenen Textes verwendet wird.</p>
+                    </li>
+                    <li>
+                        <p>Stellen Sie sicher, dass die Pfeiltasten ordnungsgemäß funktionieren und den Cursor in Textdokumenten und auf Webseiten bewegen können.</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+    <div class="developer-promo">
+        <h3>Benötigen Sie einen Webentwickler für Ihr Projekt?</h3>
+        <p>Wir entwickeln Websites, Online-Shops, APIs und Webdienste mit PHP, Laravel, WordPress, PrestaShop, Node.js und Next.js für Unternehmen und Startups.</p>
+        <a href="https://hire-web-developer.com" target="_blank" rel="noopener noreferrer">
+            Webentwicklung — PHP, Laravel &amp; WordPress
+        </a>
+    </div>
+
+        <br>
+        <div class="fcontent">
+            <div class="ftext">
+                <h2 class="title">Sie können die Tastatur ohne Registrierung und völlig kostenlos testen</h2>
+
+                <h3 class="subtitle">Wie überprüfe ich eine Laptoptastatur?</h3>
+                <p class="top-p1" style="padding-top:5px">
+                    Um die Tastatur eines Laptops zu überprüfen, können Sie folgende Schritte ausführen:<br>
+                    - Drücken Sie nacheinander jede Taste und stellen Sie sicher, dass sie reagiert und das Symbol auf dem Bildschirm angezeigt wird.<br>
+                    - Verwenden Sie ein in das Betriebssystem integriertes oder ein Drittanbieter-Tool zum Testen der Tasten.<br>
+                    - Sie können unsere Website nutzen, um die Tastatur online kostenlos und ohne Registrierung zu testen.<br>
+                    - Überprüfen Sie die speziellen Tasten und Tastenkombinationen (Strg, Alt, Umschalt usw.).<br>
+                </p>
+                <br>
+                <h3 class="subtitle">Wie überprüfe ich die Funktion der Tasten und führe einen Tastaturtest durch?</h3>
+                <p class="top-p1" style="padding-top:5px">
+                    Um einzelne Tasten zu überprüfen, können Sie:<br>
+                    - Einen Texteditor öffnen und nacheinander jede Taste drücken, um die Zeichenausgabe zu überprüfen.<br>
+                    - Online-Tastaturtest-Tools verwenden, die die Tastenanschläge auf dem Bildschirm anzeigen.<br>
+                    - Tastaturtestprogramme verwenden, die bei der Identifizierung von Tastenproblemen helfen können.
+                </p>
+                <br>
+                <h3 class="subtitle">Was tun, wenn Wasser auf die Tastatur gelangt ist?</h3>
+                <p class="top-p1" style="padding-top:5px">
+                    Wenn Flüssigkeit auf die Laptoptastatur gelangt ist, sollten folgende Schritte unternommen werden:<br>
+                    - Schalten Sie den Laptop sofort aus und trennen Sie ihn von der Stromquelle.<br>
+                    - Schütteln Sie überschüssige Flüssigkeit ab, aber nicht zu stark, da dies zu Schäden führen kann.<br>
+                    - Drehen Sie den Laptop um, damit die Flüssigkeit abfließen kann.<br>
+                    - Schalten Sie den Laptop erst ein, wenn das gesamte Bauteil vollständig trocken ist.<br>
+                    - Wenn die Flüssigkeit Zucker oder andere gelöste Stoffe enthielt, ist es ratsam, sich an Fachleute für eine Reinigung zu wenden.<br>
+                    Seien Sie immer vorsichtig mit Flüssigkeiten in der Nähe von Elektronik, da dies schwere Schäden verursachen kann.
+                </p>
+                <br>
+                <h3 class="subtitle">Warum funktionieren einige Tasten nicht oder nicht richtig?</h3>
+                <p class="top-p1" style="padding-top:5px">
+                    Die häufigsten Ursachen sind physische Schäden, Schmutz oder Flüssigkeit unter den Tasten sowie Treiberprobleme. Unser Test hilft festzustellen, ob das Problem mechanisch ist.
+                </p>
+                <br>
+                <h3 class="subtitle">Was sind "klebrige" Tasten und wie erkennt man sie?</h3>
+                <p class="top-p1" style="padding-top:5px">
+                    "Kleben" oder Kurzschluss tritt auf, wenn eine Taste nicht in ihre ursprüngliche Position zurückkehrt oder weiterhin ein Signal sendet. Bei unserem Test bleibt eine solche Taste blau hervorgehoben, selbst nachdem Sie sie losgelassen haben.
+                </p>
+                <br>
+                <h3 class="subtitle">Müssen Programme zum Testen installiert werden?</h3>
+                <p class="top-p1" style="padding-top:5px">
+                    Nein, unser Service funktioniert komplett online in Ihrem Browser. Sie müssen nichts herunterladen oder installieren, was den Testprozess schnell und sicher macht.
+                </p>
+            </div>
+            <br>
+
+            <div class="ftext">
+                <br>
+                Der Online-Tastaturtestdienst <b>KeyTest</b> ermöglicht es Ihnen, visuell zu überprüfen, ob die Tastatur Ihres Computers einwandfrei funktioniert oder ob einige Tasten nicht richtig oder gar nicht funktionieren.<br>
+                Durch Öffnen der Website <a href="/" style="color:inherit;text-transform:uppercase">keytest.pp.ua</a> in einem Browser können Sie sofort mit dem Testen beginnen, es müssen keine Programme heruntergeladen werden.<br>Beginnen Sie nacheinander die Tasten zu drücken. Die Tasten, die derzeit gedrückt sind, werden blau auf dem Bildschirm angezeigt. Die bereits getesteten - grau (was bedeutet, dass die Taste zuvor gedrückt und dann losgelassen wurde, also funktionstüchtig ist).<br>Wenn es bereits vor Beginn des Tests blaue Tasten auf dem Bildschirm gibt - sie sind höchstwahrscheinlich kurzgeschlossen (wahrscheinlich mit Wasser überflutet) und die Tastatur muss ersetzt werden. Wenn beim Drücken einer Taste zwei oder mehr blau aufleuchten - dies deutet ebenfalls auf einen Laptoptastaturfehler hin.<br><br>Laptoptastaturen fallen normalerweise aufgrund von Flüssigkeit aus.<br>Sie sollten keinen Laptop mit nassen Händen benutzen, da Feuchtigkeit ins Innere gelangen und leitende Bahnen kurzschließen kann.<br>Meistens muss eine solche Tastatur ersetzt werden; sie kann kaum repariert werden.<br><br><b>Zusätzliche Funktionen:</b> Unser Service ist ideal, wenn Sie einen MacBook Tastaturtest oder eine mechanische Tastatur prüfen möchten. Sie können auch auf klemmende Tasten Windows 10/11 testen und einen Doppelklick-Test (double click test) durchführen.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="indexfast-promo">
+        <h3>Benötigen Sie eine schnelle Indexierung von Seiten in Google?</h3>
+        <p>Wir empfehlen IndexFast — einen SEO-Service zum Einreichen von URLs zur Indexierung, zur Überwachung des Seitenstatus und zur Beschleunigung des Erscheinens neuer Inhalte in der Suche.</p>
+        <a href="https://indexfast.pp.ua" target="_blank" rel="noopener noreferrer">
+            SEO-Service zur Indexierung von Seiten in Google
+        </a>
+    </div>
+
+    <br>
+    <footer class="footer">
+        <div class="fcontent-modern">
+            <!-- Left Column: Services -->
+            <div class="fcontent-column">
+                <h5 class="title-modern">Andere kostenlose Dienste</h5>
+                <div class="fcontent-links">
+                    <a class="fcontent-link-card" target="_blank" rel="follow" href="https://monitortest.pp.ua" title="Kostenloser Online-Monitortest | Free online monitor test">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">MonitorTest.pp.ua</span>
+                            <span>Kostenloser Online-Monitortest</span>
+                        </span>
+                    </a>
+                    <a class="fcontent-link-card" target="_blank" rel="follow" href="https://tools.apartner.pro" title="Kostenlose Onlinedienste | Free online services">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">Tools.apartner.pro</span>
+                            <span>Kostenlose Online-Dienste</span>
+                        </span>
+                    </a>
+                    <a class="fcontent-link-card" target="_blank" rel="follow" href="https://pctest.pp.ua" title="Kostenloser Online-PC-Test | Free online PC test">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">PCTest.pp.ua</span>
+                            <span>Kostenloser Online-PC-Test</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column: Partners -->
+            <div class="fcontent-column">
+                <h5 class="title-modern">Unsere Partner</h5>
+                <div class="fcontent-links" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px;">
+                    <a class="fcontent-link-card" target="_blank" rel="follow" href="https://devroman.pl" title="devroman.pl - Entwicklung von Websites, Startups, Bots, Chats">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">devroman.pl</span>
+                            <span>Website- und Bot-Entwicklung</span>
+                        </span>
+                    </a>
+                    <a class="fcontent-link-card" target="_blank" rel="follow" href="https://programista.devroman.pl" title="programista.devroman.pl - Entwicklung von Websites, Startups, Bots, Chats">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">programista.devroman.pl</span>
+                            <span>Webanwendungs-Entwicklung</span>
+                        </span>
+                    </a>
+                    <a class="fcontent-link-card" rel="follow" href="/de/partners/" title="Andere Partner">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">Andere Partner</span>
+                            <span>Alle unsere Partner anzeigen</span>
+                        </span>
+                    </a>
+                    <a class="fcontent-link-card" target="_blank" rel="follow" href="https://programist.pp.ua" title="Programist - Web Development Services">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">Programist.pp.ua</span>
+                            <span>Web Development Services</span>
+                        </span>
+                    </a>
+                    <a class="fcontent-link-card" target="_blank" rel="follow" href="https://fullstack.matviy.pp.ua" title="Full Stack Developer Services">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">Full Stack Services</span>
+                            <span>Developer Services</span>
+                        </span>
+                    </a>
+                    <a class="fcontent-link-card" target="_blank" rel="follow" href="https://programist.matviy.pp.ua" title="Programist Matviy - Web Solutions">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">Programist Matviy</span>
+                            <span>Erweiterte Weblösungen</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <br>
+    <footer class="footer">
+        <div class="keybord-footer">
+            <a class="right" href="https://keytest.pp.ua/de/" rel="follow" title="keytest.pp.ua Online-Tastaturtest">
+                2018-2026, KeyTest.pp.ua</a>
+        </div>
+    </footer>
+    <br>
+    <section class="copyright">
+        <div class="container" style="margin-bottom: 8px;">
+            <a href="/de/privacy-policy/" title="Datenschutzerklärung">Datenschutzerklärung</a> | 
+            <a href="/de/terms/" title="Nutzungsbedingungen">Nutzungsbedingungen</a> | 
+            <a href="/de/about/" title="Über uns & Kontakt">Über uns & Kontakt</a>
+        </div>
+        <div class="container">
+            Site erstellt von <a href="https://apartner.pro" target="_blank" rel="follow"
+                title="Development of sites on cms prestashop, wordpress, laravel, Розробка сайтів на cms prestashop, wordpress, laravel">APARTNER.PRO</a>
+            | <a href="https://programist.top" target="_blank" rel="follow" title="Development of sites on cms prestashop, wordpress, laravel, Розробка сайтів на cms prestashop,
+                wordpress, laravel">PROGRAMIST.TOP</a>
+        </div>
+
+        <div class="container">
+            <a href="https://roman.matviy.pp.ua" target="_blank" rel="follow"
+                title="Hire prestashop, laravel, wordpress, php developer">
+                Hire fullstack freelancer prestashop, laravel, wordpress, php, vue, sql
+            </a>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="../../assets/index.js"></script>
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "KeyTest",
+        "url": "https://keytest.pp.ua/de/",
+        "logo": "https://keytest.pp.ua/assets/img/logo.png",
+        "sameAs": [
+            "https://apartner.pro",
+            "https://programist.top"
+        ]
+    }
+    </script>
+    <!-- WebSite Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "KeyTest - Online-Tastaturtest",
+        "url": "https://keytest.pp.ua/de/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://keytest.pp.ua/de/search/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Startseite",
+            "item": "https://keytest.pp.ua/de/"
+        },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tastaturtest ✅",
+            "item": "https://keytest.pp.ua/de/"
+        }]
+    }
+    </script>
+    <!-- WebPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Kostenloser Online-Tastaturtest | KeyTest",
+        "description": "Überprüfen Sie alle Tasten auf der Laptoptastatur oder dem PC. Schneller und kostenloser Online-Tastaturtest ohne Registrierung.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "KeyTest",
+            "logo": {
+            "@type": "ImageObject",
+            "url": "https://keytest.pp.ua/assets/img/logo.png"
+            }
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "KeyTest - Kostenloser Online-Tastaturtest",
+        "description": "Überprüfen Sie alle Tasten auf der Laptoptastatur oder dem PC. Schneller und kostenloser Online-Tastaturtest ohne Registrierung.",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "UAH"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "ratingCount": "7859",
+            "bestRating": "5"
+        }
+    }
+    </script>
+
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Wie überprüfe ich eine Laptoptastatur?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Um die Tastatur eines Laptops zu überprüfen, können Sie folgende Schritte ausführen: - Drücken Sie nacheinander jede Taste und stellen Sie sicher, dass sie reagiert und das Symbol auf dem Bildschirm angezeigt wird. - Verwenden Sie ein in das Betriebssystem integriertes oder ein Drittanbieter-Tool zum Testen der Tasten. - Sie können unsere Website nutzen, um die Tastatur online kostenlos und ohne Registrierung zu testen. - Überprüfen Sie die speziellen Tasten und Tastenkombinationen (Strg, Alt, Umschalt usw.)."
+        }
+      },{
+        "@type": "Question",
+        "name": "Wie überprüfe ich die Funktion der Tasten und führe einen Tastaturtest durch?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Um einzelne Tasten zu überprüfen, können Sie: - Einen Texteditor öffnen und nacheinander jede Taste drücken, um die Zeichenausgabe zu überprüfen. - Online-Tastaturtest-Tools verwenden, die die Tastenanschläge auf dem Bildschirm anzeigen. - Tastaturtestprogramme verwenden, die bei der Identifizierung von Tastenproblemen helfen können."
+        }
+      },{
+        "@type": "Question",
+        "name": "Was tun, wenn Wasser auf die Tastatur gelangt ist?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Wenn Flüssigkeit auf die Laptoptastatur gelangt ist, sollten folgende Schritte unternommen werden: - Schalten Sie den Laptop sofort aus und trennen Sie ihn von der Stromquelle. - Schütteln Sie überschüssige Flüssigkeit ab, aber nicht zu stark. - Drehen Sie den Laptop um, damit die Flüssigkeit abfließen kann. - Schalten Sie den Laptop erst ein, wenn er vollständig trocken ist. - Wenn die Flüssigkeit Zucker enthielt, ist es ratsam, sich an Fachleute für eine Reinigung zu wenden."
+        }
+      },{
+        "@type": "Question",
+        "name": "Warum funktionieren einige Tasten nicht oder nicht richtig?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Die häufigsten Ursachen sind physische Schäden, Schmutz oder Flüssigkeit unter den Tasten sowie Treiberprobleme. Unser Test hilft festzustellen, ob das Problem mechanisch ist."
+        }
+      },{
+        "@type": "Question",
+        "name": "Was sind 'klebrige' Tasten und wie erkennt man sie?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ein 'Kleben' oder Kurzschluss tritt auf, wenn eine Taste nicht in ihre ursprüngliche Position zurückkehrt oder weiterhin ein Signal sendet. Bei unserem Test bleibt eine solche Taste blau hervorgehoben, selbst nachdem Sie sie losgelassen haben."
+        }
+      },{
+        "@type": "Question",
+        "name": "Müssen Programme zum Testen installiert werden?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nein, unser Service funktioniert komplett online in Ihrem Browser. Sie müssen nichts herunterladen oder installieren, was den Testprozess schnell und sicher macht."
+        }
+      }]
+    }
+    </script>
+
+    <!--<script type="application/ld+json">
+        {
+          "@context": "https://schema.org/",
+          "@type": "AggregateRating",
+          "itemReviewed": {
+            "@type": "Service",
+            "image": "https://keytest.pp.ua/assets/img/keytest.png",
+            "name": "Online-Tastaturtest kostenlos"
+          },
+          "ratingValue": "5",
+          "bestRating": "5",
+          "ratingCount": "7859"
+        }
+    </script>-->
+
+    <!-- Lazy load AdSense -->
+    <script>
+        (function() {
+            var adsLoaded = false;
+            function loadAds() {
+                if (!adsLoaded) {
+                    adsLoaded = true;
+                    var script = document.createElement('script');
+                    script.async = true;
+                    script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2646134257100461";
+                    script.crossOrigin = "anonymous";
+                    document.body.appendChild(script);
+                    
+                    window.removeEventListener('scroll', loadAds);
+                    window.removeEventListener('mousemove', loadAds);
+                    window.removeEventListener('touchstart', loadAds);
+                }
+            }
+            window.addEventListener('scroll', loadAds, {passive: true});
+            window.addEventListener('mousemove', loadAds, {passive: true});
+            window.addEventListener('touchstart', loadAds, {passive: true});
+            setTimeout(loadAds, 3500);
+        })();
+    </script>
+</body>
+
+</html>
