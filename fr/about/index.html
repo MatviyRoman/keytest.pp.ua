@@ -241,7 +241,29 @@
     <footer>
         <p>&copy; 2018-2026 <a href="/fr/">KeyTest.pp.ua</a> - Test de clavier gratuit en ligne</p>
     </footer>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2646134257100461"
-     crossorigin="anonymous"></script>
+    <!-- Lazy load AdSense -->
+    <script>
+        (function() {
+            var adsLoaded = false;
+            function loadAds() {
+                if (!adsLoaded) {
+                    adsLoaded = true;
+                    var script = document.createElement('script');
+                    script.async = true;
+                    script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2646134257100461";
+                    script.crossOrigin = "anonymous";
+                    document.body.appendChild(script);
+                    
+                    window.removeEventListener('scroll', loadAds);
+                    window.removeEventListener('mousemove', loadAds);
+                    window.removeEventListener('touchstart', loadAds);
+                }
+            }
+            window.addEventListener('scroll', loadAds, {passive: true});
+            window.addEventListener('mousemove', loadAds, {passive: true});
+            window.addEventListener('touchstart', loadAds, {passive: true});
+            setTimeout(loadAds, 3500);
+        })();
+    </script>
 </body>
 </html>
