@@ -4,8 +4,7 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-  <!-- ==================== HOMEPAGES ==================== -->
-  <url>
+    <url>
     <loc>https://keytest.pp.ua/</loc>
     <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/" />
@@ -84,8 +83,7 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- ==================== PARTNERS ==================== -->
-  <url>
+    <url>
     <loc>https://keytest.pp.ua/partners/</loc>
     <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/partners/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/partners/" />
@@ -164,8 +162,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- ==================== ABOUT & CONTACTS ==================== -->
-  <url>
+    <url>
     <loc>https://keytest.pp.ua/about/</loc>
     <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/about/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/about/" />
@@ -244,8 +241,7 @@
     <priority>0.5</priority>
   </url>
 
-  <!-- ==================== TERMS OF SERVICE ==================== -->
-  <url>
+    <url>
     <loc>https://keytest.pp.ua/terms/</loc>
     <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/terms/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/terms/" />
@@ -324,8 +320,7 @@
     <priority>0.3</priority>
   </url>
 
-  <!-- ==================== PRIVACY POLICY ==================== -->
-  <url>
+    <url>
     <loc>https://keytest.pp.ua/privacy-policy/</loc>
     <xhtml:link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/privacy-policy/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/privacy-policy/" />
