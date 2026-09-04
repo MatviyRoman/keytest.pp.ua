@@ -38,16 +38,33 @@
         }
         a {
             display: inline-block;
-            padding: 12px 30px;
-            background-color: #4a90e2;
+            padding: 12px 20px;
+            background-color: #333;
+            border: 1px solid #444;
             color: white;
             text-decoration: none;
             border-radius: 4px;
             font-weight: bold;
-            transition: background-color 0.3s;
+            transition: all 0.3s;
         }
         a:hover {
+            background-color: #4a90e2;
+            border-color: #4a90e2;
+        }
+        .main-btn {
+            background-color: #4a90e2;
+            border-color: #4a90e2;
+        }
+        .main-btn:hover {
             background-color: #357abd;
+            border-color: #357abd;
+        }
+        .links-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
         }
         .key {
             display: inline-block;
@@ -83,8 +100,15 @@
             <div class="key active">4</div>
         </div>
         
-        <p>Поверніться на головну сторінку, щоб продовжити роботу з нашим сервісом.</p>
-        <a href="/">На головну</a>
+        <p>Поверніться на головну сторінку або оберіть потрібний тест:</p>
+        
+        <div class="links-grid">
+            <a href="/" class="main-btn">Головна сторінка</a>
+            <a href="/macbook-keyboard-test/">Тест клавіатури MacBook</a>
+            <a href="/mechanical-keyboard-test/">Тест механічної клавіатури</a>
+            <a href="/laptop-keyboard-test/">Тест клавіатури ноутбука</a>
+            <a href="/windows-keyboard-test/">Тест клавіатури Windows</a>
+        </div>
     </div>
     
     <footer style="margin-top: 50px; color: #888; font-size: 14px;">
@@ -103,15 +127,16 @@
                     script.crossOrigin = "anonymous";
                     document.body.appendChild(script);
                     
-                    window.removeEventListener('scroll', loadAds);
-                    window.removeEventListener('mousemove', loadAds);
-                    window.removeEventListener('touchstart', loadAds);
+                    var events = ['scroll', 'mousemove', 'touchstart', 'keydown', 'click'];
+                    for (var i = 0; i < events.length; i++) {
+                        window.removeEventListener(events[i], loadAds);
+                    }
                 }
             }
-            window.addEventListener('scroll', loadAds, {passive: true});
-            window.addEventListener('mousemove', loadAds, {passive: true});
-            window.addEventListener('touchstart', loadAds, {passive: true});
-            setTimeout(loadAds, 3500);
+            var events = ['scroll', 'mousemove', 'touchstart', 'keydown', 'click'];
+            for (var i = 0; i < events.length; i++) {
+                window.addEventListener(events[i], loadAds, {passive: true});
+            }
         })();
     </script>
 </body>
