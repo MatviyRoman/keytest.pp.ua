@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="pl" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="all">
+    <meta name="description" content="Bezpłatny test klawiatury Windows 10/11 online. Sprawdź wszystkie klawisze laptopa lub PC bez rejestracji i instalacji programów.">
+    <meta name="keywords" content="windows keyboard test, keyboard test, online keyboard test, windows 10 keyboard test, windows 11 keyboard test, test keyboard online free">
+    <meta http-equiv="Content-Language" content="pl">
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/img/fav.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicon-32x32.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/img/apple-touch-icon.png">
+    <link rel="manifest" href="../../assets/img/site.webmanifest">
+    <link rel="preload" href="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js" as="script">
+    <link rel="preload" href="../../assets/index.js" as="script">
+    <link rel="preload" href="../../assets/style.min.css" as="style">
+    <link rel="stylesheet" href="../../assets/style.min.css">
+    <style>
+        .lang-switcher {
+            position: relative;
+            display: table;
+            margin: 10px auto;
+            z-index: 1000;
+            background-color: rgba(47, 79, 79, 0.8);
+            padding: 8px 20px;
+            border-radius: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            white-space: nowrap;
+        }
+        .lang-switcher .lang-option {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 5px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        .lang-switcher .lang-option:hover { color: #4CAF50; }
+        .lang-switcher .lang-option.active { color: #4CAF50; text-decoration: underline; }
+        .lang-switcher .lang-separator { color: #fff; margin: 0 2px; }
+        @media (max-width: 768px) {
+            .lang-switcher { padding: 5px 10px; margin: 10px auto; }
+            .lang-switcher .lang-option { font-size: 14px; }
+        }
+        .link { color: #fff; padding: 3px; display: block; }
+        .hosting-promo {
+            background: linear-gradient(135deg, rgba(25, 42, 86, 0.9) 0%, rgba(10, 15, 30, 0.95) 100%);
+            border: 1px solid rgba(74, 144, 226, 0.4);
+            border-radius: 12px; padding: 20px 25px; margin: 20px auto; max-width: 800px;
+            text-align: center; box-shadow: 0 8px 32px 0 rgba(74, 144, 226, 0.15);
+            backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); transition: all 0.3s ease;
+        }
+        .hosting-promo:hover {
+            box-shadow: 0 12px 40px 0 rgba(74, 144, 226, 0.3);
+            border-color: rgba(74, 144, 226, 0.6); transform: translateY(-2px);
+        }
+        .hosting-promo h3 { color: #4a90e2; font-size: 20px; margin-top: 0; margin-bottom: 10px; font-weight: 700; letter-spacing: 0.5px; }
+        .hosting-promo p { color: #e0e0e0; font-size: 15px; line-height: 1.5; margin-bottom: 18px; }
+        .hosting-promo a {
+            display: inline-block; background: linear-gradient(90deg, #4a90e2 0%, #357abd 100%);
+            color: #ffffff; font-weight: 600; font-size: 15px; padding: 10px 24px; border-radius: 30px;
+            text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
+        }
+        .hosting-promo a:hover {
+            background: linear-gradient(90deg, #357abd 0%, #4a90e2 100%);
+            transform: scale(1.05); box-shadow: 0 6px 20px rgba(74, 144, 226, 0.5);
+        }
+        .indexfast-promo {
+            background: linear-gradient(135deg, rgba(75, 15, 120, 0.85) 0%, rgba(10, 15, 30, 0.95) 100%);
+            border: 1px solid rgba(160, 32, 240, 0.4); border-radius: 12px; padding: 20px 25px;
+            margin: 25px auto; max-width: 800px; text-align: center;
+            box-shadow: 0 8px 32px 0 rgba(160, 32, 240, 0.15); backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px); transition: all 0.3s ease;
+        }
+        .indexfast-promo:hover {
+            box-shadow: 0 12px 40px 0 rgba(160, 32, 240, 0.3);
+            border-color: rgba(160, 32, 240, 0.6); transform: translateY(-2px);
+        }
+        .indexfast-promo h3 { color: #d896ff; font-size: 20px; margin-top: 0; margin-bottom: 10px; font-weight: 700; letter-spacing: 0.5px; }
+        .indexfast-promo p { color: #e0e0e0; font-size: 15px; line-height: 1.5; margin-bottom: 18px; }
+        .indexfast-promo a {
+            display: inline-block; background: linear-gradient(90deg, #a020f0 0%, #7d12cb 100%);
+            color: #ffffff; font-weight: 600; font-size: 15px; padding: 10px 24px; border-radius: 30px;
+            text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(160, 32, 240, 0.3);
+        }
+        .indexfast-promo a:hover {
+            background: linear-gradient(90deg, #7d12cb 0%, #a020f0 100%);
+            transform: scale(1.05); box-shadow: 0 6px 20px rgba(160, 32, 240, 0.5);
+        }
+        .developer-promo {
+            background: linear-gradient(135deg, rgba(10, 80, 50, 0.9) 0%, rgba(5, 25, 15, 0.97) 100%);
+            border: 1px solid rgba(40, 200, 120, 0.4); border-radius: 12px; padding: 20px 25px;
+            margin: 25px auto; max-width: 800px; text-align: center;
+            box-shadow: 0 8px 32px 0 rgba(40, 200, 120, 0.15); backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px); transition: all 0.3s ease;
+        }
+        .developer-promo:hover {
+            box-shadow: 0 12px 40px 0 rgba(40, 200, 120, 0.3);
+            border-color: rgba(40, 200, 120, 0.6); transform: translateY(-2px);
+        }
+        .developer-promo h3 { color: #5dffa8; font-size: 20px; margin-top: 0; margin-bottom: 10px; font-weight: 700; letter-spacing: 0.5px; }
+        .developer-promo p { color: #e0e0e0; font-size: 15px; line-height: 1.5; margin-bottom: 18px; }
+        .developer-promo a {
+            display: inline-block; background: linear-gradient(90deg, #28c878 0%, #1a9e58 100%);
+            color: #ffffff; font-weight: 600; font-size: 15px; padding: 10px 24px; border-radius: 30px;
+            text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(40, 200, 120, 0.3);
+        }
+        .developer-promo a:hover {
+            background: linear-gradient(90deg, #1a9e58 0%, #28c878 100%);
+            transform: scale(1.05); box-shadow: 0 6px 20px rgba(40, 200, 120, 0.5);
+        }
+        .fcontent-modern {
+            background: linear-gradient(135deg, rgba(28, 47, 47, 0.95) 0%, rgba(20, 32, 32, 0.98) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px; padding: 30px;
+            margin: 0 auto; max-width: 1234px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+            display: grid; grid-template-columns: 1fr 1fr 2fr; gap: 40px; letter-spacing: 0.5px;
+        }
+        @media (max-width: 768px) {
+            .fcontent-modern { grid-template-columns: 1fr; gap: 25px; padding: 20px; }
+        }
+        .fcontent-column { display: flex; flex-direction: column; gap: 15px; }
+        .fcontent-modern .title-modern {
+            font-size: 16px; font-weight: 700; color: #5dffa8; margin: 0 0 10px 0;
+            padding-bottom: 8px; border-bottom: 2px solid rgba(93, 255, 168, 0.15);
+            display: flex; align-items: center; letter-spacing: 1px; text-transform: uppercase;
+        }
+        .fcontent-links { display: flex; flex-direction: column; gap: 12px; }
+        .fcontent-link-card {
+            display: flex; align-items: flex-start; gap: 12px;
+            background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 10px; padding: 12px 16px; color: #b0c4de !important;
+            text-decoration: none; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            font-size: 15px; line-height: 1.4;
+        }
+        .fcontent-link-card:hover {
+            background: rgba(93, 255, 168, 0.06); border-color: rgba(93, 255, 168, 0.3);
+            color: #ffffff !important; transform: translateX(4px); box-shadow: 0 4px 15px rgba(93, 255, 168, 0.08);
+        }
+        .fcontent-link-card .bullet-dot {
+            width: 6px; height: 6px; border-radius: 50%; background-color: #5dffa8;
+            margin-top: 7px; flex-shrink: 0; box-shadow: 0 0 8px #5dffa8; transition: transform 0.3s;
+        }
+        .fcontent-link-card:hover .bullet-dot { transform: scale(1.3); background-color: #ffffff; box-shadow: 0 0 10px #ffffff; }
+        .fcontent-link-card .link-text-container { display: flex; flex-direction: column; gap: 2px; text-align: left; }
+        .fcontent-link-card .link-title { font-weight: 600; color: #ffffff; }
+        .fcontent-link-card:hover .link-title { color: #5dffa8; }
+    </style>
+    <link rel="canonical" href="https://keytest.pp.ua/pl/windows-keyboard-test/">
+
+    <link rel="alternate" hreflang="uk" href="https://keytest.pp.ua/windows-keyboard-test/" />
+    <link rel="alternate" hreflang="en" href="https://keytest.pp.ua/en/windows-keyboard-test/" />
+    <link rel="alternate" hreflang="pl" href="https://keytest.pp.ua/pl/windows-keyboard-test/" />
+    <link rel="alternate" hreflang="de" href="https://keytest.pp.ua/de/windows-keyboard-test/" />
+    <link rel="alternate" hreflang="fr" href="https://keytest.pp.ua/fr/windows-keyboard-test/" />
+    <link rel="alternate" hreflang="ru" href="https://keytest.pp.ua/ru/windows-keyboard-test/" />
+    <link rel="alternate" hreflang="x-default" href="https://keytest.pp.ua/windows-keyboard-test/" />
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@APARTNER.PRO">
+    <meta name="twitter:title" content="keytest.pp.ua - Windows keyboard test online">
+    <meta name="twitter:description" content="Bezpłatny test klawiatury Windows 10/11 online. Sprawdź wszystkie klawisze laptopa lub PC bez rejestracji i instalacji programów.">
+    <meta name="twitter:image" content="https://keytest.pp.ua/assets/img/fav.jpg">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Test klawiatury Windows 10/11 online — za darmo">
+    <meta property="og:site_name" content="KeyTest" />
+    <meta property="og:url" content="https://keytest.pp.ua/pl/windows-keyboard-test/">
+    <meta property="og:image" content="https://keytest.pp.ua/assets/img/keyboard-test-preview.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="KeyTest - Windows keyboard test online">
+    <meta property="og:description" content="Bezpłatny test klawiatury Windows 10/11 online. Sprawdź wszystkie klawisze laptopa lub PC bez rejestracji i instalacji programów.">
+    <meta property="og:locale" content="pl_PL">
+    <title>Test klawiatury Windows 10/11 online ✅</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X54XV8ZP8C"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-X54XV8ZP8C');
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@graph":[{"@type":"Corporation","name":"KeyTest","description":"KeyTest - Windows 10/11 keyboard test online","url":"https://keytest.pp.ua/pl/windows-keyboard-test/","logo":{"@type":"ImageObject","@id":"https://keytest.pp.ua/#logo","url":"https://keytest.pp.ua/assets/img/fav.jpg","width":300,"height":300,"caption":"KeyTest"},"image":{"@id":"https://keytest.pp.ua/#logo"}},{"@type":"BreadcrumbList","name":"Breadcrumbs","description":"Breadcrumbs list","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://keytest.pp.ua/"},{"@type":"ListItem","position":2,"name":"Test klawiatury Windows ✅","item":"https://keytest.pp.ua/pl/windows-keyboard-test/"}]},{"@type":"CreativeWorkSeries","name":"KeyTest - Test klawiatury Windows 10/11 online","aggregateRating":{"@type":"AggregateRating","ratingValue":4.9,"reviewCount":7859}}]}
+    </script>
+    <link rel="help" type="text/markdown" href="https://keytest.pp.ua/llms.txt">
+</head>
+
+<body cz-shortcut-listen="true">
+    <header class="header">
+        <div class="lang-switcher">
+                <a href="/windows-keyboard-test/" class="lang-option">UA</a>
+            <span class="lang-separator">|</span>
+            <a href="/en/windows-keyboard-test/" class="lang-option ">EN</a>
+            <span class="lang-separator">|</span>
+            <a href="/pl/windows-keyboard-test/" class="lang-option active">PL</a>
+            <span class="lang-separator">|</span>
+            <a href="/de/windows-keyboard-test/" class="lang-option ">DE</a>
+            <span class="lang-separator">|</span>
+            <a href="/fr/windows-keyboard-test/" class="lang-option ">FR</a>
+            <span class="lang-separator">|</span>
+            <a href="/ru/windows-keyboard-test/" class="lang-option ">RU</a>
+        </div>
+        <div class="top-block">
+            <h1 style="color:#d3d3d3;font-size:2em;margin-bottom:10px;">Test klawiatury Windows 10/11: sprawdź wszystkie klawisze</h1>
+            <div class="rating" style="text-align: center; margin: 5px 0 15px 0;" title="Ocena: 4.9 / 5 (na podstawie 7859 opinii)">
+                <span style="color: #fbbc04; font-size: 22px;">★★★★★</span>
+                <span style="color: #d3d3d3; font-size: 15px; margin-left: 8px;">Ocena: 4.9 / 5 (na podstawie 7859 opinii)</span>
+            </div>
+            <div style="text-align: center; margin-bottom: 20px;">
+                <a href="https://bookmark.apartner.pro/dr/keytest.pp.ua" title="Domain Rating on Bookmark.Apartner.Pro" target="_blank" rel="follow">
+                  <img src="https://bookmark.apartner.pro/badge.php?domain=keytest.pp.ua" alt="DR 83 - Bookmark.Apartner.Pro" width="230" height="28">
+                </a>
+            </div>
+            <p class="top-p">Tutaj możesz za darmo i bez rejestracji sprawdzić działanie wszystkich klawiszy klawiatury Windows 10 lub Windows 11.<br>Wciśnięty klawisz podświetla się na niebiesko, zwolniony na szaro. Jeśli kolor się nie zmienia — klawisz jest uszkodzony.<br>Dla poprawnego wykrywania klawiszy używaj <b>angielskiego</b> układu klawiatury!</p>
+            <div class="padding-l-r-40">
+                <div class="ftext">
+                    <div class="key press"><p>F1</p></div>
+                    <span style="color:#ffefd5;font-size:18px">— tak wygląda aktualnie wciśnięty klawisz.</span>
+                </div>
+                <div class="ftext">
+                    <div class="key active"><p>F1</p></div>
+                    <span style="color:#ffefd5;font-size:18px">— ten klawisz był wciśnięty i zwolniony — działa poprawnie.</span>
+                </div>
+            </div>
+        </div>
+        <div class="keybord">
+            <div class="blur"></div>
+            <div class="fade"></div>
+            <div class="content">
+                <div class="keybord-top"></div>
+                <div class="key-block">
+                    <div class="key k27"><p>Esc</p></div>
+                    <div class="key vh"></div>
+                    <div class="key k112"><p>F1</p></div>
+                    <div class="key k113"><p>F2</p></div>
+                    <div class="key k114"><p>F3</p></div>
+                    <div class="key k115"><p>F4</p></div>
+                    <div class="key vh half"></div>
+                    <div class="key k116"><p>F5</p></div>
+                    <div class="key k117"><p>F6</p></div>
+                    <div class="key k118"><p>F7</p></div>
+                    <div class="key k119"><p>F8</p></div>
+                    <div class="key vh half"></div>
+                    <div class="key k120"><p>F9</p></div>
+                    <div class="key k121"><p>F10</p></div>
+                    <div class="key k122"><p>F11</p></div>
+                    <div class="key k123"><p>F12</p></div>
+                    <div class="key dl brackets k44"><p>Prt<br>Sc</p></div>
+                    <div class="key dl k145"><p>Scr<br>Lk</p></div>
+                    <div class="key dl k19"><p>Pause<br>break</p></div>
+                    <div class="key t16 k36"><p>Home</p></div>
+                    <div class="key t16 k35"><p>End</p></div>
+                    <div class="key dl k192"><p>~<br>`</p></div>
+                    <div class="key k49"><p>1</p></div>
+                    <div class="key k50"><p>2</p></div>
+                    <div class="key k51"><p>3</p></div>
+                    <div class="key k52"><p>4</p></div>
+                    <div class="key k53"><p>5</p></div>
+                    <div class="key k54"><p>6</p></div>
+                    <div class="key k55"><p>7</p></div>
+                    <div class="key k56"><p>8</p></div>
+                    <div class="key k57"><p>9</p></div>
+                    <div class="key k48"><p>0</p></div>
+                    <div class="key dl smin k173 k189"><p>_<br>-</p></div>
+                    <div class="key dl splus k61 k187"><p>+<br>=</p></div>
+                    <div class="key bs k8"><p>⟵</p></div>
+                    <div class="key dl brackets k33"><p>Page<br>up</p></div>
+                    <div class="key dl k144"><p>Num<br>Lock</p></div>
+                    <div class="key k111"><p>/</p></div>
+                    <div class="key k106"><p>*</p></div>
+                    <div class="key dl k109"><p>_</p></div>
+                    <div class="key tab k9"><p>Tab</p></div>
+                    <div class="key k81"><p>Q</p></div>
+                    <div class="key k87"><p>W</p></div>
+                    <div class="key k69"><p>E</p></div>
+                    <div class="key k82"><p>R</p></div>
+                    <div class="key k84"><p>T</p></div>
+                    <div class="key k89"><p>Y</p></div>
+                    <div class="key k85"><p>U</p></div>
+                    <div class="key k73"><p>I</p></div>
+                    <div class="key k79"><p>O</p></div>
+                    <div class="key k80"><p>P</p></div>
+                    <div class="key ds k219"><p>{<br>[</p></div>
+                    <div class="key ds k221"><p>}<br>]</p></div>
+                    <div class="key ds sum k220"><p>|<br>\</p></div>
+                    <div class="key dl brackets k34"><p>Page<br>down</p></div>
+                    <div class="key k103"><p>7</p></div>
+                    <div class="key k104"><p>8</p></div>
+                    <div class="key k105"><p>9</p></div>
+                    <div class="key plus k107"><p>+</p></div>
+                    <div class="key caps k20"><p>Caps Lock</p></div>
+                    <div class="key k65"><p>A</p></div>
+                    <div class="key k83"><p>S</p></div>
+                    <div class="key k68"><p>D</p></div>
+                    <div class="key k70"><p>F</p></div>
+                    <div class="key k71"><p>G</p></div>
+                    <div class="key k72"><p>H</p></div>
+                    <div class="key k74"><p>J</p></div>
+                    <div class="key k75"><p>K</p></div>
+                    <div class="key k76"><p>L</p></div>
+                    <div class="key ds k59 k186"><p>:<br>;</p></div>
+                    <div class="key ds k222"><p>"<br>'</p></div>
+                    <div class="key enter k13"><p><span></span> ENTER</p></div>
+                    <div class="key brackets k45"><p>ins</p></div>
+                    <div class="key k100"><p>4</p></div>
+                    <div class="key k101"><p>5</p></div>
+                    <div class="key k102"><p>6</p></div>
+                    <div class="key shift1 k16"><p>SHIFT</p></div>
+                    <div class="key k90"><p>Z</p></div>
+                    <div class="key k88"><p>X</p></div>
+                    <div class="key k67"><p>C</p></div>
+                    <div class="key k86"><p>V</p></div>
+                    <div class="key k66"><p>B</p></div>
+                    <div class="key k78"><p>N</p></div>
+                    <div class="key k77"><p>M</p></div>
+                    <div class="key ds k188"><p>&lt;<br>,</p></div>
+                    <div class="key ds k190"><p>&gt;<br>.</p></div>
+                    <div class="key ds k191"><p>?<br>/</p></div>
+                    <div class="key shift2 k16"><p>SHIFT</p></div>
+                    <div class="key brackets k46"><p>del</p></div>
+                    <div class="key k97"><p>1</p></div>
+                    <div class="key k98"><p>2</p></div>
+                    <div class="key k99"><p>3</p></div>
+                    <div class="key enter2 k13"><p>Enter</p></div>
+                    <div class="key ctrl1 k17"><p>CTRL</p></div>
+                    <div class="key wndw k91"><p><span></span></p></div>
+                    <div class="key alt k18"><p>ALT</p></div>
+                    <div class="key space k32"></div>
+                    <div class="key alt k18"><p>ALT</p></div>
+                    <div class="key cont k93"><div class="cblock"><span></span> <span></span> <span></span></div></div>
+                    <div class="key ctrl2 k17"><p>CTRL</p></div>
+                    <div class="key arup brackets k38"><p>↑</p></div>
+                    <div class="key zero k96"><p>0</p></div>
+                    <div class="key k110"><p>.,</p></div>
+                    <div class="m-block">
+                        <div class="key lclick k0"></div>
+                        <div class="key cclick k1"></div>
+                        <div class="key rclick k2"></div>
+                    </div>
+                    <div class="key arleft k37"><p>←</p></div>
+                    <div class="key ardown k40"><p>↓</p></div>
+                    <div class="key arright k39"><p>→</p></div>
+                </div>
+                <div class="keybord-footer"><hr></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="indexfast-promo">
+        <h3>Szukasz wygodnego banku?</h3>
+        <p>Załóż kartę Monobank — szybka rejestracja online, wygodna aplikacja i atrakcyjny cashback co miesiąc.</p>
+        <a href="https://mono-bank.pp.ua/monobank-zareiestruvatysia.html" target="_blank" rel="follow">
+            Monobank: zarejestruj się<br>i odbierz bonus
+        </a>
+    </div>
+
+<div class="hosting-promo devroman-promo">
+    <h3>Chcesz stronę bez opłaty za tworzenie?</h3>
+    <p>
+        <strong>Tworzenie strony — bezpłatne.</strong><br>Płacisz tylko za domenę i hosting.
+    </p>
+    <a href="https://hire.devroman.dev/#contact" target="_blank" rel="noopener">
+        Chcę bezpłatną stronę →
+    </a>
+    <p>
+        Lub napisz do mnie:
+        <a href="https://t.me/RomanMatviy" target="_blank" rel="noopener noreferrer">Telegram</a>
+        ·
+        <a href="https://wa.me/380938800822" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    </p>
+</div>
+
+    <footer class="footer">
+        <div class="fcontent">
+            <h2 class="title">KeyTest Test klawiatury online</h2>
+            <p class="fdesc">Aby przetestować klawiaturę, naciskaj klawisze (najpierw przełącz na układ angielski)</p>
+            <div class="ftext">
+                <div class="key press"><p>A</p></div><span>— klawisz, który aktualnie trzymasz wciśnięty</span>
+            </div>
+            <div class="ftext">
+                <div class="key active"><p>A</p></div><span>— klawisz po zwolnieniu — potwierdza jego sprawność</span>
+            </div>
+        </div>
+        <br>
+        <div class="fcontent">
+            <div class="ftext">
+                <h2 class="title">Serwis do testowania klawiatury online</h2>
+                <h3 class="title">Możesz przeprowadzić test pisania na klawiaturze Windows w czasie rzeczywistym.</h3>
+                <p>Może to być konieczne w wielu sytuacjach:</p>
+                <br>
+                <ol>
+                    <li><p>Po aktualizacji do Windows 10 lub Windows 11 przetestuj każdy klawisz, aby wykryć konflikty sterowników.</p></li>
+                    <li><p>Sprawdź wszystkie klawisze przy zakupie używanego laptopa z systemem Windows.</p></li>
+                    <li><p>Po czyszczeniu lub naprawie klawiatury sprawdź klawisze od F1 do F12 oraz pomocnicze Insert, Home, End, PrtSc itp.</p></li>
+                    <li><p>Upewnij się, że klawisz Win i inne systemowe klawisze Windows reagują poprawnie.</p></li>
+                    <li><p>Sprawdź klawisze modyfikujące Ctrl, Alt i Shift oraz ich kombinacje.</p></li>
+                    <li><p>Upewnij się, że klawisze numeryczne i symboliczne działają prawidłowo.</p></li>
+                    <li><p>Sprawdź brak "przyklejania" klawiszy po aktualizacji systemu.</p></li>
+                    <li><p>Przetestuj Caps Lock i Num Lock — czy włączają się i wyłączają poprawnie.</p></li>
+                </ol>
+            </div>
+        </div>
+
+    <div class="developer-promo">
+        <h3>Potrzebujesz programisty do projektu?</h3>
+        <p>Tworzymy strony, sklepy internetowe, API i serwisy na PHP, Laravel, WordPress, PrestaShop, Node.js i Next.js.</p>
+        <a href="https://hire-web-developer.com" target="_blank" rel="noopener noreferrer">
+            Tworzenie stron i serwisów na PHP, Laravel i WordPress
+        </a>
+    </div>
+
+        <br>
+        <div class="fcontent">
+            <div class="ftext">
+                <h2 class="title">Sprawdź klawiaturę Windows bezpłatnie — bez rejestracji</h2>
+                <br>
+                                <h3 class="subtitle">Jak przetestować klawiaturę na Windows 10/11?</h3>
+                <p class="top-p1" style="padding-top:5px">Otwórz keytest.pp.ua w przeglądarce, przełącz na angielski układ klawiatury i naciskaj kolejno każdy klawisz. Wciśnięty klawisz podświetla się na niebiesko; po zwolnieniu zmienia kolor na szary — oznacza to jego sprawność. Jeśli klawisz pozostaje niebieski, może być zablokowany lub uszkodzony.</p>
+                <br>
+                <h3 class="subtitle">Dlaczego niektóre klawisze nie działają na Windows?</h3>
+                <p class="top-p1" style="padding-top:5px">Najczęstsze przyczyny to fizyczne uszkodzenie, zabrudzenie pod klawiszami, przestarzałe lub konfliktowe sterowniki klawiatury w Windows 10/11, uszkodzony port USB lub połączenie Bluetooth. Nasz test pomaga określić, czy problem jest sprzętowy czy programowy.</p>
+                <br>
+                <h3 class="subtitle">Co to jest "przyklejanie" klawiszy Windows i jak je wykryć?</h3>
+                <p class="top-p1" style="padding-top:5px">"Przyklejanie" występuje, gdy klawisz nie wraca do pozycji spoczynkowej lub nadal wysyła sygnał. Na naszym teście taki klawisz pozostaje podświetlony na niebiesko po zwolnieniu. Może to wskazywać na uszkodzenie mechaniczne lub włączoną funkcję Lepkich klawiszy w ustawieniach Windows.</p>
+                <br>
+                <h3 class="subtitle">Czy do testowania klawiatury Windows potrzebuję programów?</h3>
+                <p class="top-p1" style="padding-top:5px">Nie, nasz serwis działa w całości online w przeglądarce Chrome, Firefox lub Edge. Nic nie trzeba pobierać ani instalować.</p>
+                <br>
+                <h3 class="subtitle">Jak przetestować klawisz Win (Windows) online?</h3>
+                <p class="top-p1" style="padding-top:5px">Naciśnij klawisz Win (⊞) na naszej stronie — jeśli odpowiedni przycisk podświetli się na niebiesko lub szaro, klawisz działa poprawnie. Jeśli nie ma reakcji, sprawdź ustawienia systemu Windows.</p>
+                <br>
+                <br>
+                Internetowy serwis do testowania klawiatury <b>KeyTest</b> pozwala wizualnie sprawdzić, czy wszystkie klawisze komputera z systemem Windows działają poprawnie. Otwórz <a href="/pl/" style="color:inherit;text-transform:uppercase">keytest.pp.ua</a> w przeglądarce i zacznij testować natychmiast — bez pobierania czegokolwiek.<br><br><b>Dodatkowe narzędzia:</b> Nasz serwis świetnie nadaje się też do testu klawiatury MacBook, testu klawiatury mechanicznej oraz testu klawiatury laptopa online.
+            </div>
+            <br>
+        </div>
+    </footer>
+
+    <div class="indexfast-promo">
+        <h3>Potrzebujesz szybkiej indeksacji Google?</h3>
+        <p>Wypróbuj IndexFast — serwis SEO do zgłaszania URL do indeksacji i monitorowania statusu stron.</p>
+        <a href="https://indexfast.pp.ua" target="_blank" rel="noopener noreferrer">
+            Serwis SEO do indeksacji stron w Google
+        </a>
+    </div>
+
+    <br>
+    <footer class="footer">
+        <div class="fcontent-modern">
+            <div class="fcontent-column">
+                <h5 class="title-modern">Specjalne testy</h5>
+                <div class="fcontent-links">
+                    <a class="fcontent-link-card" href="/macbook-keyboard-test/" title="Test klawiatury MacBook">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">Test klawiatury MacBook</span>
+                        </span>
+                    </a>
+                    <a class="fcontent-link-card" href="/mechanical-keyboard-test/" title="Test klawiatury mechanicznej">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">Test klawiatury mechanicznej</span>
+                        </span>
+                    </a>
+                    <a class="fcontent-link-card" href="/laptop-keyboard-test/" title="Test klawiatury laptopa">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">Test klawiatury laptopa</span>
+                        </span>
+                    </a>
+                    <a class="fcontent-link-card" href="/windows-keyboard-test/" title="Windows Keyboard Test">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">Windows Keyboard Test</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="fcontent-column">
+                <h5 class="title-modern">Inne bezpłatne serwisy</h5>
+                <div class="fcontent-links">
+                    <a class="fcontent-link-card" target="_blank" rel="follow" href="https://monitortest.pp.ua" title="Free online monitor test">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">MonitorTest.pp.ua</span>
+                            <span>Free online monitor test</span>
+                        </span>
+                    </a>
+                    <a class="fcontent-link-card" target="_blank" rel="follow" href="https://tools.apartner.pro" title="Free online services">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">Tools.apartner.pro</span>
+                            <span>Free online services</span>
+                        </span>
+                    </a>
+                    <a class="fcontent-link-card" target="_blank" rel="follow" href="https://pctest.pp.ua" title="Free online PC test">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">PCTest.pp.ua</span>
+                            <span>Free online PC test</span>
+                        </span>
+                    </a>
+                    <a class="fcontent-link-card" target="_blank" rel="follow" href="https://nomeravto.pp.ua" title="Vehicle lookup by plate">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">NomerAvto.pp.ua</span>
+                            <span>Vehicle lookup by plate</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="fcontent-column">
+                <h5 class="title-modern">Nasi partnerzy</h5>
+                <div class="fcontent-links" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px;">
+                    <a class="fcontent-link-card" target="_blank" rel="follow" href="https://devroman.pl" title="devroman.pl">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">devroman.pl</span>
+                            <span>Web Development Services</span>
+                        </span>
+                    </a>
+                    <a class="fcontent-link-card" target="_blank" rel="follow" href="https://programist.pp.ua" title="Programist - Web Development">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">Programist.pp.ua</span>
+                            <span>Web Development Services</span>
+                        </span>
+                    </a>
+                    <a class="fcontent-link-card" rel="follow" href="/partners/" title="Our partners">
+                        <span class="bullet-dot"></span>
+                        <span class="link-text-container">
+                            <span class="link-title">Nasi partnerzy</span>
+                            <span>View all partners</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <br>
+    <footer class="footer">
+        <div class="keybord-footer">
+            <a class="right" href="https://keytest.pp.ua" rel="follow" title="keytest.pp.ua keyboard test online">
+                2018-2026, KeyTest.pp.ua</a>
+        </div>
+    </footer>
+    <br>
+    <section class="copyright">
+        <div class="container" style="margin-bottom: 8px;">
+            <a href="/pl/privacy-policy/" title="Polityka prywatności">Polityka prywatności</a> |
+            <a href="/pl/terms/" title="Warunki użytkowania">Warunki użytkowania</a> |
+            <a href="/pl/about/" title="O nas i kontakt">O nas i kontakt</a>
+        </div>
+        <div class="container">
+            Strona stworzona przez <a href="https://apartner.pro" target="_blank" rel="follow" title="APARTNER.PRO">APARTNER.PRO</a>
+            | <a href="https://programist.top" target="_blank" rel="follow" title="PROGRAMIST.TOP">PROGRAMIST.TOP</a>
+        </div>
+        <div class="container">
+            <a href="https://roman.matviy.pp.ua" target="_blank" rel="follow" title="Hire fullstack developer">
+                Hire fullstack freelancer prestashop, laravel, wordpress, php, vue, sql
+            </a>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="../../assets/index.js"></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{"@type":"Question","name":"Jak przetestować klawiaturę na Windows 10/11?","acceptedAnswer":{"@type":"Answer","text":"Otwórz keytest.pp.ua w przeglądarce, przełącz na angielski układ klawiatury i naciskaj kolejno każdy klawisz. Wciśnięty klawisz podświetla się na niebiesko; po zwolnieniu zmienia kolor na szary — oznacza to jego sprawność. Jeśli klawisz pozostaje niebieski, może być zablokowany lub uszkodzony."}},{"@type":"Question","name":"Dlaczego niektóre klawisze nie działają na Windows?","acceptedAnswer":{"@type":"Answer","text":"Najczęstsze przyczyny to fizyczne uszkodzenie, zabrudzenie pod klawiszami, przestarzałe lub konfliktowe sterowniki klawiatury w Windows 10/11, uszkodzony port USB lub połączenie Bluetooth. Nasz test pomaga określić, czy problem jest sprzętowy czy programowy."}},{"@type":"Question","name":"Co to jest "przyklejanie" klawiszy Windows i jak je wykryć?","acceptedAnswer":{"@type":"Answer","text":""Przyklejanie" występuje, gdy klawisz nie wraca do pozycji spoczynkowej lub nadal wysyła sygnał. Na naszym teście taki klawisz pozostaje podświetlony na niebiesko po zwolnieniu. Może to wskazywać na uszkodzenie mechaniczne lub włączoną funkcję Lepkich klawiszy w ustawieniach Windows."}},{"@type":"Question","name":"Czy do testowania klawiatury Windows potrzebuję programów?","acceptedAnswer":{"@type":"Answer","text":"Nie, nasz serwis działa w całości online w przeglądarce Chrome, Firefox lub Edge. Nic nie trzeba pobierać ani instalować."}},{"@type":"Question","name":"Jak przetestować klawisz Win (Windows) online?","acceptedAnswer":{"@type":"Answer","text":"Naciśnij klawisz Win (⊞) na naszej stronie — jeśli odpowiedni przycisk podświetli się na niebiesko lub szaro, klawisz działa poprawnie. Jeśli nie ma reakcji, sprawdź ustawienia systemu Windows."}}]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Bezpłatny test klawiatury Windows 10/11 | KeyTest",
+        "description": "Sprawdź wszystkie klawisze klawiatury Windows 10/11. Szybki i bezpłatny test online bez rejestracji.",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Windows 10, Windows 11, Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "UAH"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "ratingCount": "7859",
+            "bestRating": "5"
+        }
+    }
+    </script>
+    <!-- Lazy load AdSense -->
+    <script>
+        (function() {
+            var adsLoaded = false;
+            function loadAds() {
+                if (!adsLoaded) {
+                    adsLoaded = true;
+                    var script = document.createElement('script');
+                    script.async = true;
+                    script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2646134257100461";
+                    script.crossOrigin = "anonymous";
+                    document.body.appendChild(script);
+                    var events = ['scroll', 'mousemove', 'touchstart', 'keydown', 'click'];
+                    for (var i = 0; i < events.length; i++) {
+                        window.removeEventListener(events[i], loadAds);
+                    }
+                }
+            }
+            var events = ['scroll', 'mousemove', 'touchstart', 'keydown', 'click'];
+            for (var i = 0; i < events.length; i++) {
+                window.addEventListener(events[i], loadAds, {passive: true});
+            }
+        })();
+    </script>
+</body>
+</html>
