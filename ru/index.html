@@ -1287,15 +1287,16 @@
                     script.crossOrigin = "anonymous";
                     document.body.appendChild(script);
                     
-                    window.removeEventListener('scroll', loadAds);
-                    window.removeEventListener('mousemove', loadAds);
-                    window.removeEventListener('touchstart', loadAds);
+                    var events = ['scroll', 'mousemove', 'touchstart', 'keydown', 'click'];
+                    for (var i = 0; i < events.length; i++) {
+                        window.removeEventListener(events[i], loadAds);
+                    }
                 }
             }
-            window.addEventListener('scroll', loadAds, {passive: true});
-            window.addEventListener('mousemove', loadAds, {passive: true});
-            window.addEventListener('touchstart', loadAds, {passive: true});
-            setTimeout(loadAds, 3500);
+            var events = ['scroll', 'mousemove', 'touchstart', 'keydown', 'click'];
+            for (var i = 0; i < events.length; i++) {
+                window.addEventListener(events[i], loadAds, {passive: true});
+            }
         })();
     </script>
 </body>
